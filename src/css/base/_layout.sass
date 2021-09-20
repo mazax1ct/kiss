@@ -1,0 +1,39 @@
+html
+  box-sizing: border-box
+  font-family: sans-serif
+  height: 100%
+
+*,
+*::after,
+*::before
+  box-sizing: inherit
+
+body
+  display: flex
+  flex-direction: column
+  height: 100%
+  min-height: 100%
+  min-width: 320px
+  overflow-wrap: break-word
+
+.page-content
+  flex: 1 0 auto
+  padding-top: 75px
+  padding-bottom: 50px
+
+  @media(min-width: 1200px)
+    padding-top: 90px
+
+  @media(min-width: 1900px)
+    padding-top: 110px
+
+.container
+  margin-left: auto
+  margin-right: auto
+  max-width: 1920px
+  padding-left: 20px
+  padding-right: 20px
+
+  @media(min-width: 1900px)
+    padding-left: 60px
+    padding-right: 60px

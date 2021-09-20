@@ -1,0 +1,43 @@
+.multi-button
+  position: relative
+
+  &__button,
+  &__link
+    align-items: center
+    background-color: $main-color
+    border: none
+    border-radius: 50%
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    padding: 0
+    width: 40px
+
+    @media(min-width: 1900px)
+      height: 93px
+      width: 93px
+
+    svg
+      fill: #fff
+      height: 14px
+      width: 14px
+
+      @media(min-width: 1900px)
+        height: 32px
+        width: 32px
+
+  &__link
+    box-shadow: 0 12px 30px 0 rgba(#0A7F8D, 0.55)
+
+  &__list
+    display: none
+    list-style: none
+    left: 0
+    padding: 0
+    position: absolute
+    top: 100%
+    z-index: 1
+
+    li
+      margin-top: 10px

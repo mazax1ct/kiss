@@ -1,0 +1,145 @@
+.footer
+  flex-shrink: 0
+  text-align: center
+
+  @media(min-width: 1024px)
+    text-align: left
+
+  &__map
+    background-color: rgba($text-color, 0.2)
+    height: 260px
+
+  &__top
+    border-bottom: 1px solid #E6E6E6
+    padding-bottom: 30px
+    padding-top: 30px
+
+  &__phone-block
+    font-size: 35px
+    font-weight: 500
+    line-height: 1.4
+    margin-bottom: 20px
+
+    a
+      color: $text-color
+      text-decoration: none
+
+  &__address-block
+    margin-bottom: 20px
+
+  &__address
+    font-size: 14px
+    line-height: 1.3
+    margin-bottom: 15px
+
+  &__work-time
+    font-size: 10px
+    line-height: 1.3
+    margin-bottom: 10px
+
+    @media(min-width: 1024px)
+      display: none
+
+  &__appointment
+    align-items: center
+    border: none
+    background-color: transparent
+    color: $main-color
+    cursor: pointer
+    display: flex
+    font-weight: 700
+    font-size: 12px
+    line-height: 1.3
+    margin-left: auto
+    margin-right: auto
+    padding: 20px
+
+    svg
+      fill: $main-color
+      height: 16px
+      margin-left: 10px
+      width: 16px
+
+  &__socials
+    display: flex
+    justify-content: center
+
+  &__social
+    align-items: center
+    border-radius: 50%
+    background-color: $main-color
+    display: flex
+    height: 40px
+    justify-content: center
+    margin-left: 10px
+    margin-right: 10px
+    transition: background-color 0.3s
+    width: 40px
+
+    &:hover,
+    &:focus
+      background-color: lighten($main-color, 5%)
+
+    svg
+      fill: #fff
+      height: 14px
+      width: 14px
+
+  &__note
+    font-size: 14px
+    line-height: 1.3
+    margin-bottom: 0
+    padding-top: 30px
+    padding-bottom: 30px
+    text-align: center
+
+    @media(min-width: 1024px)
+      color: #fff
+      background-color: $main-color
+      font-size: 20px
+      font-weight: 700
+      line-height: 1.4
+      padding-top: 25px
+      padding-bottom: 25px
+
+    @media(min-width: 1900px)
+      font-size: 38px
+
+  &__bottom
+    color: rgba($text-color, 0.3)
+    font-size: 10px
+    line-height: 1.3
+    padding-bottom: 25px
+
+    @media(min-width: 1024px)
+      display: flex
+      justify-content: space-between
+      padding-top: 20px
+      padding-bottom: 20px
+
+    @media(min-width: 1200px)
+      font-size: 12px
+
+    @media(min-width: 1400px)
+      font-size: 14px
+
+    @media(min-width: 1900px)
+      color: rgba($text-color, 0.6)
+      font-size: 16px
+      padding-top: 40px
+      padding-bottom: 40px
+
+  &__bottom-logo
+    margin-bottom: 30px
+    margin-left: auto
+    margin-right: auto
+    width: 92px
+
+    @media(min-width: 1024px)
+      display: none
+
+  &__bottom-left
+    margin-bottom: 15px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0

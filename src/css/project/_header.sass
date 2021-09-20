@@ -1,0 +1,186 @@
+.header
+  background-color: #fff
+  left: 0
+  padding-top: 15px
+  padding-bottom: 15px
+  position: fixed
+  right: 0
+  top: 0
+  transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s
+  transform: translateY(0)
+  z-index: 10
+
+  @media(min-width: 1900px)
+    padding-top: 20px
+    padding-bottom: 20px
+
+  &.scrolled
+    box-shadow: 0 0 6px 0 rgba($text-color, 0.1)
+
+  &.out
+    box-shadow: none
+    transform: translateY(-100%)
+
+  &__inner
+    align-items: center
+    display: flex
+
+  &__logo
+    min-width: 76px
+    margin-right: auto
+    width: 76px
+
+    @media(min-width: 1024px)
+      margin-right: 20px
+
+    @media(min-width: 1200px)
+      margin-right: 40px
+      min-width: 100px
+      width: 100px
+
+    @media(min-width: 1900px)
+      min-width: 132px
+      margin-right: 60px
+      width: 132px
+
+  &__button
+    align-items: center
+    background-color: $main-color
+    border: none
+    border-radius: 50%
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    padding: 0
+    transition: background-color 0.3s
+    width: 40px
+
+    &:hover,
+    &:focus
+      background-color: lighten($main-color, 5%)
+
+    svg
+      fill: #fff
+      height: 20px
+      width: 20px
+
+  &__menu-block
+    display: none
+
+    @media(min-width: 1024px)
+      display: flex
+      margin-right: auto
+
+  &__menu-list
+    @media(min-width: 1024px)
+      display: flex
+      font-size: 14px
+      list-style: none
+      margin: 0
+      padding: 0
+
+    @media(min-width: 1200px)
+      font-size: 16px
+
+    @media(min-width: 1900px)
+      font-size: 18px
+
+    li
+      &:not(:last-child)
+        @media(min-width: 1024px)
+          margin-right: 15px
+
+        @media(min-width: 1900px)
+          margin-right: 25px
+
+    a
+      color: $text-color
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        text-decoration: underline
+
+  &__menu-toggler
+    margin-right: 20px
+
+    @media(max-width: 1023px)
+      display: none
+
+  &__search-block
+    margin-right: 10px
+
+    @media(min-width: 1500px)
+      margin-right: 15px
+
+    @media(min-width: 1900px)
+      margin-right: 20px
+
+  &__calc-button,
+  &__location-block
+    margin-right: 10px
+
+    @media(min-width: 1500px)
+      margin-right: 15px
+
+    @media(min-width: 1900px)
+      margin-right: 20px
+
+  &__location-block
+    font-size: 16px
+    line-height: 1.22222
+
+    @media(min-width: 1500px)
+      align-items: center
+      display: flex
+      margin-right: 30px
+
+    @media(min-width: 1900px)
+      font-size: 18px
+      margin-right: 40px
+
+  &__address
+    margin-left: 15px
+
+    @media(max-width: 1499px)
+      display: none
+
+    @media(min-width: 1900px)
+      margin-left: 20px
+
+  &__phone-block
+    color: $text-color
+    font-size: 16px
+    font-weight: 700
+    margin-right: 10px
+    text-decoration: none
+    transition: color 0.3s
+
+    @media(min-width: 1024px)
+      align-items: center
+      display: flex
+      margin-right: 0
+
+    @media(min-width: 1900px)
+      font-size: 18px
+
+    &:hover,
+    &:focus
+      color: $main-color
+
+      .header__button
+        background-color: lighten($main-color, 5%)
+
+  &__phone
+    margin-left: 15px
+
+    @media(max-width: 1349px)
+      display: none
+
+    @media(min-width: 1900px)
+      margin-left: 20px
+
+  &__burger
+    @media(min-width: 1024px)
+      display: none
