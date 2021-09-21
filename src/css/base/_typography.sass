@@ -1,7 +1,18 @@
 body
   color: $text-color
   font-family: 'Gilroy', Arial, sans-serif
-  line-height: 1.388
+  font-size: 14px
+  line-height: 1.4
+
+  @media(min-width: 1200px)
+    font-size: 16px
+
+  @media(min-width: 1900px)
+    font-size: 20px
+
+a
+  transition: color 0.3s
+  text-decoration: none
 
 h1,.h1,
 h2,.h2,
@@ -10,6 +21,20 @@ h4,.h4,
 h5,.h5,
 h6,.h6
   font-weight: 700
+
+h1,
+.h1
+  font-size: 80px
+  line-height: 1.4
+  margin-bottom: 20px
+
+h2,
+.h2
+  font-size: 32px
+  line-height: 1.2
+
+  @media(min-width: 1900px)
+    font-size: 62px
 
 h1,.h1,
 h2,.h2,
@@ -45,3 +70,35 @@ img
   height: auto
   max-width: 100%
   vertical-align: top
+
+.title-block
+  margin-bottom: 60px
+
+  @media(min-width: 768px)
+    display: flex
+    justify-content: space-between
+
+  h2,
+  .h2
+    margin-bottom: 20px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      max-width: 810px
+      padding-right: 20px
+      width: 50%
+
+    a
+      color: $main-color
+
+      &:hover,
+      &:focus
+        color: lighten($main-color, 5%)
+
+  &__text
+    @media(min-width: 768px)
+      max-width: 790px
+      width: 50%
+
+    @media(min-width: 1900px)
+      font-size: 24px
