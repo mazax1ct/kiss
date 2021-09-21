@@ -419,8 +419,53 @@
                 </div>
             </div>
         </div>
-        <div class="footer__middle">
-    
+        <div class="footer__middle container">
+            <div class="footer__contacts">
+                <img class="footer__contacts-logo" src="images/logo.svg" alt="КИСС">
+                <p class="footer__contacts-phone"><a href="tel:+78124183440">+7 (812) 418-34-40</a></p>
+                <p class="footer__contacts-address">г. Санкт-Петербург<br> Щербаков пер. д 2/58</p>
+                <p class="footer__contacts-work-time">Ежедневно 9:00-21:00</p>
+            </div>
+            <div class="footer__menu-block">
+                <button class="js-footer-menu-toggler footer__menu-toggler" type="button">
+                    <svg>
+                        <use xlink:href="#burger"></use>
+                    </svg>
+                    <span>Показать меню</span>
+                </button>
+                <div class="footer__menu">
+                    <div class="footer__menu-inner">
+                        <div class="footer__menu-column">
+                            <p class="footer__menu-title"><a href="#">Услуги</a></p>
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Ортодонтия</a></li>
+                                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Терапия</a></li>
+                                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Ортопедия</a></li>
+                                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Имплантация</a></li>
+                                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Хирургия</a></li>
+                                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Отбеливание</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__menu-column">
+                            <p class="footer__menu-title"><a href="#">О центре</a></p>
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Цены</a></li>
+                                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Работы</a></li>
+                                <li class="footer__menu-item"><a class="footer__menu-link" href="#">О центре</a></li>
+                                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Специалисты</a></li>
+                                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Акции</a></li>
+                                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="footer__calc-button" type="button">
+                <svg>
+                    <use xlink:href="#calc"></use>
+                </svg>
+                <span>Калькулятор<br> лечения</span>
+            </button>
         </div>
         <p class="footer__note">Имеются противопоказания, необходимо проконсультироваться со специалистом</p>
         <div class="footer__bottom container">
@@ -429,7 +474,7 @@
             </div>
             <div class="footer__bottom-left">
                 © 2020, ООО «ЦПЗ КИСС»<br>
-                Лицензия на осуществление медицинской деятельносити № ЛО-78-01-010430 от 17.12.2019 г.
+                Лицензия на осуществление медицинской деятельносити №&nbsp;ЛО-78-01-010430&nbsp;от&nbsp;17.12.2019&nbsp;г.
             </div>
             <div class="footer__bottom-right">
                 Вся информация, включая цены, предоставлена для ознакомления и не является публичной офертой<br>
@@ -440,7 +485,9 @@
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
     <script src="js/multi-button.js"></script>
+    <script src="js/footer-map.js"></script>
     <script src="js/main.js"></script>
     <script src="js/preloader.js"></script>
 </body>
