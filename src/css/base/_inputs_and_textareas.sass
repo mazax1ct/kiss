@@ -1,75 +1,82 @@
+.input-label
+  display: block
+  margin-bottom: 25px
+  position: relative
+
+  &.changed
+    .input-label__text
+      font-size: 16px
+      opacity: 0.6
+      top: 10%
+
+  &__text
+    font-size: 24px
+    line-height: 1.4
+    left: 0
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    transition: top 0.3s, font-size 0.3s, opacity 0.3s
+
 .input,
 .textarea
-  background-color: #fff
-  border: 1px solid #ceced0
-  border-radius: 5px
+  background-color: transparent
+  border: none
+  border-bottom: 1px solid rgba($text-color, 0.2)
+  border-radius: 0
+  box-shadow: none
   color: inherit
+  font-size: 24px
+  font-weight: 400
+  line-height: 1.4
+  transition: border-color 0.3s, color 0.3s
   width: 100%
 
   &:focus
-    border-color: #303032
-    box-shadow: 0 0 5px 2px #00d123
+    border-color: $main-color
+    outline: none
+
+    &::-webkit-input-placeholder
+      color: $text-color
+      opacity: 0.6
+
+    &::-moz-placeholder
+      color: $text-color
+      opacity: 0.6
+
+    &:-ms-input-placeholder
+      color: $text-color
+      opacity: 0.6
 
   &.error
     border-color: #ff0000
 
     &:focus
       border-color: #ff0000
-      box-shadow: 0 0 5px 2px #ff0000
 
   &:disabled
     opacity: 0.5
 
+  &::-webkit-input-placeholder
+    color: $text-color
+    opacity: 1
+    transition: opacity 0.3s
+
+  &::-moz-placeholder
+    color: $text-color
+    opacity: 1
+    transition: opacity 0.3s
+
+  &:-ms-input-placeholder
+    color: $text-color
+    opacity: 1
+    transition: opacity 0.3s
+
 .input
-  height: 50px
-  line-height: 50px
-  padding: 0 10px
+  height: 86px
+  padding: 16px 0
 
 .textarea
-  height: 100px
-  padding: 10px
+  height: 200px
+  padding: 0
   resize: none
-
-/*placeholder*/
-.input::-webkit-input-placeholder
-  color: #303032
-  opacity: 1
-
-.input::-moz-placeholder
-  color: #303032
-  opacity: 1
-
-.input:-ms-input-placeholder
-  color: #303032
-  opacity: 1
-
-.textarea::-webkit-input-placeholder
-  color: #303032
-  opacity: 1
-
-.textarea::-moz-placeholder
-  color: #303032
-  opacity: 1
-
-.textarea:-ms-input-placeholder
-  color: #303032
-  opacity: 1
-
-/*:focus placeholder*/
-.input:focus::-webkit-input-placeholder
-  opacity: 0
-
-.input:focus::-moz-placeholder
-  opacity: 0
-
-.input:focus:-ms-input-placeholder
-  opacity: 0
-
-.textarea:focus::-webkit-input-placeholder
-  opacity: 0
-
-.textarea:focus::-moz-placeholder
-  opacity: 0
-
-.textarea:focus:-ms-input-placeholder
-  opacity: 0

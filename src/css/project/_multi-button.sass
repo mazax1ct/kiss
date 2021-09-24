@@ -5,50 +5,45 @@
   &__link
     align-items: center
     background-color: $main-color
-    border: none
+    border: 2px solid $main-color
     border-radius: 50%
     cursor: pointer
     display: flex
     height: 40px
     justify-content: center
     padding: 0
-    transition: background-color 0.3s
+    transition: background-color 0.3s, border-color 0.3s
     width: 40px
-
-    @media(min-width: 1350px)
-      height: 60px
-      width: 60px
-
-    @media(min-width: 1900px)
-      height: 93px
-      width: 93px
 
     &:hover,
     &:focus
-      background-color: lighten($main-color, 5%)
+      background-color: $main-color-hover
+      border-color: $main-color-hover
 
     svg
       fill: #fff
-      height: 14px
-      width: 14px
-
-      @media(min-width: 1350px)
-        height: 20px
-        width: 20px
-
-      @media(min-width: 1900px)
-        height: 32px
-        width: 32px
+      height: 18px
+      width: 18px
 
   &__button
     &.is-active
+      background-color: transparent
+      border-color: $main-color
+
+      svg
+        fill: $main-color
+
+      &:hover,
+      &:focus
+        background-color: $main-color-hover
+        border-color: $main-color-hover
+
+        svg
+          fill: #fff
+
       svg
         height: 12px
         width: 12px
-
-        @media(min-width: 1900px)
-          height: 20px
-          width: 20px
 
   &__link
     box-shadow: 0 12px 30px 0 rgba(#0A7F8D, 0.55)

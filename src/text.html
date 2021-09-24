@@ -72,26 +72,24 @@
                 <li>нумерованный список</li>
             </ol>
             <form method="post" class="form" action="index.html">
-                <p>
-                    <label>
-                        <input class="input" type="text" value="" placeholder="текст..." />
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <input class="input" type="text" value="" placeholder="текст..." disabled />
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <textarea class="textarea" placeholder="текст..."></textarea>
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <textarea class="textarea" placeholder="текст..." disabled></textarea>
-                    </label>
-                </p>
+                <label class="input-label">
+                    <span class="input-label__text">Ваше Имя</span>
+                    <input class="input" type="text" value="" />
+                </label>
+
+                <label class="input-label">
+                    <span class="input-label__text">Ваше Имя</span>
+                    <input class="input" type="text" value="" disabled />
+                </label>
+
+                <label class="input-label">
+                    <textarea class="textarea" placeholder="Плейсхолдер"></textarea>
+                </label>
+
+                <label class="input-label">
+                    <textarea class="textarea" placeholder="Плейсхолдер" disabled></textarea>
+                </label>
+
                 <p>
                     <label class="checkbox-label">
                         <input type="checkbox" />

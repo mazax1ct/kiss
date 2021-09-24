@@ -34,7 +34,16 @@
             </ul>
         </nav>
         <div class="header__search-block">
-            <button class="header__button header__search-toggler" type="button" title="Открыть поиск">
+            <form class="header__search-form" action="">
+                <input class="header__search-input" type="text" value="" placeholder="Поиск">
+                <button class="header__search-input-clear" type="button" title="Очистить" disabled>
+                    <svg>
+                        <use xlink:href="#close"></use>
+                    </svg>
+                </button>
+                <button class="header__search-submit" type="submit" disabled>Искать</button>
+            </form>
+            <button class="js-search-toggler header__button header__search-toggler" type="button" title="Открыть поиск">
                 <svg>
                     <use xlink:href="#search"></use>
                 </svg>
@@ -53,14 +62,40 @@
             </button>
             <span class="header__address">Санкт-Петербург<br> Щербаков пер. д 2/58</span>
         </div>
-        <a class="header__phone-block" href="tel:+78124183440" title="Позвонить нам">
-            <span class="header__button">
-                <svg>
-                    <use xlink:href="#phone"></use>
-                </svg>
-            </span>
-            <span class="header__phone">+7 (812) 418-34-40</span>
-        </a>
+        <div class="header__phone-block">
+            <div class="multi-button">
+                <button class="js-multi-button-toggler multi-button__button" type="button" title="Открыть">
+                    <svg>
+                        <use xlink:href="#phone"></use>
+                    </svg>
+                </button>
+                <div class="multi-button__list">
+                    <li>
+                        <a class="multi-button__link" href="tel:+78124183440" title="Позвонить нам">
+                            <svg>
+                                <use xlink:href="#phone"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="multi-button__link" href="#" title="Мы в Telegram">
+                            <svg>
+                                <use xlink:href="#tg"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="multi-button__link" href="#" title="Мы в WhatsApp">
+                            <svg>
+                                <use xlink:href="#whatsapp"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </div>
+            </div>
+            <a class="header__phone" href="tel:+78124183440" title="Позвонить нам">+7 (812) 418-34-40</a>
+        </div>
+        <button class="header__appointment button" type="button">Записаться на приём</button>
         <button class="header__button header__burger" type="button" title="Открыть меню">
             <svg>
                 <use xlink:href="#burger"></use>

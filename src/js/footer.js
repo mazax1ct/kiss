@@ -1,7 +1,6 @@
 //открытие/закрытие меню
 $(document).on('click', '.js-footer-menu-toggler', function () {
   $('.footer__menu').slideToggle();
-
   var _this = $(this);
   _this.toggleClass('is-active');
 
