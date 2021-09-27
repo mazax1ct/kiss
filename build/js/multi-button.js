@@ -7,13 +7,13 @@ $(document).on('click', '.js-multi-button-toggler', function () {
     _this.next('.multi-button__list').addClass('is-active');
     setTimeout(function (){
       _this.next('.multi-button__list').addClass('animate');
-    },300);
+    },100);
   } else {
     _this.find('use').attr('xlink:href', '#phone');
     _this.next('.multi-button__list').removeClass('animate');
     setTimeout(function (){
       _this.next('.multi-button__list').removeClass('is-active');
-    },300);
+    },100);
   }
   return false;
 });

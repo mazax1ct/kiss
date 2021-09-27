@@ -1,6 +1,6 @@
 <div class="popups-shade">
-    <div class="record-popup">
-        <button class="record-popup__close" type="button" title="Закрыть">
+    <div class="record-popup popup">
+        <button class="js-popup-closer popup__close" type="button" title="Закрыть">
             <svg>
                 <use xlink:href="#close"></use>
             </svg>
@@ -16,6 +16,31 @@
                 <span class="input-label__text">Телефон</span>
                 <input class="js-phone-mask input" type="text" value="" />
             </label>
+            <label class="select-wrapper">
+                <span class="select-wrapper__container">
+                    <select class="js-select" placeholder="Выберите услугу (необязательно)">
+                        <option value=""></option>
+                        <option value="1">Терапия</option>
+                        <option value="2">Ортодонтия</option>
+                        <option value="3">Ортопедия</option>
+                        <option value="3">Имплантация</option>
+                        <option value="4">Терапия</option>
+                        <option value="5">Ортодонтия</option>
+                        <option value="6">Ортопедия</option>
+                        <option value="7">Имплантация</option>
+                        <option value="8">Терапия</option>
+                        <option value="9">Ортодонтия</option>
+                        <option value="10">Ортопедия</option>
+                        <option value="11">Имплантация</option>
+                    </select>
+                </span>
+            </label>
+            <button class="record-popup__submit round-button round-button--type_1" type="submit">
+                <svg>
+                    <use xlink:href="#arrow_top_right"></use>
+                </svg>
+                <span>Записаться<br> на приём</span>
+            </button>
         </form>
     </div>
 </div>

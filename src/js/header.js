@@ -35,14 +35,14 @@ $(document).on('click', '.js-search-toggler', function () {
     $('.header__search-input').focus();
 		setTimeout(function () {
       $('.header__search-form').addClass('animate');
-    },300);
+    },100);
   } else {
 		_this.find('use').attr('xlink:href', '#search');
 		$('.header__search-form').removeClass('animate');
 		setTimeout(function (){
 			$('.header__search-input').blur();
       $('.header__search-form').removeClass('is-active');
-    },300);
+    },100);
   }
   return false;
 });
