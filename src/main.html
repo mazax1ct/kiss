@@ -29,30 +29,51 @@
     //= template/header.html
 
     <main class="page-content">
-        <div class="js-portraits portraits swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <picture>
-                        <source srcset="images/content/portraits/img_1.jpg, images/content/portraits/img_1@2x.jpg 2x" media="(min-width: 1350px)">
-                        <img src="images/content/portraits/img_1_mob.jpg" srcset="images/content/portraits/img_1_mob@2x.jpg 2x" alt="Имя">
-                    </picture>
-                </div>
-                <div class="swiper-slide">
-                    <picture>
-                        <source srcset="images/content/portraits/img_2.jpg, images/content/portraits/img_2@2x.jpg 2x" media="(min-width: 1350px)">
-                        <img src="images/content/portraits/img_2_mob.jpg" srcset="images/content/portraits/img_2_mob@2x.jpg 2x" alt="Имя">
-                    </picture>
-                </div>
-                <div class="swiper-slide">
-                    <picture>
-                        <source srcset="images/content/portraits/img_3.jpg, images/content/portraits/img_3@2x.jpg 2x" media="(min-width: 1350px)">
-                        <img src="images/content/portraits/img_3_mob.jpg" srcset="images/content/portraits/img_3_mob@2x.jpg 2x" alt="Имя">
-                    </picture>
+        <div class="container">
+            <div class="js-portraits portraits swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/content/portraits/img_1.jpg, images/content/portraits/img_1@2x.jpg 2x" media="(min-width: 1350px)">
+                            <img src="images/content/portraits/img_1_mob.jpg" srcset="images/content/portraits/img_1_mob@2x.jpg 2x" alt="Имя">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/content/portraits/img_2.jpg, images/content/portraits/img_2@2x.jpg 2x" media="(min-width: 1350px)">
+                            <img src="images/content/portraits/img_2_mob.jpg" srcset="images/content/portraits/img_2_mob@2x.jpg 2x" alt="Имя">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/content/portraits/img_3.jpg, images/content/portraits/img_3@2x.jpg 2x" media="(min-width: 1350px)">
+                            <img src="images/content/portraits/img_3_mob.jpg" srcset="images/content/portraits/img_3_mob@2x.jpg 2x" alt="Имя">
+                        </picture>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container">
+            <div class="intro">
+                <h1><span>Быть хорошими</span> <span>стоматологами -</span> <span>это <span class="decorated-words">наша работа</span></span></h1>
+                <div class="intro__text">
+                    <p>Мы делаем своих клиентов счастливыми каждый&nbsp;день</p>
+                </div>
+                <div class="intro__buttons">
+                    <button class="intro__button intro__button--calc" type="button">
+                        <svg>
+                            <use xlink:href="#calc"></use>
+                        </svg>
+                        <span>Калькулятор лечения</span>
+                    </button>
+                    <button class="js-popup-opener intro__button intro__button--appointment" type="button" data-popup="record-popup">
+                        <svg>
+                            <use xlink:href="#arrow_top_right"></use>
+                        </svg>
+                        <span>Записаться на приём</span>
+                    </button>
+                </div>
+            </div>
+
             <div class="title-block">
                 <h2>Наши услуги</h2>
                 <div class="title-block__text">
