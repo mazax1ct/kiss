@@ -1,0 +1,146 @@
+.calculation
+  color: #fff
+  margin-left: -20px
+  margin-right: -20px
+  margin-bottom: 60px
+
+  @media(min-width: 768px)
+    position: relative
+    padding-top: 30px
+
+  @media(min-width: 1024px)
+    margin-left: 0
+    margin-right: 0
+
+  @media(min-width: 1350px)
+    margin-bottom: 120px
+
+  @media(min-width: 1900px)
+    margin-bottom: 170px
+    padding-top: 55px
+
+  &::before
+    @media(min-width: 1024px)
+      background-color: $main-color
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      background-image: url("data:image/svg+xml,%3Csvg width='45' height='45' viewBox='0 0 45 45' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M24.3551 37.3167L39.9404 21.7314L42.5644 24.3555L22.4996 44.4203L2.4348 24.3555L5.05887 21.7314L20.6441 37.3167L20.6441 2.43519L24.3551 2.43519L24.3551 37.3167Z' fill='white'/%3E%3C/svg%3E%0A")
+      background-size: 24px 24px
+      border-radius: 50%
+      content: ''
+      height: 50px
+      left: 50%
+      margin-top: 0
+      margin-left: -25px
+      position: absolute
+      top: 0
+      width: 50px
+      z-index: 2
+      animation: spring 1.5s linear infinite
+
+    @media(min-width: 1350px)
+      background-size: 30px 30px
+      height: 60px
+      margin-left: -30px
+      width: 60px
+
+    @media(min-width: 1900px)
+      background-size: 45px 45px
+      height: 92px
+      margin-top: -10px
+      margin-left: -46px
+      width: 92px
+
+  &__inner
+    background-color: $main-color
+    padding: 40px 20px
+
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+      flex-direction: row-reverse
+      justify-content: space-between
+      padding: 60px 40px
+
+    @media(min-width: 1024px)
+      border-radius: 30px
+      clip-path: url(#clipPath_1)
+
+    @media(min-width: 1350px)
+      border-radius: 60px
+      padding: 80px 40px
+
+    @media(min-width: 1900px)
+      padding: 140px 70px
+
+  &__text-block
+    margin-bottom: 100px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      width: 44%
+
+  h2
+    font-size: 24px
+
+    @media(min-width: 768px)
+      font-size: 28px
+
+    @media(min-width: 1200px)
+      font-size: 32px
+
+    @media(min-width: 1350px)
+      font-size: 44px
+
+    @media(min-width: 1900px)
+      font-size: 62px
+      margin-bottom: 60px
+
+  &__text
+    @media(min-width: 1900px)
+      font-size: 24px
+
+  &__image-block
+    max-width: 596px
+    position: relative
+
+    @media(min-width: 768px)
+      width: 44%
+
+  .round-button
+    color: #000
+    left: auto
+    position: absolute
+    right: 0
+    top: -70px
+    z-index: 1
+
+    @media(min-width: 768px)
+      bottom: -40px
+      right: -40px
+      top: auto
+
+    @media(min-width: 1900px)
+      bottom: -70px
+      right: -160px
+      top: auto
+
+    &:hover,
+    &:focus
+      color: #fff
+
+      svg
+        fill: #fff
+
+    svg
+      fill: #000
+
+@keyframes spring
+  0%
+    transform: translateY(0)
+
+  50%
+    transform: translateY(-20%)
+
+  100%
+    transform: translateY(0)

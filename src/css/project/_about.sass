@@ -1,0 +1,232 @@
+.about-title
+  align-items: center
+  display: flex
+  flex-direction: column
+  font-size: 26px
+  font-weight: 700
+  line-height: 1.4
+  margin-bottom: 60px
+  margin-left: auto
+  margin-right: auto
+  max-width: 315px
+  text-transform: uppercase
+  width: 100%
+
+  @media(min-width: 768px)
+    font-size: 36px
+    max-width: 440px
+
+  @media(min-width: 1024px)
+    flex-wrap: wrap
+    flex-direction: row
+    max-width: 590px
+
+  @media(min-width: 1350px)
+    font-size: 48px
+    margin-bottom: 90px
+    max-width: 790px
+
+  @media(min-width: 1400px)
+    font-size: 52px
+    max-width: 860px
+
+  @media(min-width: 1600px)
+    font-size: 60px
+    max-width: 990px
+
+  @media(min-width: 1900px)
+    font-size: 80px
+    line-height: 1.4
+    margin-bottom: 120px
+    max-width: 1330px
+
+  & > span
+
+    &:nth-child(1)
+      display: block
+
+      @media(min-width: 768px)
+        width: 100%
+
+    &:nth-child(2)
+      display: block
+      margin-left: -10%
+      position: relative
+
+      @media(min-width: 1024px)
+        display: inline
+        margin-left: auto
+        margin-right: 0.3em
+
+      &::after
+        @media(min-width: 1024px)
+          background-image: url("data:image/svg+xml,%3Csvg width='781' height='145' viewBox='0 0 781 145' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M212.071 18.8855C13.0919 36.0358 -35.2976 96.8289 124.355 123.544C189.9 134.504 291.21 142.675 389.203 142.981C530.002 143.428 677.598 135.87 741.2 111.414C849.065 69.9182 709.561 38.2389 530.811 26.6938C421.004 19.6384 294.366 11.8023 212.071 18.8855Z' stroke='%2343CEE0' stroke-width='3' stroke-miterlimit='22.9256'/%3E%3Cpath d='M129.591 107.16C-40.0511 73.603 93.2335 -1.08899 374.783 2.09891C832.049 7.27226 864.358 122.316 358.426 122.316C275.589 122.316 209.514 122.96 129.591 107.16Z' stroke='%2360EAFC' stroke-width='3' stroke-miterlimit='22.9256'/%3E%3Cpath d='M649.615 117.915C735.006 102.437 771.463 79.5731 750.156 51.8031C695.146 -20.0887 371.406 30.6866 159.792 30.6866C-51.7409 30.7148 -10.7467 79.8268 55.0383 100.859C179.155 140.526 482.722 148.166 649.615 117.915Z' stroke='%2314A9BD' stroke-width='3' stroke-miterlimit='22.9256'/%3E%3C/svg%3E%0A")
+          background-repeat: no-repeat
+          background-size: 100% auto
+          background-position: 50% 50%
+          content: ''
+          height: 127%
+          left: 50%
+          position: absolute
+          top: 50%
+          transform: translate(-50%, -50%)
+          width: 119%
+          z-index: -1
+
+    &:nth-child(3)
+      margin-left: 20%
+      position: relative
+      white-space: nowrap
+
+      @media(min-width: 1024px)
+        margin-left: 0
+
+      &::after
+        @media(max-width: 1023px)
+          background-image: url("data:image/svg+xml,%3Csvg width='685' height='149' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 685 149'%3E%3Cg%3E%3Cpath fill='%2343CEE0' d='M351.2,148.5c-3.3,0-6.6,0-9.8,0c-82-0.3-171-8-232.4-20c-55.6-10.9-85.8-27.9-84.8-47.8c0.6-13.5,15.6-26.4,43.2-37.5C96.2,31.5,137.2,22.8,186,17.9l0,0c74-7.5,188,1.1,279.6,8c60.2,4.6,112.2,11.9,150.5,21.1c42.9,10.4,65.8,22.5,68.2,36c1.9,10.8-9.5,21.9-33.8,32.9C588.3,144,440.3,148.5,351.2,148.5z M186.3,20.9c-108.5,11-158.1,38-159.1,59.9c-0.8,18,29.2,34.3,82.4,44.8c61.2,12,150.1,19.7,231.8,20c87.5,0.3,243.9-3.4,307.9-32.3c22.9-10.3,33.7-20.3,32.1-29.6c-4.1-23.6-88.9-45-216-54.6C373.9,22,260,13.4,186.3,20.9L186.3,20.9z'/%3E%3Cpath fill='%2360EAFC' d='M298.1,127.2c-66.1,0-119.7-0.6-184.6-15.6l0,0c-45.2-10.5-68.9-25.9-66.8-43.3c2.2-17.7,31.2-35.2,79.7-47.9C179.3,6.6,251.2-0.4,328.8,0.6C423,1.9,502.9,9.4,559.7,22.5c51.7,11.9,80.1,27.6,80,44.2c-0.1,16.5-28.8,31.5-80.8,42.2c-58.1,12-142.7,18.3-244.5,18.3l-8.2,0C303.5,127.2,300.8,127.2,298.1,127.2z M114.2,108.7c67.2,15.6,122.3,15.6,192,15.6l8.2,0c101.6,0,185.9-6.3,243.9-18.2c49.7-10.2,78.3-24.5,78.4-39.3c0.1-14.8-28.2-29.9-77.6-41.3c-56.6-13-136.2-20.6-230.3-21.9c-77.3-1-148.9,6-201.6,19.7C80.6,35.5,51.6,52.5,49.6,68.7C47.7,84.4,70.7,98.6,114.2,108.7L114.2,108.7z'/%3E%3Cpath fill='%2314A9BD' d='M348,141.8c-17.5,0-35.2-0.3-53-0.9c-105.3-3.4-195.3-16.5-247-35.8C24.2,96.2-2.4,79.7,0.7,62.5C4.6,41.2,52.9,30,140.3,30c54.2,0,117.9-4.5,179.5-8.9c74.7-5.3,151.9-10.8,213.2-8.3c70.2,2.8,110.2,15.4,126,39.7c5.7,8.8,7,17.2,3.7,25.2c-7.6,18.4-38.8,33.6-92.7,45l-0.3-1.5l0.3,1.5C511.6,135.1,432.7,141.8,348,141.8z M499.6,15.2c-54.7,0-117.6,4.5-179.6,8.9C258.4,28.5,194.6,33,140.3,33C26.2,33,5.7,51.8,3.7,63C1.5,75.3,20.1,91.4,49,102.3c51.4,19.3,141,32.3,246,35.6c104.2,3.4,204.2-3.3,274.3-18.2c52.2-11.1,83.5-26,90.6-43.3c2.9-7,1.8-14.6-3.4-22.4C636.9,23.9,576.3,15.2,499.6,15.2z'/%3E%3C/g%3E%3C/svg%3E%0A")
+          background-repeat: no-repeat
+          background-size: 100% auto
+          background-position: 50% 50%
+          content: ''
+          height: 150%
+          left: 50%
+          position: absolute
+          top: 50%
+          transform: translate(-50%, -50%)
+          width: 156%
+          z-index: -1
+
+.about
+  margin-left: -20px
+  margin-right: -20px
+  margin-bottom: 60px
+
+  @media(min-width: 768px)
+    position: relative
+    padding-top: 30px
+
+  @media(min-width: 1024px)
+    margin-left: 0
+    margin-right: 0
+
+  @media(min-width: 1350px)
+    margin-bottom: 120px
+
+  @media(min-width: 1900px)
+    margin-bottom: 170px
+    padding-top: 55px
+
+  &::before
+    @media(min-width: 1024px)
+      background-color: #F6FAFB
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      background-image: url("data:image/svg+xml,%3Csvg width='45' height='45' viewBox='0 0 45 45' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M24.3551 37.3167L39.9404 21.7314L42.5644 24.3555L22.4996 44.4203L2.4348 24.3555L5.05887 21.7314L20.6441 37.3167L20.6441 2.43519L24.3551 2.43519L24.3551 37.3167Z' fill='%2312A4B6'/%3E%3C/svg%3E%0A")
+      background-size: 24px 24px
+      border-radius: 50%
+      content: ''
+      height: 50px
+      left: 59.8%
+      margin-left: -25px
+      position: absolute
+      top: 0
+      width: 50px
+      z-index: 2
+      animation: spring 1.5s linear infinite
+
+    @media(min-width: 1350px)
+      background-size: 30px 30px
+      height: 60px
+      margin-left: -30px
+      width: 60px
+
+    @media(min-width: 1900px)
+      background-size: 45px 45px
+      height: 92px
+      margin-left: -46px
+      width: 92px
+
+  &__inner
+    background-color: #F6FAFB
+    padding: 40px 20px
+
+    @media(min-width: 768px)
+      padding: 40px
+
+    @media(min-width: 1024px)
+      border-radius: 30px
+      clip-path: url(#clipPath_2)
+
+    @media(min-width: 1350px)
+      border-radius: 60px
+
+    @media(min-width: 1900px)
+      padding: 80px 70px 60px
+
+  h2
+    @media(min-width: 768px)
+      max-width: 720px
+      width: 50%
+
+    @media(min-width: 1200px)
+      margin-bottom: 40px
+
+  &__text
+    margin-bottom: 60px
+
+    @media(max-width: 767px)
+      font-size: 12px
+
+    @media(min-width: 768px)
+      display: flex
+      justify-content: space-between
+      margin-bottom: 90px
+      margin-left: -20px
+      margin-right: -20px
+
+    @media(min-width: 1350px)
+      margin-bottom: 120px
+
+    @media(min-width: 1900px)
+      font-size: 24px
+      margin-bottom: 170px
+
+  &__text-column
+    @media(min-width: 768px)
+      max-width: 720px
+      padding-left: 20px
+      padding-right: 20px
+      width: 50%
+
+    &:not(:last-child)
+      margin-bottom: 20px
+
+      @media(min-width: 768px)
+        margin-bottom: 0
+
+  &__image-block
+    position: relative
+
+    img
+      border-radius: 20px
+      display: block
+      width: 100%
+
+      @media(min-width: 1350px)
+        border-radius: 40px
+
+    .round-button
+      left: 0
+      margin-left: 20px
+      position: absolute
+      top: -30px
+      z-index: 1
+
+      @media(min-width: 768px)
+        left: 50%
+        transform: translate(0, -50%)
+        top: 0
+
+      @media(min-width: 1900px)
+        margin-left: 20px
+        transform: translate(50%, -50%)

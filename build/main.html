@@ -60,6 +60,17 @@
 
 <body>
     <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <clipPath id="clipPath_1" clipPathUnits="objectBoundingBox">
+                <path
+                  d="M0.479,0.065 c-0.013,-0.026,-0.027,-0.065,-0.043,-0.065 H0.033 C0.015,0,0,0.04,0,0.09 v0.82 c0,0.05,0.015,0.09,0.033,0.09 h0.933 c0.018,0,0.033,-0.04,0.033,-0.09 V0.09 c0,-0.05,-0.015,-0.09,-0.033,-0.09 h-0.402 c-0.017,0,-0.03,0.039,-0.043,0.065 c-0.006,0.011,-0.013,0.018,-0.021,0.018 S0.485,0.076,0.479,0.065">
+                </path>
+            </clipPath>
+            <clipPath id="clipPath_2" clipPathUnits="objectBoundingBox">
+                <path
+                  d="M0.577,0.036 C0.562,0.023,0.548,0,0.53,0 L0.033,0 C0.015,0,0,0.02,0,0.044 V0.956 C0,0.98,0.015,1,0.033,1 H0.967 C0.985,1,1,0.98,1,0.956 V0.044 C1,0.02,0.985,0,0.967,0 L0.666,0 C0.648,0,0.633,0.023,0.619,0.036 C0.613,0.042,0.606,0.045,0.598,0.045 C0.59,0.045,0.583,0.042,0.577,0.036" />
+            </clipPath>
+        </defs>
         <symbol id="menu" viewBox="0 0 20 20">
             <g>
                 <path d="M3.8,14.4L3.8,14.4c1,0,1.8,0.8,1.8,1.8v0c0,1-0.8,1.8-1.8,1.8h0c-1,0-1.8-0.8-1.8-1.8v0C2,15.2,2.8,14.4,3.8,14.4z" />
@@ -272,6 +283,16 @@
                         </picture>
                     </div>
                 </div>
+                <button class="slider-prev" type="button" title="Назад">
+                    <svg>
+                        <use xlink:href="#arrow_left"></use>
+                    </svg>
+                </button>
+                <button class="slider-next" type="button" title="Вперёд">
+                    <svg>
+                        <use xlink:href="#arrow_right"></use>
+                    </svg>
+                </button>
             </div>
 
             <div class="intro">
@@ -292,6 +313,26 @@
                         </svg>
                         <span>Записаться на приём</span>
                     </button>
+                </div>
+            </div>
+
+            <div class="calculation">
+                <div class="calculation__inner">
+                    <div class="calculation__text-block">
+                        <h2>Рассчитайте точную стоимость лечения зубов прямо сейчас</h2>
+                        <div class="calculation__text">
+                            <p>Мы сделали самую точную и честную форму расчета стоимости лечения, чтобы вы сразу могли понять, что у вас такое с зубом и сколько будет стоить всё привести в порядок</p>
+                        </div>
+                    </div>
+                    <div class="calculation__image-block">
+                        <img src="images/content/calculation/chaw.svg" alt="">
+                        <button class="round-button round-button--type_1" type="button">
+                            <svg>
+                                <use xlink:href="#calc"></use>
+                            </svg>
+                            <span>Калькулятор<br> лечения</span>
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -348,6 +389,17 @@
                             </a>
                         </div>
                     </div>
+                    <div class="swiper-pagination"></div>
+                    <button class="slider-prev" type="button" title="Назад">
+                        <svg>
+                            <use xlink:href="#arrow_left"></use>
+                        </svg>
+                    </button>
+                    <button class="slider-next" type="button" title="Вперёд">
+                        <svg>
+                            <use xlink:href="#arrow_right"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
 
@@ -362,6 +414,118 @@
                 <h2>Лучшие специалисты Санкт‑Петербурга</h2>
                 <div class="title-block__text">
                     <p>Профессиональный коллектив, имеющий большой практический опыт, ответственно подходит к работе с пациентами на всех этапах лечения</p>
+                </div>
+            </div>
+
+            <div class="specialists">
+                <a class="round-button round-button--type_2" href="#">
+                    <svg>
+                        <use xlink:href="#arrow_top_right"></use>
+                    </svg>
+                    <span>Все<br> специалисты</span>
+                </a>
+                <div class="js-specialists swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="specialist">
+                                <div class="specialist__image-block">
+                                    <picture>
+                                        <source srcset="images/content/specialists/img_1.jpg, images/content/specialists/img_1@2x.jpg 2x" media="(min-width: 768px)">
+                                        <img src="images/content/specialists/img_1_mob.jpg" srcset="images/content/specialists/img_1_mob@2x.jpg 2x" alt="Рауль Родионович">
+                                    </picture>
+                                    <div class="specialist__quote">
+                                        <p>Наши клиенты, это не просто пациенты, наши клиенты – наши друзья!</p>
+                                    </div>
+                                </div>
+                                <div class="specialist__container">
+                                    <div class="specialist__container-block">
+                                        <div class="specialist__quote">
+                                            <p>Наши клиенты, это не просто пациенты, наши клиенты – наши друзья!</p>
+                                        </div>
+                                    </div>
+                                    <div class="specialist__container-block">
+                                        <div class="specialist__about-block">
+                                            <p class="specialist__name">Рауль Родионович</p>
+                                            <p class="specialist__place">Главный врач, стоматолог ортопед</p>
+                                            <p class="specialist__about">Один из самых востребованных стоматологов в Санкт-Петербурге. За 26 лет работы помог более 7 000 пациентов обрести здоровую и красивую улыбку</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="specialist">
+                                <div class="specialist__image-block">
+                                    <picture>
+                                        <source srcset="images/content/specialists/img_2.jpg, images/content/specialists/img_2@2x.jpg 2x" media="(min-width: 768px)">
+                                        <img src="images/content/specialists/img_2_mob.jpg" srcset="images/content/specialists/img_2_mob@2x.jpg 2x" alt="Дарья Викторовна">
+                                    </picture>
+                                    <div class="specialist__quote">
+                                        <p>Наши клиенты, это не просто пациенты, наши клиенты – наши друзья!</p>
+                                    </div>
+                                </div>
+                                <div class="specialist__container">
+                                    <div class="specialist__container-block">
+                                        <div class="specialist__quote">
+                                            <p>Наши клиенты, это не просто пациенты, наши клиенты – наши друзья!</p>
+                                        </div>
+                                    </div>
+                                    <div class="specialist__container-block">
+                                        <div class="specialist__about-block">
+                                            <p class="specialist__name">Дарья Викторовна</p>
+                                            <p class="specialist__place">Стоматолог терапевт</p>
+                                            <p class="specialist__about">За 26 лет работы помог более 7 000 пациентов обрести здоровую и красивую улыбку</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specialists__nav-block">
+                        <div class="specialists__pagination">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="specialists__nav">
+                            <button class="slider-prev" type="button" title="Назад">
+                                <svg>
+                                    <use xlink:href="#arrow_left"></use>
+                                </svg>
+                            </button>
+                            <button class="slider-next" type="button" title="Вперёд">
+                                <svg>
+                                    <use xlink:href="#arrow_right"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="about-title"><span>ЛЕЧИМ БЕЗБОЛЕЗНЕННО,</span> <span>КОНСУЛЬТИРУЕМ</span> <span>ПОДРОБНО</span></p>
+
+            <div class="about">
+                <div class="about__inner">
+                    <h2>Центр протезирования зубов&nbsp;Кисс</h2>
+                    <div class="about__text">
+                        <div class="about__text-column">
+                            <p>Мы используем самые современные методы протезирования и лечения зубов. Отличие нашей клиники заключается не только в профессионализме, но и в самых прозрачных и честных ценах.</p>
+                        </div>
+                        <div class="about__text-column">
+                            <p>Профессиональный коллектив, имеющий большой практический опыт, ответственно подходит к работе с пациентами. Мы используем инновационные технологии и европейские стандарты.</p>
+                        </div>
+                    </div>
+                    <div class="about__image-block">
+                        <picture>
+                            <source srcset="images/content/about/img_1.jpg, images/content/about/img_1@2x.jpg 2x" media="(min-width: 768px)">
+                            <img src="images/content/about/img_1_mob.jpg" srcset="images/content/about/img_1_mob@2x.jpg 2x" alt="alt">
+                        </picture>
+                        <a class="round-button round-button--type_2" href="#">
+                            <svg>
+                                <use xlink:href="#arrow_top_right"></use>
+                            </svg>
+                            <span>Узнать<br> о центре</span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -441,6 +605,17 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-pagination"></div>
+                    <button class="slider-prev" type="button" title="Назад">
+                        <svg>
+                            <use xlink:href="#arrow_left"></use>
+                        </svg>
+                    </button>
+                    <button class="slider-next" type="button" title="Вперёд">
+                        <svg>
+                            <use xlink:href="#arrow_right"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
 
@@ -511,6 +686,16 @@
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
+                    <button class="slider-prev" type="button" title="Назад">
+                        <svg>
+                            <use xlink:href="#arrow_left"></use>
+                        </svg>
+                    </button>
+                    <button class="slider-next" type="button" title="Вперёд">
+                        <svg>
+                            <use xlink:href="#arrow_right"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
 
@@ -739,75 +924,12 @@
     <script src="js/main.js"></script>
     <script src="js/preloader.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script>
-        const portraits = new Swiper('.js-portraits', {
-            allowTouchMove: false,
-            loop: true,
-            autoplay: {
-                delay: 1,
-                disableOnInteraction: false
-            },
-            slidesPerView: 'auto',
-            centeredSlides: true,
-            speed: 10000
-        });
-
-        const services = new Swiper('.js-services', {
-            allowTouchMove: false,
-            loop: true,
-            autoplay: {
-                delay: 1,
-                disableOnInteraction: false
-            },
-            slidesPerView: 'auto',
-            centeredSlides: true,
-            speed: 10000
-        });
-
-        const instagram = new Swiper('.js-instagram', {
-            allowTouchMove: false,
-            loop: true,
-            autoplay: {
-                delay: 1,
-                disableOnInteraction: false
-            },
-            slidesPerView: 'auto',
-            centeredSlides: true,
-            speed: 10000
-        });
-
-        const reviews = new Swiper('.js-reviews', {
-            allowTouchMove: false,
-            loop: true,
-            autoplay: {
-                delay: 1,
-                disableOnInteraction: false
-            },
-            slidesPerView: 'auto',
-            centeredSlides: true,
-            speed: 10000
-        });
-
-        const banks = new Swiper('.js-banks', {
-            allowTouchMove: false,
-            loop: true,
-            autoplay: {
-                delay: 1,
-                disableOnInteraction: false
-            },
-            spaceBetween: 50,
-            slidesPerView: 'auto',
-            speed: 5000,
-            breakpoints: {
-                1200: {
-                    spaceBetween: 110
-                },
-                1900: {
-                    spaceBetween: 185
-                }
-            }
-        });
-    </script>
+    <script src="js/portraits.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/specialists.js"></script>
+    <script src="js/reviews.js"></script>
+    <script src="js/instagram.js"></script>
+    <script src="js/banks.js"></script>
 </body>
 
 </html>

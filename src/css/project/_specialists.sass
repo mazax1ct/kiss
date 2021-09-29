@@ -1,0 +1,197 @@
+.specialists
+  margin-bottom: 60px
+  position: relative
+
+  @media(min-width: 1350px)
+    margin-bottom: 120px
+
+  @media(min-width: 1900px)
+    margin-bottom: 170px
+
+  &__nav-block
+    align-items: center
+    display: flex
+    height: 40px
+    justify-content: space-between
+
+    @media(min-width: 768px)
+      bottom: 20px
+      left: 50%
+      position: absolute
+      padding-left: 20px
+      top: auto
+      width: 50%
+      z-index: 1
+
+    @media(min-width: 1024px)
+      bottom: 30px
+      padding-left: 30px
+
+    @media(min-width: 1350px)
+      bottom: 60px
+      padding-left: 70px
+
+    @media(min-width: 1900px)
+      height: 93px
+
+  &__pagination
+    position: relative
+    width: 80px
+
+    @media(min-width: 768px)
+      display: none
+
+    .swiper-pagination
+      bottom: auto
+      transform: translate(-50%, -50%)
+      top: 50%
+
+  &__nav
+    position: relative
+    width: 100px
+
+    @media(min-width: 1900px)
+      width: 216px
+
+    .slider-next,
+    .slider-prev
+      opacity: 1
+
+    .slider-prev
+      left: 0
+
+    .slider-next
+      left: auto
+      right: 0
+
+  .round-button
+    left: 0
+    position: absolute
+    top: -30px
+    z-index: 2
+
+    @media(min-width: 1024px)
+      left: 50%
+
+    @media(min-width: 1900px)
+      margin-left: 115px
+      top: -60px
+
+.specialist
+  position: relative
+
+  &__image-block
+    margin-bottom: 30px
+    position: relative
+
+    .specialist__quote
+      bottom: 20px
+      box-sizing: border-box
+      left: 20px
+      position: absolute
+      top: auto
+      width: calc(100% - 40px)
+      z-index: 1
+
+      @media(min-width: 768px)
+        display: none
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+
+  img
+    display: block
+    width: 100%
+
+  &__container
+    @media(min-width: 768px)
+      bottom: 0
+      display: flex
+      left: 0
+      position: absolute
+      right: 0
+      top: 0
+      z-index: 1
+
+  &__container-block
+    @media(min-width: 768px)
+      display: flex
+      flex-direction: column
+      padding: 20px
+      width: 50%
+
+    @media(min-width: 1024px)
+      padding: 30px
+
+    @media(min-width: 1350px)
+      padding: 60px 70px
+
+    &:nth-child(1)
+      justify-content: flex-end
+
+      @media(max-width: 767px)
+        display: none
+
+    &:nth-child(2)
+      justify-content: center
+
+  &__quote
+    background-color: #fff
+    background-image: url("data:image/svg+xml,%3Csvg width='44' height='44' viewBox='0 0 44 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.93432 20.1287C2.93432 29.6639 6.72762 34.4929 15.6301 36.2715C15.6553 36.2747 15.6804 36.2778 15.7056 36.2778C15.7969 36.2778 15.8851 36.2463 15.9575 36.1897C16.0488 36.1173 16.0991 36.0008 16.0991 35.8843V30.964C16.0991 30.8192 16.0204 30.687 15.8976 30.6209C12.0477 28.5212 10.1243 25.2158 10.0267 20.5254H15.7056C15.9197 20.5254 16.0991 20.3491 16.0991 20.1319V7.75092C16.0991 7.53371 15.9197 7.35742 15.7056 7.35742H3.32782C3.10746 7.35742 2.93432 7.53371 2.93432 7.75092V20.1287Z' fill='%23333333'/%3E%3Cpath d='M24.8599 20.1287C24.8599 29.8119 29.1443 35.2453 37.5871 36.2747C37.606 36.2778 37.6186 36.2778 37.6375 36.2778C37.7288 36.2778 37.8295 36.2432 37.8956 36.1802C37.9806 36.1078 38.031 35.9976 38.031 35.8843V30.964C38.031 30.8192 37.9523 30.687 37.8295 30.6209C33.9796 28.5212 32.0562 25.2158 31.9586 20.5254H37.6375C37.8516 20.5254 38.031 20.3491 38.031 20.1319V7.75092C38.031 7.53371 37.8516 7.35742 37.6375 7.35742H25.2534C25.0393 7.35742 24.8599 7.53371 24.8599 7.75092V20.1287Z' fill='%23333333'/%3E%3C/svg%3E%0A")
+    background-repeat: no-repeat
+    background-size: 30px 30px
+    background-position: 10px 15px
+    border-radius: 14px
+    padding: 55px 15px 10px
+
+    @media(max-width: 767px)
+      font-size: 12px
+      line-height: 1.3
+
+    @media(min-width: 1350px)
+      background-position: 20px 25px
+      font-size: 20px
+      padding: 70px 20px 30px
+
+    @media(min-width: 1900px)
+      background-size: 44px 44px
+      background-position: 30px 40px
+      font-size: 32px
+      padding: 115px 30px 40px
+
+  &__name
+    font-size: 24px
+    font-weight: 700
+    line-height: 1.2
+    margin-bottom: 10px
+
+    @media(min-width: 1024px)
+      font-size: 32px
+
+    @media(min-width: 1350px)
+      font-size: 44px
+
+    @media(min-width: 1900px)
+      font-size: 62px
+      margin-bottom: 20px
+
+  &__place
+    color: $main-color
+
+    @media(max-width: 767px)
+      font-size: 12px
+      line-height: 1.3
+
+    @media(min-width: 1024px)
+      margin-bottom: 30px
+
+    @media(min-width: 1350px)
+      margin-bottom: 40px
+
+    @media(min-width: 1900px)
+      font-size: 24px
+      margin-bottom: 60px
+
+  &__about
+    @media(min-width: 1900px)
+      font-size: 24px

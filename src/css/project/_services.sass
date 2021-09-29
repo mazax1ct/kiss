@@ -16,6 +16,17 @@
     transform: translateX(-50%)
     width: 100vw
 
+  &:hover
+    .slider-prev,
+    .slider-next
+      opacity: 1
+
+  .swiper
+    padding-bottom: 20px
+
+    @media(min-width: 1200px)
+      padding-bottom: 0
+
   .swiper-slide
     height: auto
     padding-right: 3px
@@ -26,8 +37,28 @@
       padding-left: 10px
       padding-right: 10px
 
-  .swiper-wrapper
-    transition-timing-function: linear
+  .swiper-pagination
+    bottom: 0
+
+  .slider-next,
+  .slider-prev
+    display: none
+
+    @media(min-width: 1200px)
+      display: flex
+
+  .slider-next
+    left: auto
+    right: 20px
+
+    @media(min-width: 1900px)
+      right: 93px
+
+  .slider-prev
+    left: 20px
+
+    @media(min-width: 1900px)
+      left: 93px
 
   .round-button
     left: 20px
