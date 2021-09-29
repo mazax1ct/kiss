@@ -1,5 +1,7 @@
 const portraits = new Swiper('.js-portraits', {
     loop: true,
+    loopedSlides: 3,
+    loopAdditionalSlides: 3,
     autoplay: {
         disableOnInteraction: false,
         pauseOnMouseEnter: true
@@ -15,5 +17,10 @@ const portraits = new Swiper('.js-portraits', {
             },
             allowTouchMove: false
         }
-    }
+    },
+    on: {
+        init: function () {
+            console.log('sfsf');
+        },
+    },
 });

@@ -14,7 +14,6 @@ const specialists = new Swiper('.js-specialists', {
         nextEl: '.js-specialists .slider-next',
         prevEl: '.js-specialists .slider-prev',
     },
-    effect: 'fade',
     breakpoints: {
         768: {
             allowTouchMove: false,
