@@ -1,9 +1,9 @@
 const results = new Swiper('.js-results', {
     loop: true,
-    autoplay: {
+    /*autoplay: {
         disableOnInteraction: false,
         pauseOnMouseEnter: true
-    },
+    },*/
     speed: 1500,
     slidesPerView: 1,
     pagination: {

@@ -14,13 +14,14 @@
     height: 40px
     justify-content: space-between
     margin-top: 30px
+    padding-left: 20px
+    padding-right: 20px
 
     @media(min-width: 768px)
       bottom: 20px
       left: 50%
       margin-top: 0
       position: absolute
-      padding-left: 20px
       top: auto
       width: 50%
       z-index: 1
@@ -34,8 +35,12 @@
       bottom: 40px
       padding-right: 60px
 
+    @media(min-width: 1400px)
+      height: 60px
+
     @media(min-width: 1900px)
       height: 93px
+      padding-right: 90px
 
   &__pagination
     position: relative
@@ -52,6 +57,9 @@
   &__nav
     position: relative
     width: 100px
+
+    @media(min-width: 1400px)
+      width: 145px
 
     @media(min-width: 1900px)
       width: 216px
@@ -84,8 +92,14 @@
       bottom: 0
       top: auto
 
+  .swiper
+    margin-left: -20px
+    margin-right: -20px
+
 .result
   box-sizing: border-box
+  padding-left: 20px
+  padding-right: 20px
 
   @media(min-width: 768px)
     display: flex
@@ -101,7 +115,7 @@
       width: 50%
 
     @media(min-width: 1900px)
-      padding-left: 115px
+      padding-left: 100px
 
     img
       display: block
@@ -127,7 +141,7 @@
       width: 160px
 
     @media(min-width: 1900px)
-      transform: translateX(0)
+      transform: translateX(-12px)
       width: 230px
 
     img
@@ -147,7 +161,7 @@
       padding-right: 80px
 
     @media(min-width: 1900px)
-      padding-right: 115px
+      padding-right: 100px
 
   &__quote
     background-image: url("data:image/svg+xml,%3Csvg width='44' height='44' viewBox='0 0 44 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.93432 20.1287C2.93432 29.6639 6.72762 34.4929 15.6301 36.2715C15.6553 36.2747 15.6804 36.2778 15.7056 36.2778C15.7969 36.2778 15.8851 36.2463 15.9575 36.1897C16.0488 36.1173 16.0991 36.0008 16.0991 35.8843V30.964C16.0991 30.8192 16.0204 30.687 15.8976 30.6209C12.0477 28.5212 10.1243 25.2158 10.0267 20.5254H15.7056C15.9197 20.5254 16.0991 20.3491 16.0991 20.1319V7.75092C16.0991 7.53371 15.9197 7.35742 15.7056 7.35742H3.32782C3.10746 7.35742 2.93432 7.53371 2.93432 7.75092V20.1287Z' fill='%23333333'/%3E%3Cpath d='M24.8599 20.1287C24.8599 29.8119 29.1443 35.2453 37.5871 36.2747C37.606 36.2778 37.6186 36.2778 37.6375 36.2778C37.7288 36.2778 37.8295 36.2432 37.8956 36.1802C37.9806 36.1078 38.031 35.9976 38.031 35.8843V30.964C38.031 30.8192 37.9523 30.687 37.8295 30.6209C33.9796 28.5212 32.0562 25.2158 31.9586 20.5254H37.6375C37.8516 20.5254 38.031 20.3491 38.031 20.1319V7.75092C38.031 7.53371 37.8516 7.35742 37.6375 7.35742H25.2534C25.0393 7.35742 24.8599 7.53371 24.8599 7.75092V20.1287Z' fill='%23333333'/%3E%3C/svg%3E%0A")
