@@ -65,6 +65,10 @@
     transition-property: transform;
 }
 
+.swiper-slide > * {
+    box-sizing: border-box;
+}
+
 .swiper-slide-invisible-blank {
     visibility: hidden;
 }

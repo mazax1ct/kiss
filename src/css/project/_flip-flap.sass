@@ -1,0 +1,28 @@
+.flip-flap
+  &:hover,
+  &.is-flipped
+    .flip-flap__inner
+      transform: rotateY(180deg)
+
+  &__inner
+    position: relative
+    transition: transform 0.6s
+    transform-style: preserve-3d
+    z-index: 1
+
+  &__front,
+  &__back
+    background-color: #fff
+    backface-visibility: hidden
+    width: 100%
+
+  &__back
+    background-color: #F5F9FA
+    height: 100%
+    left: 0
+    position: absolute
+    padding: 20px
+    transform: rotateY(180deg)
+    top: 0
+    width: 100%
+    z-index: 1

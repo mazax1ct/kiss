@@ -17,10 +17,5 @@ const portraits = new Swiper('.js-portraits', {
             },
             allowTouchMove: false
         }
-    },
-    on: {
-        init: function () {
-            console.log('sfsf');
-        },
-    },
+    }
 });
