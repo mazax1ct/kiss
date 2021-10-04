@@ -4,7 +4,7 @@ const instagram = new Swiper('.js-instagram', {
         disableOnInteraction: false,
         pauseOnMouseEnter: true
     },
-    speed: 1500,
+    speed: 500,
     slidesPerView: 'auto',
     centeredSlides: true,
     pagination: {

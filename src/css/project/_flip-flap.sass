@@ -4,6 +4,10 @@
     .flip-flap__inner
       transform: rotateY(180deg)
 
+    .flip-flap__back
+      img
+        filter: blur(8px)
+
   &__inner
     position: relative
     transition: transform 0.6s
@@ -22,7 +26,6 @@
     height: 100%
     left: 0
     position: absolute
-    padding: 20px
     transform: rotateY(180deg)
     top: 0
     will-change: transform

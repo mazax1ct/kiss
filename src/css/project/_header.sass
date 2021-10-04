@@ -74,19 +74,58 @@
       width: 18px
 
   &__menu-block
+    background-color: #fff
     display: none
+    left: 0
+    height: calc(100vh - 70px)
+    position: fixed
+    top: 70px
+    transition: transform 0.3s
+    transform: translateX(100%)
+    width: 100%
+    z-index: 10
 
     @media(min-width: 1024px)
       display: flex
+      height: auto
+      left: auto
       margin-right: auto
+      position: static
+      top: auto
+      transform: none
+      width: auto
+      z-index: auto
+
+    &.is-active
+      display: block
+
+    &.animate
+      transform: translateX(0)
+
+  &__menu-block-inner
+    height: 100%
+    overflow-y: auto
+
+    @media(min-width: 1024px)
+      overflow-y: visible
+
+    &.submenu-open
+      overflow: hidden
+
+  &__menu-nav
+    display: block
 
   &__menu-list
+    font-size: 18px
+    font-weight: 700
+    list-style: none
+    margin: 0
+    padding: 0
+
     @media(min-width: 1024px)
       display: flex
       font-size: 14px
-      list-style: none
-      margin: 0
-      padding: 0
+      font-weight: 400
 
     @media(min-width: 1200px)
       font-size: 13px
@@ -106,28 +145,151 @@
           margin-right: 25px
 
     a
+      align-items: center
       color: $text-color
-      display: inline-block
-      padding-top: 10px
-      padding-bottom: 10px
+      display: flex
+      height: 62px
+      padding-left: 20px
+      padding-right: 20px
       text-decoration: none
+
+      @media(min-width: 1024px)
+        height: auto
+        padding-left: 0
+        padding-right: 0
+        padding-top: 10px
+        padding-bottom: 10px
 
       &:hover,
       &:focus
         color: $main-color
 
   &__menu-toggler
-    margin-right: 15px
+    align-items: center
+    background-color: $main-color
+    border: none
+    color: #fff
+    cursor: pointer
+    font-weight: 700
+    display: flex
+    height: 62px
+    position: relative
+    padding: 0 20px
+    transition: background-color 0.3s, color 0.3s
+    width: 100%
 
-    @media(max-width: 1023px)
-      display: none
+    @media(min-width: 1024px)
+      background-color: transparent
+      border-radius: 20px
+      color: $text-color
+      font-weight: 400
+      height: 40px
+      padding-right: 12px
+      padding-left: 0
+
+    &.is-active
+      background-color: $main-color
+      color: #fff
+
+      svg
+        @media(min-width: 1024px)
+          height: 12px
+          width: 12px
+
+    span
+      align-items: center
+      display: flex
+      height: 16px
+      justify-content: center
+      margin-right: 12px
+      width: 16px
+
+      @media(min-width: 1024px)
+        align-items: center
+        background-color: $main-color
+        border-radius: 50%
+        display: flex
+        height: 40px
+        justify-content: center
+
+        width: 40px
+
+    svg
+      fill: #fff
+      height: 16px
+      width: 16px
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 19 19' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.605 8.68006L8.7185 1.79355L9.87798 0.63408L18.7438 9.49993L9.87798 18.3658L8.7185 17.2063L15.605 10.3198L0.192259 10.3198L0.192259 8.68006L15.605 8.68006Z' fill='%23fff'/%3E%3C/svg%3E%0A")
+      background-repeat: no-repeat
+      background-position: 0 0
+      content: ''
+      height: 16px
+      left: auto
+      position: absolute
+      right: 20px
+      top: 50%
+      transform: translateY(-50%)
+      width: 16px
+      z-index: 1
+
+      @media(min-width: 1024px)
+        display: none
 
   &__search-block
+    display: none
     margin-right: 10px
     position: relative
 
+    @media(min-width: 1024px)
+      display: block
+
     @media(min-width: 1500px)
       margin-right: 15px
+
+    .header__search-form
+      display: none
+      left: auto
+      margin-bottom: 0
+      opacity: 0
+      position: absolute
+      right: 45px
+      top: 50%
+      transform: translateY(-50%)
+      transition: opacity 0.3s
+      z-index: 1
+
+      &.is-active
+        display: block
+
+      &.animate
+        opacity: 1
+
+    .header__search-input
+      padding: 10px 114px 11px 20px
+      width: 220px
+
+      @media(min-width: 375px)
+        width: 275px
+
+      @media(min-width: 768px)
+        width: 370px
+
+      @media(min-width: 1024px)
+        width: 430px
+
+      @media(min-width: 1400px)
+        width: 560px
+
+      @media(min-width: 1900px)
+        width: 615px
+
+    .header__search-submit
+      min-width: 94px
+      padding: 11px 24px 12px
+
+    .header__search-input-clear
+      right: 94px
 
   &__search-toggler
     &.is-active
@@ -147,21 +309,8 @@
         width: 12px
 
   &__search-form
-    display: none
-    left: auto
-    opacity: 0
-    position: absolute
-    right: 45px
-    top: 50%
-    transform: translateY(-50%)
-    transition: opacity 0.3s
-    z-index: 1
-
-    &.is-active
-      display: block
-
-    &.animate
-      opacity: 1
+    margin-bottom: 30px
+    position: relative
 
   &__search-input
     background-color: #fff
@@ -172,23 +321,8 @@
     font-weight: 400
     line-height: 16px
     min-height: 40px
-    padding: 10px 114px 11px 20px
-    width: 220px
-
-    @media(min-width: 375px)
-      width: 275px
-
-    @media(min-width: 768px)
-      width: 370px
-
-    @media(min-width: 1024px)
-      width: 430px
-
-    @media(min-width: 1400px)
-      width: 560px
-
-    @media(min-width: 1900px)
-      width: 615px
+    padding: 10px 90px 11px 20px
+    width: 100%
 
     &::-webkit-input-placeholder
       color: rgba($text-color, 0.4)
@@ -215,7 +349,7 @@
     justify-content: center
     padding: 0
     position: absolute
-    right: 94px
+    right: 40px
     top: 0
     width: 40px
     z-index: 1
@@ -229,25 +363,34 @@
       width: 12px
 
   &__search-submit
+    align-items: center
     background-color: $main-color
     border-radius: 20px
     border: none
     color: #fff
     cursor: pointer
+    display: flex
+    justify-content: center
     font-size: 14px
     font-weight: 700
+    height: 40px
     line-height: 17px
     left: auto
-    min-width: 94px
     position: absolute
-    padding: 11px 24px 12px
+    padding: 0
     right: 0
     top: 0
     transition: background-color 0.3s, color 0.3s, opacity 0.3s
+    width: 40px
 
     &:disabled
       cursor: default
       opacity: 0.2
+
+    svg
+      fill: #fff
+      height: 16px
+      width: 16px
 
   &__calc-button,
   &__location-block
@@ -311,3 +454,207 @@
   &__burger
     @media(min-width: 1024px)
       display: none
+
+    &.is-active
+      svg
+        height: 12px
+        width: 12px
+
+  &__mobile-block
+    border-top: 1px solid #E6E6E6
+    padding-left: 20px
+    padding-right: 20px
+    padding-top: 40px
+
+    @media(min-width: 1024px)
+      display: none
+
+  &__mobile-phone
+    font-size: 35px
+    font-weight: 500
+    text-align: center
+
+    a
+      color: $text-color
+      text-decoration: none
+
+  &__mobile-address,
+  &__mobile-work-time
+    text-align: center
+
+  &__mobile-address
+    margin-bottom: 15px
+
+  &__mobile-work-time
+    font-size: 10px
+    margin-bottom: 0
+
+  &__mobile-appointment
+    align-items: center
+    border: none
+    background-color: transparent
+    color: $main-color
+    cursor: pointer
+    display: flex
+    font-weight: 700
+    font-size: 12px
+    line-height: 1.3
+    margin-left: auto
+    margin-right: auto
+    padding: 20px
+
+    svg
+      fill: $main-color
+      height: 16px
+      margin-left: 10px
+      width: 16px
+
+.submenu
+  background-color: #fff
+  display: none
+  height: 100%
+  left: 0
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 10
+
+  @media(min-width: 1024px)
+    height: auto
+    top: 100%
+
+  &.is-active
+    display: block
+
+  &__inner
+    height: 100%
+    overflow-y: auto
+
+    @media(min-width: 1024px)
+      display: flex
+      height: auto
+      overflow-y: visible
+
+  &__closer
+    align-items: center
+    background-color: $main-color
+    border: none
+    color: #fff
+    cursor: pointer
+    display: flex
+    font-size: 18px
+    font-weight: 700
+    height: 62px
+    padding: 0 20px
+    width: 100%
+
+    svg
+      fill: #fff
+      height: 16px
+      margin-right: 12px
+      width: 16px
+
+    @media(min-width: 1024px)
+      display: none
+
+  &__menu
+    @media(min-width: 1024px)
+      width: 33.7%
+
+  &__list
+    font-size: 18px
+    font-weight: 700
+    list-style: none
+    margin: 0
+    padding: 0
+
+    a
+      align-items: center
+      color: $text-color
+      display: flex
+      height: 62px
+      padding-left: 20px
+      padding-right: 20px
+
+    svg
+      display: none
+
+  &__submenu
+    @media(min-width: 1024px)
+      width: 66.3%
+
+  &__submenu-block
+    background-color: #fff
+    display: none
+    height: 100%
+    left: 0
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 10
+
+    @media(min-width: 1024px)
+      left: auto
+      position: static
+      top: auto
+
+    &.is-active
+      display: block
+
+  &__submenu-block-inner
+    height: 100%
+    overflow-y: auto
+    padding: 20px
+
+    @media(min-width: 1024px)
+      overflow-y: visible
+
+  &__sublist
+    font-size: 16px
+    list-style: none
+    margin: 0
+    padding: 0
+
+    a
+      color: $text-color
+      display: block
+      padding-top: 15px
+      padding-bottom: 15px
+
+.banner-menu
+  background-color: #F5F9FA
+  color: $text-color
+  display: block
+  margin-top: 15px
+  margin-bottom: 15px
+  position: relative
+  text-decoration: none
+
+  picture
+    display: block
+
+  &__container
+    bottom: 0
+    left: 0
+    position: absolute
+    padding: 20px
+    top: auto
+    width: 100%
+    z-index: 1
+
+  &__title
+    display: block
+    font-size: 18px
+    font-weight: 700
+    margin-bottom: 10px
+
+  &__text
+    display: block
+    font-size: 12px
+    line-height: 1.2
+    margin-bottom: 10px
+
+  &__price
+    color: $main-color
+    font-size: 18px
+    font-weight: 700

@@ -159,36 +159,227 @@
             <a class="header__logo" href="main.html">
                 <img src="images/logo.svg" alt="КИСС">
             </a>
-            <button class="js-menu-toggler header__button header__menu-toggler" type="button" title="Открыть меню">
-                <svg>
-                    <use xlink:href="#menu"></use>
-                </svg>
-            </button>
-            <nav class="header__menu-block">
-                <ul class="header__menu-list">
-                    <li>
-                        <a href="#">Услуги и стоимость</a>
-                    </li>
-                    <li>
-                        <a href="#">Акции</a>
-                    </li>
-                    <li>
-                        <a href="#">О центре</a>
-                    </li>
-                    <li>
-                        <a href="#">Работы</a>
-                    </li>
-                    <li>
-                        <a href="#">Специалисты</a>
-                    </li>
-                    <li>
-                        <a href="#">Калькулятор</a>
-                    </li>
-                    <li>
-                        <a href="#">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="header__menu-block">
+                <div class="header__menu-block-inner">
+                    <nav class="header__menu-nav">
+                        <ul class="header__menu-list">
+                            <li>
+                                <button class="js-menu-toggler header__menu-toggler" type="button">
+                                    <span>
+                                        <svg>
+                                            <use xlink:href="#menu"></use>
+                                        </svg>
+                                    </span>
+                                    Услуги и стоимость
+                                </button>
+                            </li>
+                            <li>
+                                <a href="#">Акции</a>
+                            </li>
+                            <li>
+                                <a href="#">О центре</a>
+                            </li>
+                            <li>
+                                <a href="#">Работы</a>
+                            </li>
+                            <li>
+                                <a href="#">Специалисты</a>
+                            </li>
+                            <li>
+                                <a href="#">Калькулятор</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="submenu">
+                            <div class="submenu__inner">
+                                <button class="js-submenu-closer submenu__closer" type="button">
+                                    <svg>
+                                        <use xlink:href="#arrow_left"></use>
+                                    </svg>
+                                    Услуги и стоимость
+                                </button>
+                                <div class="submenu__menu">
+                                    <ul class="submenu__list">
+                                        <li>
+                                            <a class="js-lvl3menu-opener" href="#" data-target="1">
+                                                <svg>
+                                                    <use xlink:href="#menu_icon_1"></use>
+                                                </svg>
+                                                Ортопедия
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="js-lvl3menu-opener" href="#" data-target="2">
+                                                <svg>
+                                                    <use xlink:href="#menu_icon_2"></use>
+                                                </svg>
+                                                Имплантация
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="js-lvl3menu-opener" href="#" data-target="3">
+                                                <svg>
+                                                    <use xlink:href="#menu_icon_3"></use>
+                                                </svg>
+                                                Терапия
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="js-lvl3menu-opener" href="#" data-target="4">
+                                                <svg>
+                                                    <use xlink:href="#menu_icon_4"></use>
+                                                </svg>
+                                                Хирургия
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="js-lvl3menu-opener" href="#" data-target="5">
+                                                <svg>
+                                                    <use xlink:href="#menu_icon_5"></use>
+                                                </svg>
+                                                Ортодонтия
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="js-lvl3menu-opener" href="#" data-target="6">
+                                                <svg>
+                                                    <use xlink:href="#menu_icon_6"></use>
+                                                </svg>
+                                                Отбеливание
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="submenu__submenu">
+                                    <div class="submenu__submenu-block" data-target="1">
+                                        <button class="js-lvl3menu-closer submenu__closer" type="button">
+                                            <svg>
+                                                <use xlink:href="#arrow_left"></use>
+                                            </svg>
+                                            Ортопедия
+                                        </button>
+                                        <div class="submenu__submenu-block-inner">
+                                            <ul class="submenu__sublist">
+                                                <li>
+                                                    <a href="#">Установка виниров</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Установка коронок</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Установка протезов</a>
+                                                </li>
+                                            </ul>
+                                            <a class="banner-menu" href="#">
+                                                <picture>
+                                                    <source srcset="images/content/menu/img_1.jpg, images/content/menu/img_1@2x.jpg 2x" media="(min-width: 1024px)">
+                                                    <img loading="lazy" src="images/content/menu/img_1_mob.jpg" srcset="images/content/menu/img_1_mob@2x.jpg 2x" alt="alt">
+                                                </picture>
+                                                <span class="banner-menu__container">
+                                                    <span class="banner-menu__title">Виниры</span>
+                                                    <span class="banner-menu__text">Помогают корректировать форму, цвет зуба и выполняют эстетическую функцию</span>
+                                                    <span class="banner-menu__price">от 160 000 ₽</span>
+                                                </span>
+                                            </a>
+                                            <ul class="submenu__sublist">
+                                                <li>
+                                                    <a href="#">Прайс-лист врача ортопеда</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Примеры лечения</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="submenu__submenu-block" data-target="2">
+                                        <button class="js-lvl3menu-closer submenu__closer" type="button">
+                                            <svg>
+                                                <use xlink:href="#arrow_left"></use>
+                                            </svg>
+                                            Имплантация
+                                        </button>
+                                        <div class="submenu__submenu-block-inner">
+                                            Блок 2
+                                        </div>
+                                    </div>
+                                    <div class="submenu__submenu-block" data-target="3">
+                                        <button class="js-lvl3menu-closer submenu__closer" type="button">
+                                            <svg>
+                                                <use xlink:href="#arrow_left"></use>
+                                            </svg>
+                                            Терапия
+                                        </button>
+                                        <div class="submenu__submenu-block-inner">
+                                            Блок 3
+                                        </div>
+                                    </div>
+                                    <div class="submenu__submenu-block" data-target="4">
+                                        <button class="js-lvl3menu-closer submenu__closer" type="button">
+                                            <svg>
+                                                <use xlink:href="#arrow_left"></use>
+                                            </svg>
+                                            Хирургия
+                                        </button>
+                                        <div class="submenu__submenu-block-inner">
+                                            Блок 4
+                                        </div>
+                                    </div>
+                                    <div class="submenu__submenu-block" data-target="5">
+                                        <button class="js-lvl3menu-closer submenu__closer" type="button">
+                                            <svg>
+                                                <use xlink:href="#arrow_left"></use>
+                                            </svg>
+                                            Ортодонтия
+                                        </button>
+                                        <div class="submenu__submenu-block-inner">
+                                            Блок 5
+                                        </div>
+                                    </div>
+                                    <div class="submenu__submenu-block" data-target="6">
+                                        <button class="js-lvl3menu-closer submenu__closer" type="button">
+                                            <svg>
+                                                <use xlink:href="#arrow_left"></use>
+                                            </svg>
+                                            Отбеливание
+                                        </button>
+                                        <div class="submenu__submenu-block-inner">
+                                            Блок 6
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="header__mobile-block">
+                        <form class="header__search-form" action="">
+                            <input class="header__search-input" type="text" value="" placeholder="Поиск">
+                            <button class="header__search-input-clear" type="button" title="Очистить" disabled>
+                                <svg>
+                                    <use xlink:href="#close"></use>
+                                </svg>
+                            </button>
+                            <button class="header__search-submit" type="submit" disabled>
+                                <svg>
+                                    <use xlink:href="#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <p class="header__mobile-phone">
+                            <a href="tel:+78124183440">+7 (812) 418-34-40</a>
+                        </p>
+                        <p class="header__mobile-address">г. Санкт-Петербург<br> Щербаков пер. д 2/58</p>
+                        <p class="header__mobile-work-time">Ежедневно 9:00-21:00</p>
+                        <button class="js-popup-opener header__mobile-appointment" type="button" data-popup="record-popup">
+                            Записаться на приём
+                            <svg>
+                                <use xlink:href="#arrow_right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div class="header__search-block">
                 <form class="header__search-form" action="">
                     <input class="header__search-input" type="text" value="" placeholder="Поиск">
@@ -252,7 +443,7 @@
                 <a class="header__phone" href="tel:+78124183440" title="Позвонить нам">+7 (812) 418-34-40</a>
             </div>
             <button class="js-popup-opener header__appointment button" type="button" data-popup="record-popup">Записаться на приём</button>
-            <button class="header__button header__burger" type="button" title="Открыть меню">
+            <button class="js-mobile-menu-toggler header__button header__burger" type="button" title="Открыть меню">
                 <svg>
                     <use xlink:href="#burger"></use>
                 </svg>
@@ -402,7 +593,7 @@
                             <div class="flip-flap">
                                 <div class="flip-flap__inner">
                                     <div class="flip-flap__front">
-                                        <a class="service" href="#">
+                                        <div class="service">
                                             <picture>
                                                 <source srcset="images/content/services/img_1.jpg, images/content/services/img_1@2x.jpg 2x" media="(min-width: 1350px)">
                                                 <img loading="lazy" src="images/content/services/img_1_mob.jpg" srcset="images/content/services/img_1_mob@2x.jpg 2x" alt="alt">
@@ -411,12 +602,23 @@
                                                 <span class="service__title">Имплантация</span>
                                                 <span class="service__text">С имплантами вы забудете даже о самых сложных дефектах зубного ряда</span>
                                             </span>
-                                        </a>
+                                        </div>
                                     </div>
                                     <div class="flip-flap__back">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, obcaecati libero quo voluptates dolorem fugit quia laborum nulla saepe quod culpa repellat alias! Assumenda consequuntur quasi magni, qui
-                                            reiciendis debitis!</p>
-                                        <p><a class="button" href="#">Подробнее</a></p>
+                                        <a class="service-back service-back--dark" href="#">
+                                            <picture>
+                                                <source srcset="images/content/services/back.jpg, images/content/services/back@2x.jpg 2x" media="(min-width: 1350px)">
+                                                <img loading="lazy" src="images/content/services/back_mob.jpg" srcset="images/content/services/back_mob@2x.jpg 2x" alt="alt">
+                                            </picture>
+                                            <span class="service-back__title">Ортопедия</span>
+                                            <span class="service-back__text">Составим индивидуальный график лечения с учетом специфики вашей работы Со индивидуальный график лечения с учетом специфики вашей работы</span>
+                                            <span class="service-back__link">Узнать больше</span>
+                                            <span class="service-back__tags">
+                                                <span class="service-back__tag">Виниры</span>
+                                                <span class="service-back__tag">Коронки</span>
+                                                <span class="service-back__tag">Протезирование</span>
+                                            </span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -425,7 +627,7 @@
                             <div class="flip-flap">
                                 <div class="flip-flap__inner">
                                     <div class="flip-flap__front">
-                                        <a class="service" href="#">
+                                        <div class="service">
                                             <picture>
                                                 <source srcset="images/content/services/img_2.jpg, images/content/services/img_2@2x.jpg 2x" media="(min-width: 1350px)">
                                                 <img loading="lazy" src="images/content/services/img_2_mob.jpg" srcset="images/content/services/img_2_mob@2x.jpg 2x" alt="alt">
@@ -434,12 +636,23 @@
                                                 <span class="service__title">Ортопедия</span>
                                                 <span class="service__text">Восстановим эстетическую и жевательную функцию ваших зубов</span>
                                             </span>
-                                        </a>
+                                        </div>
                                     </div>
                                     <div class="flip-flap__back">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, obcaecati libero quo voluptates dolorem fugit quia laborum nulla saepe quod culpa repellat alias! Assumenda consequuntur quasi magni, qui
-                                            reiciendis debitis!</p>
-                                        <p><a class="button" href="#">Подробнее</a></p>
+                                        <a class="service-back service-back--green" href="#">
+                                            <picture>
+                                                <source srcset="images/content/services/back.jpg, images/content/services/back@2x.jpg 2x" media="(min-width: 1350px)">
+                                                <img loading="lazy" src="images/content/services/back_mob.jpg" srcset="images/content/services/back_mob@2x.jpg 2x" alt="alt">
+                                            </picture>
+                                            <span class="service-back__title">Ортопедия</span>
+                                            <span class="service-back__text">Составим индивидуальный график лечения с учетом специфики вашей работы Со индивидуальный график лечения с учетом специфики вашей работы</span>
+                                            <span class="service-back__link">Узнать больше</span>
+                                            <span class="service-back__tags">
+                                                <span class="service-back__tag">Виниры</span>
+                                                <span class="service-back__tag">Коронки</span>
+                                                <span class="service-back__tag">Протезирование</span>
+                                            </span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -448,7 +661,7 @@
                             <div class="flip-flap">
                                 <div class="flip-flap__inner">
                                     <div class="flip-flap__front">
-                                        <a class="service" href="#">
+                                        <div class="service">
                                             <picture>
                                                 <source srcset="images/content/services/img_3.jpg, images/content/services/img_3@2x.jpg 2x" media="(min-width: 1350px)">
                                                 <img loading="lazy" src="images/content/services/img_3_mob.jpg" srcset="images/content/services/img_3_mob@2x.jpg 2x" alt="alt">
@@ -457,12 +670,23 @@
                                                 <span class="service__title">Терапия</span>
                                                 <span class="service__text">Составим индивидуальный график лечения с учетом специфики вашей работы</span>
                                             </span>
-                                        </a>
+                                        </div>
                                     </div>
                                     <div class="flip-flap__back">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, obcaecati libero quo voluptates dolorem fugit quia laborum nulla saepe quod culpa repellat alias! Assumenda consequuntur quasi magni, qui
-                                            reiciendis debitis!</p>
-                                        <p><a class="button" href="#">Подробнее</a></p>
+                                        <a class="service-back service-back--dark" href="#">
+                                            <picture>
+                                                <source srcset="images/content/services/back.jpg, images/content/services/back@2x.jpg 2x" media="(min-width: 1350px)">
+                                                <img loading="lazy" src="images/content/services/back_mob.jpg" srcset="images/content/services/back_mob@2x.jpg 2x" alt="alt">
+                                            </picture>
+                                            <span class="service-back__title">Ортопедия</span>
+                                            <span class="service-back__text">Составим индивидуальный график лечения с учетом специфики вашей работы Со индивидуальный график лечения с учетом специфики вашей работы</span>
+                                            <span class="service-back__link">Узнать больше</span>
+                                            <span class="service-back__tags">
+                                                <span class="service-back__tag">Виниры</span>
+                                                <span class="service-back__tag">Коронки</span>
+                                                <span class="service-back__tag">Протезирование</span>
+                                            </span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

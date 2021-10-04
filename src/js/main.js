@@ -35,3 +35,7 @@ $(document).on('blur', '.input-label .input', function() {
     $(this).parent('.input-label').removeClass('changed');
   }
 });
+
+$(document).on('click', '.flip-flap__front', function () {
+	$(this).closest('.flip-flap').toggleClass('is-flipped');
+});

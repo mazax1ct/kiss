@@ -104,7 +104,6 @@
     overflow: hidden
 
   img
-    display: block
     transition: transform 0.3s
 
   &__text-block
@@ -151,3 +150,144 @@
 
     @media(min-width: 1900px)
       font-size: 24px
+
+.service-back
+  color: #fff
+  display: flex
+  flex-direction: column
+  height: 100%
+  position: relative
+  padding: 20px
+  text-decoration: none
+
+  @media(min-width: 1350px)
+    padding: 30px
+
+  @media(min-width: 1900px)
+    padding: 40px
+
+  &:hover,
+  &:focus
+    color: #fff
+
+    img
+      filter: blur(8px)
+
+  &--dark
+    picture
+      &::before
+        bottom: 0
+        background-color: rgba(#272729, 0.75)
+        content: ''
+        left: 0
+        position: absolute
+        right: 0
+        top: 0
+        z-index: 1
+
+  &--green
+    picture
+      &::before
+        bottom: 0
+        background-color: rgba($main-color, 0.75)
+        content: ''
+        left: 0
+        position: absolute
+        right: 0
+        top: 0
+        z-index: 1
+
+  picture
+    bottom: 0
+    left: 0
+    overflow: hidden
+    position: absolute
+    right: 0
+    top: 0
+    z-index: -1
+
+    img
+      transition-delay: 0.5s
+      transition: filter 0.5s
+
+  &__title
+    display: block
+    font-size: 24px
+    font-weight: 700
+    margin-bottom: 10px
+
+    @media(min-width: 1350px)
+      font-size: 30px
+      margin-bottom: 20px
+
+    @media(min-width: 1900px)
+      font-size: 38px
+      margin-bottom: 50px
+
+  &__text
+    display: block
+    font-size: 12px
+    font-weight: 500
+    line-height: 1.2
+    margin-bottom: 20px
+
+    @media(min-width: 1350px)
+      font-size: 18px
+
+    @media(min-width: 1900px)
+      font-size: 24px
+      margin-bottom: 30px
+
+  &__link
+    display: block
+    font-size: 12px
+    font-weight: 700
+    text-decoration: underline
+
+    @media(min-width: 1350px)
+      font-size: 18px
+
+    @media(min-width: 1900px)
+      font-size: 24px
+
+  &__tags
+    color: $main-color
+    display: flex
+    flex-wrap: wrap
+    font-size: 12px
+    font-weight: 700
+    line-height: 1.2
+    margin-top: auto
+    margin-bottom: -5px
+
+    @media(min-width: 1350px)
+      font-size: 16px
+
+    @media(min-width: 1900px)
+      font-size: 20px
+      margin-bottom: -10px
+
+  &__tag
+    align-items: center
+    background-color: #fff
+    border-radius: 12px
+    display: flex
+    justify-content: center
+    height: 24px
+    margin-bottom: 5px
+    padding: 4px 12px
+
+    @media(min-width: 1350px)
+      border-radius: 18px
+      height: 36px
+      padding: 6px 12px
+
+    @media(min-width: 1900px)
+      border-radius: 24px
+      height: 48px
+
+    &:not(:last-child)
+      margin-right: 5px
+
+      @media(min-width: 1900px)
+        margin-right: 10px

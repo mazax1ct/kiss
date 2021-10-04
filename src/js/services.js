@@ -1,10 +1,10 @@
 const services = new Swiper('.js-services', {
     loop: true,
-    autoplay: {
+    /*autoplay: {
         disableOnInteraction: false,
         pauseOnMouseEnter: true
-    },
-    speed: 1500,
+    },*/
+    speed: 500,
     slidesPerView: 'auto',
     centeredSlides: true,
     pagination: {

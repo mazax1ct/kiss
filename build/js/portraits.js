@@ -6,7 +6,7 @@ const portraits = new Swiper('.js-portraits', {
         disableOnInteraction: false,
         pauseOnMouseEnter: true
     },
-    speed: 1500,
+    speed: 500,
     slidesPerView: 'auto',
     centeredSlides: true,
     breakpoints: {
