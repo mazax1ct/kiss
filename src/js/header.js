@@ -36,6 +36,7 @@ $(document).on('click', '.js-mobile-menu-toggler', function () {
 		setTimeout(function () {
       $('.header__menu-block').removeClass('is-active');
 			$('body').removeClass('menu-open');
+			$('body').removeClass('submenu-open');
     },100);
   }
   return false;
