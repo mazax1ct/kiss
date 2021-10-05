@@ -49,18 +49,44 @@ $(document).on('click', '.js-menu-toggler', function () {
 	if(_this.hasClass('is-active')) {
 		if($('body').width() > 1023) {
 			_this.find('use').attr('xlink:href', '#close');
+			if(!$('body').hasClass('compensate-for-scrollbar')) {
+		    scrollCompensate();
+		  }
+			$('.js-lvl3menu-opener[data-target="1"]').addClass('is-active');
+			$('.submenu__submenu-block[data-target="1"]').addClass('is-active');
 		}
+
+		$('body').addClass('submenu-open');
 
 		$('.header__menu-block-inner').addClass('submenu-open');
 
 		$('.submenu').addClass('is-active');
   } else {
-		_this.find('use').attr('xlink:href', '#menu');
+		if($('body').width() > 1023) {
+			_this.find('use').attr('xlink:href', '#menu');
+			$('body').removeClass('compensate-for-scrollbar');
+			$('#scroll-compensate').remove();
+		}
 
 		$('.header__menu-block-inner').removeClass('submenu-open');
 		$('.submenu').removeClass('is-active');
+		$('body').removeClass('submenu-open');
+
   }
   return false;
+});
+
+$(document).on('click', '.js-submenu-closer', function () {
+	$('.js-menu-toggler').removeClass('is-active');
+	$('.js-menu-toggler').find('use').attr('xlink:href', '#menu');
+	$('.header__menu-block-inner').removeClass('submenu-open');
+	$('.submenu').removeClass('is-active');
+	$('body').removeClass('submenu-open');
+	$('body').removeClass('compensate-for-scrollbar');
+	if($('#scroll-compensate').length) {
+		$('#scroll-compensate').remove();
+	}
+	return false;
 });
 
 //закрытие меню второго уровня (мобила)
@@ -73,6 +99,8 @@ $(document).on('click', '.js-submenu-closer', function () {
 
 //открытие меню 3 уровня (мобила)
 $(document).on('click', '.js-lvl3menu-opener', function () {
+	$('.js-lvl3menu-opener').removeClass('is-active');
+	$(this).addClass('is-active');
 	$('.submenu__submenu-block').removeClass('is-active');
 	$('.submenu__submenu-block[data-target="'+$(this).attr('data-target')+'"]').addClass('is-active');
 	return false;

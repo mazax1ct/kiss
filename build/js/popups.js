@@ -67,8 +67,11 @@ function popoverClose() {
   setTimeout(function () {
     $('.popups-shade').fadeOut(300, function() {
       $('.popups-shade').removeClass('is-open');
-      $('body').removeClass('popup-open').removeClass('compensate-for-scrollbar');
-      $('#scroll-compensate').remove();
+      $('body').removeClass('popup-open');
+      if(!$('body').hasClass('submenu-open')) {
+        $('body').removeClass('compensate-for-scrollbar');
+        $('#scroll-compensate').remove();
+      }
       document.removeEventListener('keydown', keyboardUse);
       lastFocusedElement.focus();
     });

@@ -26,6 +26,14 @@ body
     .header
       transform: translateY(0)
 
+  &.submenu-open
+    @media(min-width: 1024px)
+      overflow: hidden
+
+    .header
+      @media(min-width: 1024px)
+        transform: translateY(0)
+
 .page-content
   flex: 1 0 auto
   padding-top: 75px
