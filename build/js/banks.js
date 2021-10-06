@@ -1,19 +1,12 @@
-const banks = new Swiper('.js-banks', {
-    allowTouchMove: false,
-    loop: true,
-    autoplay: {
-        delay: 1,
-        disableOnInteraction: false
-    },
-    spaceBetween: 50,
-    slidesPerView: 'auto',
-    speed: 5000,
-    breakpoints: {
-        1200: {
-            spaceBetween: 110
-        },
-        1900: {
-            spaceBetween: 185
-        }
-    }
+$(document).ready(function() {
+  if($('.js-banks').length) {
+    $('.js-banks').slick({
+      autoplay: true,
+      arrows: false,
+      infinite: true,
+      mobileFirst: true,
+      centerMode: true,
+      variableWidth: true
+    });
+  }
 });

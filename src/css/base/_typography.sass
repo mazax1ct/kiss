@@ -70,12 +70,18 @@ p,
 ul,
 ol,
 table,
-.table-responsive
+.table-responsive,
+.responsive-table
   margin-top: 0
   margin-bottom: 20px
 
   &:last-child
     margin-bottom: 0
+
+.table-responsive,
+.responsive-table
+  min-height: 0.01%
+  overflow-x: auto
 
 table
   border-collapse: collapse
@@ -99,12 +105,16 @@ img
   margin-bottom: 60px
 
   @media(min-width: 768px)
-    align-items: center
+    align-items: flex-start
     display: flex
     justify-content: space-between
+    margin-left: -10px
+    margin-right: -10px
 
   @media(min-width: 1350px)
     margin-bottom: 120px
+    margin-left: -20px
+    margin-right: -20px
 
   @media(min-width: 1900px)
     margin-bottom: 170px
@@ -114,31 +124,94 @@ img
     margin-bottom: 20px
 
     @media(min-width: 768px)
+      margin-top: -10px
       margin-bottom: 0
       max-width: 830px
-      padding-right: 20px
+      padding-right: 10px
+      padding-left: 10px
       width: 50%
 
     @media(min-width: 1350px)
-      padding-right: 40px
+      padding-right: 20px
+      padding-left: 20px
 
-    a
-      color: $main-color
-
-      &:hover,
-      &:focus
-        color: lighten($main-color, 5%)
+    @media(min-width: 1900px)
+      margin-top: -15px
 
   &__text
     @media(min-width: 768px)
       max-width: 790px
+      padding-left: 10px
+      padding-right: 10px
       width: 50%
 
     @media(min-width: 1350px)
       font-size: 18px
+      max-width: 830px
+      padding-left: 20px
+      padding-right: 20px
 
     @media(min-width: 1900px)
       font-size: 24px
+
+.form-block
+  margin-bottom: 60px
+
+  @media(min-width: 768px)
+    align-items: flex-start
+    display: flex
+    justify-content: space-between
+    margin-left: -10px
+    margin-right: -10px
+
+  @media(min-width: 1350px)
+    margin-bottom: 120px
+    margin-left: -20px
+    margin-right: -20px
+
+  @media(min-width: 1900px)
+    margin-bottom: 170px
+
+  &:last-child
+    margin-bottom: 0
+
+  &__block
+    @media(min-width: 768px)
+      max-width: 790px
+      padding-left: 10px
+      padding-right: 10px
+      width: 50%
+
+    @media(min-width: 1350px)
+      font-size: 18px
+      padding-left: 20px
+      padding-right: 20px
+
+    @media(min-width: 1900px)
+      font-size: 24px
+
+    &:first-child
+      margin-bottom: 30px
+
+      @media(min-width: 768px)
+        margin-bottom: 0
+
+  h2,
+  .h2
+    margin-bottom: 20px
+
+    @media(min-width: 768px)
+      margin-top: 20px
+
+    @media(min-width: 1350px)
+      margin-bottom: 40px
+
+    @media(min-width: 1400px)
+      margin-top: 15px
+
+    @media(min-width: 1900px)
+      margin-bottom: 60px
+      margin-top: 0
 
 .text-block
   max-width: 1190px

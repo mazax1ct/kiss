@@ -383,6 +383,8 @@
 }
 
 .select2-container--default .select2-results > .select2-results__options {
+    border-radius: 10px;
+    box-shadow: 0 0 3px 0 rgba($text-color, 0.3);
     max-height: 200px;
     overflow-y: auto;
     scrollbar-width: thin;

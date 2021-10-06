@@ -19,48 +19,46 @@
     margin-bottom: 170px
 
   &:hover
-    .slider-prev,
-    .slider-next
+    .slick-next,
+    .slick-prev
       opacity: 1
 
-  .swiper
-    padding-bottom: 20px
-
-    @media(min-width: 1200px)
-      padding-bottom: 0
-
-  .swiper-slide
-    height: auto
-    padding-right: 3px
-    padding-left: 3px
-    width: auto !important
-
-    @media(min-width: 1900px)
-      padding-left: 10px
-      padding-right: 10px
-
-  .swiper-pagination
-    bottom: 0
-
-  .slider-next,
-  .slider-prev
+  .slick-next,
+  .slick-prev
     display: none
 
     @media(min-width: 1200px)
       display: flex
 
-  .slider-next
+  .slick-next
     left: auto
     right: 20px
 
     @media(min-width: 1900px)
       right: 93px
 
-  .slider-prev
+  .slick-prev
     left: 20px
 
     @media(min-width: 1900px)
       left: 93px
+
+  .slick-track
+    display: flex
+
+  .slick-slide
+    height: auto
+    padding-left: 3px
+    padding-right: 3px
+    max-width: 306px
+
+    @media(min-width: 1350px)
+      max-width: 426px
+
+    @media(min-width: 1900px)
+      padding-left: 10px
+      padding-right: 10px
+      max-width: 607px
 
   .round-button
     left: 20px
@@ -70,13 +68,14 @@
 
     @media(min-width: 1024px)
       left: 50%
+      transform: translateX(10px)
 
     @media(min-width: 1350px)
       top: 0
-      transform: translateY(-50%)
+      transform: translate(20px, -50%)
 
     @media(min-width: 1900px)
-      margin-left: 115px
+      transform: translate(100px, -50%)
 
 .review
   background-color: #F6FAFB

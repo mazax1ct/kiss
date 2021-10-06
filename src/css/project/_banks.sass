@@ -10,12 +10,28 @@
     transform: translateX(-50%)
     width: 100vw
 
-  .swiper-wrapper
-    align-items: center
-    transition-timing-function : linear
+  .slick-track
+    display: flex
 
-  .swiper-slide
-    width: auto
+  .slick-slide
+    align-items: center
+    display: flex
+    height: auto
+    justify-content: center
+    padding-left: 25px
+    padding-right: 25px
+
+    @media(min-width: 1024px)
+      padding-left: 40px
+      padding-right: 40px
+
+    @media(min-width: 1350px)
+      padding-left: 50px
+      padding-right: 50px
+
+    @media(min-width: 1900px)
+      padding-left: 90px
+      padding-right: 90px
 
   img
     max-height: 30px

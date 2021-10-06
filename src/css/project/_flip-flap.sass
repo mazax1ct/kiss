@@ -1,8 +1,19 @@
 .flip-flap
+  max-width: 300px
+
+  @media(min-width: 1350px)
+    max-width: 420px
+
+  @media(min-width: 1900px)
+    max-width: 587px
+
   &:hover,
   &.is-flipped
     .flip-flap__inner
       transform: rotateY(180deg)
+
+    .flip-flap__front
+      pointer-events: none
 
     .flip-flap__back
       img

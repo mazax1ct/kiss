@@ -1,0 +1,134 @@
+.gallery
+  margin-bottom: 60px
+  margin-left: -20px
+  margin-right: -20px
+
+  @media(min-width: 1350px)
+    margin-bottom: 120px
+
+  @media(min-width: 1400px)
+    left: 50%
+    margin-left: 0
+    margin-right: 0
+    position: relative
+    transform: translateX(-50%)
+    width: 100vw
+
+  @media(min-width: 1900px)
+    margin-bottom: 170px
+
+  &:hover
+    .slick-next,
+    .slick-prev
+      opacity: 1
+
+  .slick-next,
+  .slick-prev
+    display: none
+
+    @media(min-width: 1200px)
+      display: flex
+
+  .slick-next
+    left: auto
+    right: 20px
+
+    @media(min-width: 1900px)
+      right: 93px
+
+  .slick-prev
+    left: 20px
+
+    @media(min-width: 1900px)
+      left: 93px
+
+  .slick-slide
+    padding-left: 3px
+    padding-right: 3px
+    max-width: 306px
+
+    @media(min-width: 1350px)
+      max-width: 426px
+
+    @media(min-width: 1900px)
+      padding-left: 10px
+      padding-right: 10px
+      max-width: 607px
+
+  img
+    transition: transform 0.3s
+
+  &__link
+    display: block
+    max-width: 165px
+    overflow: hidden
+
+    @media(min-width: 1350px)
+      max-width: 420px
+
+    @media(min-width: 1900px)
+      max-width: 587px
+
+    &:hover,
+    &:focus
+      img
+        transform: scale(1.02)
+
+  &__tab
+    display: none
+
+    &.is-active
+      display: block
+
+.gallery-switches
+  color: $main-color
+  display: flex
+  flex-wrap: wrap
+  margin-top: 30px
+  margin-bottom: -5px
+
+  @media(min-width: 1900px)
+    margin-top: 60px
+    margin-bottom: -10px
+
+  &__switch
+    background-color: $main-color
+    border: 1px solid $main-color
+    border-radius: 12px
+    cursor: pointer
+    color: #fff
+    font-size: 12px
+    font-weight: 700
+    height: 24px
+    line-height: 1.2
+    margin-bottom: 5px
+    padding: 0 12px 1px
+    transition: background-color 0.3s, color 0.3s
+    text-decoration: none
+
+    @media(min-width: 1350px)
+      border-radius: 18px
+      font-size: 16px
+      height: 36px
+
+    @media(min-width: 1900px)
+      border-width: 2px
+      border-radius: 24px
+      font-size: 20px
+      height: 48px
+      padding-left: 22px
+      padding-right: 22px
+
+    &:not(:last-child)
+      margin-right: 5px
+
+      @media(min-width: 1024px)
+        margin-right: 10px
+
+      @media(min-width: 1900px)
+        margin-right: 20px
+
+    &.is-active
+      background-color: #fff
+      color: $main-color
+      cursor: default

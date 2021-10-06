@@ -2,7 +2,6 @@
   margin-bottom: 60px
   margin-left: -20px
   margin-right: -20px
-  position: relative
 
   @media(min-width: 1350px)
     margin-bottom: 120px
@@ -11,17 +10,57 @@
     left: 50%
     margin-left: 0
     margin-right: 0
+    position: relative
     transform: translateX(-50%)
     width: 100vw
 
   @media(min-width: 1900px)
     margin-bottom: 170px
 
+  &:hover
+    .slick-next,
+    .slick-prev
+      opacity: 1
+
+  .slick-next,
+  .slick-prev
+    display: none
+
+    @media(min-width: 1200px)
+      display: flex
+
+  .slick-next
+    left: auto
+    right: 20px
+
+    @media(min-width: 1900px)
+      right: 93px
+
+  .slick-prev
+    left: 20px
+
+    @media(min-width: 1900px)
+      left: 93px
+
+  .slick-slide
+    padding-left: 3px
+    padding-right: 3px
+    max-width: 306px
+
+    @media(min-width: 1350px)
+      max-width: 426px
+
+    @media(min-width: 1900px)
+      padding-left: 10px
+      padding-right: 10px
+      max-width: 607px
+
   img
     transition: transform 0.3s
 
   &__link
     display: block
+    max-width: 165px
     overflow: hidden
 
     @media(min-width: 1350px)
@@ -35,50 +74,6 @@
       img
         transform: scale(1.02)
 
-  &:hover
-    .slider-prev,
-    .slider-next
-      opacity: 1
-
-  .swiper
-    padding-bottom: 20px
-
-    @media(min-width: 1200px)
-      padding-bottom: 0
-
-  .swiper-slide
-    height: auto
-    padding-right: 3px
-    padding-left: 3px
-    width: auto !important
-
-    @media(min-width: 1900px)
-      padding-left: 10px
-      padding-right: 10px
-
-  .swiper-pagination
-    bottom: 0
-
-  .slider-next,
-  .slider-prev
-    display: none
-
-    @media(min-width: 1200px)
-      display: flex
-
-  .slider-next
-    left: auto
-    right: 20px
-
-    @media(min-width: 1900px)
-      right: 93px
-
-  .slider-prev
-    left: 20px
-
-    @media(min-width: 1900px)
-      left: 93px
-
   .round-button
     left: 20px
     position: absolute
@@ -87,13 +82,14 @@
 
     @media(min-width: 1024px)
       left: 50%
+      transform: translateX(10px)
 
     @media(min-width: 1350px)
       top: 0
-      transform: translateY(-50%)
+      transform: translate(20px, -50%)
 
     @media(min-width: 1900px)
-      margin-left: 115px
+      transform: translate(100px, -50%)
 
 .subscribers
   align-items: center

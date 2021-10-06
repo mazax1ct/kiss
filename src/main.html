@@ -30,37 +30,27 @@
 
     <main class="page-content">
         <div class="container">
-            <div class="js-portraits portraits swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+            <div class="portraits">
+                <div class="js-portraits">
+                    <div>
                         <picture>
                             <source srcset="images/content/portraits/img_1.jpg, images/content/portraits/img_1@2x.jpg 2x" media="(min-width: 1350px)">
                             <img loading="lazy" src="images/content/portraits/img_1_mob.jpg" srcset="images/content/portraits/img_1_mob@2x.jpg 2x" alt="Имя">
                         </picture>
                     </div>
-                    <div class="swiper-slide">
+                    <div>
                         <picture>
                             <source srcset="images/content/portraits/img_2.jpg, images/content/portraits/img_2@2x.jpg 2x" media="(min-width: 1350px)">
                             <img loading="lazy" src="images/content/portraits/img_2_mob.jpg" srcset="images/content/portraits/img_2_mob@2x.jpg 2x" alt="Имя">
                         </picture>
                     </div>
-                    <div class="swiper-slide">
+                    <div>
                         <picture>
                             <source srcset="images/content/portraits/img_3.jpg, images/content/portraits/img_3@2x.jpg 2x" media="(min-width: 1350px)">
                             <img loading="lazy" src="images/content/portraits/img_3_mob.jpg" srcset="images/content/portraits/img_3_mob@2x.jpg 2x" alt="Имя">
                         </picture>
                     </div>
                 </div>
-                <button class="slider-prev" type="button" title="Назад">
-                    <svg>
-                        <use xlink:href="#arrow_left"></use>
-                    </svg>
-                </button>
-                <button class="slider-next" type="button" title="Вперёд">
-                    <svg>
-                        <use xlink:href="#arrow_right"></use>
-                    </svg>
-                </button>
             </div>
 
             <div class="intro">
@@ -164,122 +154,109 @@
                     </svg>
                     <span>Все услуги<br> и цены</span>
                 </a>
-                <div class="js-services swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="flip-flap">
-                                <div class="flip-flap__inner">
-                                    <div class="flip-flap__front">
-                                        <div class="service">
-                                            <picture>
-                                                <source srcset="images/content/services/img_1.jpg, images/content/services/img_1@2x.jpg 2x" media="(min-width: 1350px)">
-                                                <img src="images/content/services/img_1_mob.jpg" srcset="images/content/services/img_1_mob@2x.jpg 2x" alt="alt">
-                                            </picture>
-                                            <span class="service__text-block">
-                                                <span class="service__title">Имплантация</span>
-                                                <span class="service__text">С имплантами вы забудете даже о самых сложных дефектах зубного ряда</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="flip-flap__back">
-                                        <a class="service-back service-back--dark" href="#">
-                                            <picture>
-                                                <source srcset="images/content/services/back.jpg, images/content/services/back@2x.jpg 2x" media="(min-width: 1350px)">
-                                                <img src="images/content/services/back_mob.jpg" srcset="images/content/services/back_mob@2x.jpg 2x" alt="alt">
-                                            </picture>
-                                            <span class="service-back__title">Ортопедия</span>
-                                            <span class="service-back__text">Составим индивидуальный график лечения с учетом специфики вашей работы Со индивидуальный график лечения с учетом специфики вашей работы</span>
-                                            <span class="service-back__link">Узнать больше</span>
-                                            <span class="service-back__tags">
-                                                <span class="service-back__tag">Виниры</span>
-                                                <span class="service-back__tag">Коронки</span>
-                                                <span class="service-back__tag">Протезирование</span>
-                                            </span>
-                                        </a>
+                <div class="js-services">
+                    <div>
+                        <div class="flip-flap">
+                            <div class="flip-flap__inner">
+                                <div class="flip-flap__front">
+                                    <div class="service">
+                                        <picture>
+                                            <source srcset="images/content/services/img_1.jpg, images/content/services/img_1@2x.jpg 2x" media="(min-width: 1350px)">
+                                            <img src="images/content/services/img_1_mob.jpg" srcset="images/content/services/img_1_mob@2x.jpg 2x" alt="alt">
+                                        </picture>
+                                        <span class="service__text-block">
+                                            <span class="service__title">Имплантация</span>
+                                            <span class="service__text">С имплантами вы забудете даже о самых сложных дефектах зубного ряда</span>
+                                        </span>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="flip-flap">
-                                <div class="flip-flap__inner">
-                                    <div class="flip-flap__front">
-                                        <div class="service">
-                                            <picture>
-                                                <source srcset="images/content/services/img_2.jpg, images/content/services/img_2@2x.jpg 2x" media="(min-width: 1350px)">
-                                                <img src="images/content/services/img_2_mob.jpg" srcset="images/content/services/img_2_mob@2x.jpg 2x" alt="alt">
-                                            </picture>
-                                            <span class="service__text-block">
-                                                <span class="service__title">Ортопедия</span>
-                                                <span class="service__text">Восстановим эстетическую и жевательную функцию ваших зубов</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="flip-flap__back">
-                                        <a class="service-back service-back--green" href="#">
-                                            <picture>
-                                                <source srcset="images/content/services/back.jpg, images/content/services/back@2x.jpg 2x" media="(min-width: 1350px)">
-                                                <img src="images/content/services/back_mob.jpg" srcset="images/content/services/back_mob@2x.jpg 2x" alt="alt">
-                                            </picture>
-                                            <span class="service-back__title">Ортопедия</span>
-                                            <span class="service-back__text">Составим индивидуальный график лечения с учетом специфики вашей работы Со индивидуальный график лечения с учетом специфики вашей работы</span>
-                                            <span class="service-back__link">Узнать больше</span>
-                                            <span class="service-back__tags">
-                                                <span class="service-back__tag">Виниры</span>
-                                                <span class="service-back__tag">Коронки</span>
-                                                <span class="service-back__tag">Протезирование</span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="flip-flap">
-                                <div class="flip-flap__inner">
-                                    <div class="flip-flap__front">
-                                        <div class="service">
-                                            <picture>
-                                                <source srcset="images/content/services/img_3.jpg, images/content/services/img_3@2x.jpg 2x" media="(min-width: 1350px)">
-                                                <img src="images/content/services/img_3_mob.jpg" srcset="images/content/services/img_3_mob@2x.jpg 2x" alt="alt">
-                                            </picture>
-                                            <span class="service__text-block">
-                                                <span class="service__title">Терапия</span>
-                                                <span class="service__text">Составим индивидуальный график лечения с учетом специфики вашей работы</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="flip-flap__back">
-                                        <a class="service-back service-back--dark" href="#">
-                                            <picture>
-                                                <source srcset="images/content/services/back.jpg, images/content/services/back@2x.jpg 2x" media="(min-width: 1350px)">
-                                                <img src="images/content/services/back_mob.jpg" srcset="images/content/services/back_mob@2x.jpg 2x" alt="alt">
-                                            </picture>
-                                            <span class="service-back__title">Ортопедия</span>
-                                            <span class="service-back__text">Составим индивидуальный график лечения с учетом специфики вашей работы Со индивидуальный график лечения с учетом специфики вашей работы</span>
-                                            <span class="service-back__link">Узнать больше</span>
-                                            <span class="service-back__tags">
-                                                <span class="service-back__tag">Виниры</span>
-                                                <span class="service-back__tag">Коронки</span>
-                                                <span class="service-back__tag">Протезирование</span>
-                                            </span>
-                                        </a>
-                                    </div>
+                                <div class="flip-flap__back">
+                                    <a class="service-back service-back--dark" href="#">
+                                        <picture>
+                                            <source srcset="images/content/services/back.jpg, images/content/services/back@2x.jpg 2x" media="(min-width: 1350px)">
+                                            <img src="images/content/services/back_mob.jpg" srcset="images/content/services/back_mob@2x.jpg 2x" alt="alt">
+                                        </picture>
+                                        <span class="service-back__title">Ортопедия</span>
+                                        <span class="service-back__text">Составим индивидуальный график лечения с учетом специфики вашей работы Со индивидуальный график лечения с учетом специфики вашей работы</span>
+                                        <span class="service-back__link">Узнать больше</span>
+                                        <span class="service-back__tags">
+                                            <span class="service-back__tag">Виниры</span>
+                                            <span class="service-back__tag">Коронки</span>
+                                            <span class="service-back__tag">Протезирование</span>
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
-                    <button class="slider-prev" type="button" title="Назад">
-                        <svg>
-                            <use xlink:href="#arrow_left"></use>
-                        </svg>
-                    </button>
-                    <button class="slider-next" type="button" title="Вперёд">
-                        <svg>
-                            <use xlink:href="#arrow_right"></use>
-                        </svg>
-                    </button>
+                    <div>
+                        <div class="flip-flap">
+                            <div class="flip-flap__inner">
+                                <div class="flip-flap__front">
+                                    <div class="service">
+                                        <picture>
+                                            <source srcset="images/content/services/img_2.jpg, images/content/services/img_2@2x.jpg 2x" media="(min-width: 1350px)">
+                                            <img src="images/content/services/img_2_mob.jpg" srcset="images/content/services/img_2_mob@2x.jpg 2x" alt="alt">
+                                        </picture>
+                                        <span class="service__text-block">
+                                            <span class="service__title">Ортопедия</span>
+                                            <span class="service__text">Восстановим эстетическую и жевательную функцию ваших зубов</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flip-flap__back">
+                                    <a class="service-back service-back--green" href="#">
+                                        <picture>
+                                            <source srcset="images/content/services/back.jpg, images/content/services/back@2x.jpg 2x" media="(min-width: 1350px)">
+                                            <img src="images/content/services/back_mob.jpg" srcset="images/content/services/back_mob@2x.jpg 2x" alt="alt">
+                                        </picture>
+                                        <span class="service-back__title">Ортопедия</span>
+                                        <span class="service-back__text">Составим индивидуальный график лечения с учетом специфики вашей работы Со индивидуальный график лечения с учетом специфики вашей работы</span>
+                                        <span class="service-back__link">Узнать больше</span>
+                                        <span class="service-back__tags">
+                                            <span class="service-back__tag">Виниры</span>
+                                            <span class="service-back__tag">Коронки</span>
+                                            <span class="service-back__tag">Протезирование</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flip-flap">
+                            <div class="flip-flap__inner">
+                                <div class="flip-flap__front">
+                                    <div class="service">
+                                        <picture>
+                                            <source srcset="images/content/services/img_3.jpg, images/content/services/img_3@2x.jpg 2x" media="(min-width: 1350px)">
+                                            <img src="images/content/services/img_3_mob.jpg" srcset="images/content/services/img_3_mob@2x.jpg 2x" alt="alt">
+                                        </picture>
+                                        <span class="service__text-block">
+                                            <span class="service__title">Терапия</span>
+                                            <span class="service__text">Составим индивидуальный график лечения с учетом специфики вашей работы </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flip-flap__back">
+                                    <a class="service-back service-back--dark" href="#">
+                                        <picture>
+                                            <source srcset="images/content/services/back.jpg, images/content/services/back@2x.jpg 2x" media="(min-width: 1350px)">
+                                            <img src="images/content/services/back_mob.jpg" srcset="images/content/services/back_mob@2x.jpg 2x" alt="alt">
+                                        </picture>
+                                        <span class="service-back__title">Ортопедия</span>
+                                        <span class="service-back__text">Составим индивидуальный график лечения с учетом специфики вашей работы Со индивидуальный график лечения с учетом специфики вашей работы</span>
+                                        <span class="service-back__link">Узнать больше</span>
+                                        <span class="service-back__tags">
+                                            <span class="service-back__tag">Виниры</span>
+                                            <span class="service-back__tag">Коронки</span>
+                                            <span class="service-back__tag">Протезирование</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -297,68 +274,49 @@
                     </svg>
                     <span>Смотреть<br> все работы</span>
                 </a>
-                <div class="js-results swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="result">
-                                <div class="result__image-block">
-                                    <picture>
-                                        <source srcset="images/content/results/img_1.jpg, images/content/results/img_1@2x.jpg 2x" media="(min-width: 768px)">
-                                        <img loading="lazy" src="images/content/results/img_1_mob.jpg" srcset="images/content/results/img_1_mob@2x.jpg 2x" alt="alt">
-                                    </picture>
-                                    <picture class="result__before-after">
-                                        <source srcset="images/content/results/img_2.jpg, images/content/results/img_2@2x.jpg 2x" media="(min-width: 768px)">
-                                        <img loading="lazy" src="images/content/results/img_2_mob.jpg" srcset="images/content/results/img_2_mob@2x.jpg 2x" alt="alt">
-                                    </picture>
-                                </div>
-                                <div class="result__text-block">
-                                    <div class="result__quote">
-                                        <p>С красивой улыбкой моя жизнь изменилась полностью, теперь постоянно хожу и улыбаюсь!</p>
-                                    </div>
-                                    <p class="result__patient">Невзорова Мария, 31 год</p>
-                                    <p class="result__problem">Взрослый пациент: Класс II, серьёзный глубокий прикус и смещение средней линии</p>
-                                    <p class="result__solution">Скорректировали глубокий прикус, класс II подкласс 2 скорректирован до класса I, клинический случай с удалениями</p>
-                                </div>
+                <div class="js-results">
+                    <div>
+                        <div class="result">
+                            <div class="result__image-block">
+                                <picture>
+                                    <source srcset="images/content/results/img_1.jpg, images/content/results/img_1@2x.jpg 2x" media="(min-width: 768px)">
+                                    <img loading="lazy" src="images/content/results/img_1_mob.jpg" srcset="images/content/results/img_1_mob@2x.jpg 2x" alt="alt">
+                                </picture>
+                                <picture class="result__before-after">
+                                    <source srcset="images/content/results/img_2.jpg, images/content/results/img_2@2x.jpg 2x" media="(min-width: 768px)">
+                                    <img loading="lazy" src="images/content/results/img_2_mob.jpg" srcset="images/content/results/img_2_mob@2x.jpg 2x" alt="alt">
+                                </picture>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="result">
-                                <div class="result__image-block">
-                                    <picture>
-                                        <source srcset="images/content/results/img_1.jpg, images/content/results/img_1@2x.jpg 2x" media="(min-width: 768px)">
-                                        <img loading="lazy" src="images/content/results/img_1_mob.jpg" srcset="images/content/results/img_1_mob@2x.jpg 2x" alt="alt">
-                                    </picture>
-                                    <picture class="result__before-after">
-                                        <source srcset="images/content/results/img_2.jpg, images/content/results/img_2@2x.jpg 2x" media="(min-width: 768px)">
-                                        <img loading="lazy" src="images/content/results/img_2_mob.jpg" srcset="images/content/results/img_2_mob@2x.jpg 2x" alt="alt">
-                                    </picture>
+                            <div class="result__text-block">
+                                <div class="result__quote">
+                                    <p>С красивой улыбкой моя жизнь изменилась полностью, теперь постоянно хожу и улыбаюсь!</p>
                                 </div>
-                                <div class="result__text-block">
-                                    <div class="result__quote">
-                                        <p>С красивой улыбкой моя жизнь изменилась полностью, теперь постоянно хожу и улыбаюсь!</p>
-                                    </div>
-                                    <p class="result__patient">Невзорова Мария, 31 год</p>
-                                    <p class="result__problem">Взрослый пациент: Класс II, серьёзный глубокий прикус и смещение средней линии</p>
-                                    <p class="result__solution">Скорректировали глубокий прикус, класс II подкласс 2 скорректирован до класса I, клинический случай с удалениями</p>
-                                </div>
+                                <p class="result__patient">Невзорова Мария, 31 год</p>
+                                <p class="result__problem">Взрослый пациент: Класс II, серьёзный глубокий прикус и смещение средней линии</p>
+                                <p class="result__solution">Скорректировали глубокий прикус, класс II подкласс 2 скорректирован до класса I, клинический случай с удалениями</p>
                             </div>
                         </div>
                     </div>
-                    <div class="results__nav-block">
-                        <div class="results__pagination">
-                            <div class="swiper-pagination"></div>
-                        </div>
-                        <div class="results__nav">
-                            <button class="slider-prev" type="button" title="Назад">
-                                <svg>
-                                    <use xlink:href="#arrow_left"></use>
-                                </svg>
-                            </button>
-                            <button class="slider-next" type="button" title="Вперёд">
-                                <svg>
-                                    <use xlink:href="#arrow_right"></use>
-                                </svg>
-                            </button>
+                    <div>
+                        <div class="result">
+                            <div class="result__image-block">
+                                <picture>
+                                    <source srcset="images/content/results/img_1.jpg, images/content/results/img_1@2x.jpg 2x" media="(min-width: 768px)">
+                                    <img loading="lazy" src="images/content/results/img_1_mob.jpg" srcset="images/content/results/img_1_mob@2x.jpg 2x" alt="alt">
+                                </picture>
+                                <picture class="result__before-after">
+                                    <source srcset="images/content/results/img_2.jpg, images/content/results/img_2@2x.jpg 2x" media="(min-width: 768px)">
+                                    <img loading="lazy" src="images/content/results/img_2_mob.jpg" srcset="images/content/results/img_2_mob@2x.jpg 2x" alt="alt">
+                                </picture>
+                            </div>
+                            <div class="result__text-block">
+                                <div class="result__quote">
+                                    <p>С красивой улыбкой моя жизнь изменилась полностью, теперь постоянно хожу и улыбаюсь!</p>
+                                </div>
+                                <p class="result__patient">Невзорова Мария, 31 год</p>
+                                <p class="result__problem">Взрослый пациент: Класс II, серьёзный глубокий прикус и смещение средней линии</p>
+                                <p class="result__solution">Скорректировали глубокий прикус, класс II подкласс 2 скорректирован до класса I, клинический случай с удалениями</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -378,78 +336,59 @@
                     </svg>
                     <span>Все<br> специалисты</span>
                 </a>
-                <div class="js-specialists swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="specialist">
-                                <div class="specialist__image-block">
-                                    <picture>
-                                        <source srcset="images/content/specialists/img_1.jpg, images/content/specialists/img_1@2x.jpg 2x" media="(min-width: 768px)">
-                                        <img loading="lazy" src="images/content/specialists/img_1_mob.jpg" srcset="images/content/specialists/img_1_mob@2x.jpg 2x" alt="Рауль Родионович">
-                                    </picture>
-                                    <div class="specialist__quote">
-                                        <p>Наши клиенты, это не просто пациенты, наши клиенты – наши друзья!</p>
-                                    </div>
-                                </div>
-                                <div class="specialist__container">
-                                    <div class="specialist__container-block">
-                                        <div class="specialist__quote">
-                                            <p>Наши клиенты, это не просто пациенты, наши клиенты – наши друзья!</p>
-                                        </div>
-                                    </div>
-                                    <div class="specialist__container-block">
-                                        <div class="specialist__about-block">
-                                            <p class="specialist__name">Рауль Родионович</p>
-                                            <p class="specialist__place">Главный врач, стоматолог ортопед</p>
-                                            <p class="specialist__about">Один из самых востребованных стоматологов в Санкт-Петербурге. За 26 лет работы помог более 7 000 пациентов обрести здоровую и красивую улыбку</p>
-                                        </div>
-                                    </div>
+                <div class="js-specialists">
+                    <div>
+                        <div class="specialist">
+                            <div class="specialist__image-block">
+                                <picture>
+                                    <source srcset="images/content/specialists/img_1.jpg, images/content/specialists/img_1@2x.jpg 2x" media="(min-width: 768px)">
+                                    <img loading="lazy" src="images/content/specialists/img_1_mob.jpg" srcset="images/content/specialists/img_1_mob@2x.jpg 2x" alt="Рауль Родионович">
+                                </picture>
+                                <div class="specialist__quote">
+                                    <p>Наши клиенты, это не просто пациенты, наши клиенты – наши друзья!</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="specialist">
-                                <div class="specialist__image-block">
-                                    <picture>
-                                        <source srcset="images/content/specialists/img_2.jpg, images/content/specialists/img_2@2x.jpg 2x" media="(min-width: 768px)">
-                                        <img loading="lazy" src="images/content/specialists/img_2_mob.jpg" srcset="images/content/specialists/img_2_mob@2x.jpg 2x" alt="Дарья Викторовна">
-                                    </picture>
+                            <div class="specialist__container">
+                                <div class="specialist__container-block">
                                     <div class="specialist__quote">
                                         <p>Наши клиенты, это не просто пациенты, наши клиенты – наши друзья!</p>
                                     </div>
                                 </div>
-                                <div class="specialist__container">
-                                    <div class="specialist__container-block">
-                                        <div class="specialist__quote">
-                                            <p>Наши клиенты, это не просто пациенты, наши клиенты – наши друзья!</p>
-                                        </div>
-                                    </div>
-                                    <div class="specialist__container-block">
-                                        <div class="specialist__about-block">
-                                            <p class="specialist__name">Дарья Викторовна</p>
-                                            <p class="specialist__place">Стоматолог терапевт</p>
-                                            <p class="specialist__about">За 26 лет работы помог более 7 000 пациентов обрести здоровую и красивую улыбку</p>
-                                        </div>
+                                <div class="specialist__container-block">
+                                    <div class="specialist__about-block">
+                                        <p class="specialist__name">Рауль Родионович</p>
+                                        <p class="specialist__place">Главный врач, стоматолог ортопед</p>
+                                        <p class="specialist__about">Один из самых востребованных стоматологов в Санкт-Петербурге. За 26 лет работы помог более 7&nbsp;000 пациентов обрести здоровую и красивую улыбку</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="specialists__nav-block">
-                        <div class="specialists__pagination">
-                            <div class="swiper-pagination"></div>
-                        </div>
-                        <div class="specialists__nav">
-                            <button class="slider-prev" type="button" title="Назад">
-                                <svg>
-                                    <use xlink:href="#arrow_left"></use>
-                                </svg>
-                            </button>
-                            <button class="slider-next" type="button" title="Вперёд">
-                                <svg>
-                                    <use xlink:href="#arrow_right"></use>
-                                </svg>
-                            </button>
+                    <div>
+                        <div class="specialist">
+                            <div class="specialist__image-block">
+                                <picture>
+                                    <source srcset="images/content/specialists/img_2.jpg, images/content/specialists/img_2@2x.jpg 2x" media="(min-width: 768px)">
+                                    <img loading="lazy" src="images/content/specialists/img_2_mob.jpg" srcset="images/content/specialists/img_2_mob@2x.jpg 2x" alt="Дарья Викторовна">
+                                </picture>
+                                <div class="specialist__quote">
+                                    <p>Наши клиенты, это не просто пациенты, наши клиенты – наши друзья!</p>
+                                </div>
+                            </div>
+                            <div class="specialist__container">
+                                <div class="specialist__container-block">
+                                    <div class="specialist__quote">
+                                        <p>Наши клиенты, это не просто пациенты, наши клиенты – наши друзья!</p>
+                                    </div>
+                                </div>
+                                <div class="specialist__container-block">
+                                    <div class="specialist__about-block">
+                                        <p class="specialist__name">Дарья Викторовна</p>
+                                        <p class="specialist__place">Стоматолог терапевт</p>
+                                        <p class="specialist__about">За 26 лет работы помог более 7&nbsp;000 пациентов обрести здоровую и красивую улыбку</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -497,79 +436,66 @@
                     </svg>
                     <span>Больше отзывов<br> на Яндекс</span>
                 </a>
-                <div class="js-reviews swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="review">
-                                <div class="review__author">
-                                    <div class="review__author-avatar"><img loading="lazy" src="images/content/subscribers/img_4.jpg" alt="Елена Иванова"></div>
-                                    <div class="review__author-info">
-                                        <p class="review__author-name">Елена Иванова</p>
-                                        <p class="review__author-age">65 лет</p>
-                                    </div>
+                <div class="js-reviews">
+                    <div>
+                        <div class="review">
+                            <div class="review__author">
+                                <div class="review__author-avatar"><img loading="lazy" src="images/content/subscribers/img_4.jpg" alt="Елена Иванова"></div>
+                                <div class="review__author-info">
+                                    <p class="review__author-name">Елена Иванова</p>
+                                    <p class="review__author-age">65 лет</p>
                                 </div>
-                                <div class="review__text">
-                                    <p>Долгое время ходила в эту клинику. Очень довольна качеством и отношением. Очень важно, в экстремальных ситуациях в клинике всегда готовы пойти на встречу. Я очень довольна. Хожу в эту клинику уже более 4-х лет.
-                                    </p>
-                                    <p>Рекомендую Рауля Родионовича, как профессионала своего дела!</p>
-                                </div>
-                                <a class="review__verified" href="#" target="_blank" rel="nofollow noreferrer noopener">
-                                    <img loading="lazy" src="images/icons/ya.svg" alt="">
-                                    Отзыв проверен<br> Яндексом
-                                </a>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="review">
-                                <div class="review__author">
-                                    <div class="review__author-avatar"><img loading="lazy" src="images/content/subscribers/img_2.jpg" alt="Олег"></div>
-                                    <div class="review__author-info">
-                                        <p class="review__author-name">Олег</p>
-                                        <p class="review__author-age">32 года</p>
-                                    </div>
-                                </div>
-                                <div class="review__text">
-                                    <p>Долгое время ходила без зубов, был не красив. В КИСС с улыбкой принял мед. персонал. Долго лечили меня доктора. Теперь улыбаюсь, как раньше друзья, с такой улыбкой я просто звезда. Приятные цены и хорошее
-                                        специалисты</p>
-                                </div>
-                                <a class="review__verified" href="#" target="_blank" rel="nofollow noreferrer noopener">
-                                    <img loading="lazy" src="images/icons/ya.svg" alt="">
-                                    Отзыв проверен<br> Яндексом
-                                </a>
+                            <div class="review__text">
+                                <p>Долгое время ходила в эту клинику. Очень довольна качеством и отношением. Очень важно, в экстремальных ситуациях в клинике всегда готовы пойти на встречу. Я очень довольна. Хожу в эту клинику уже более 4-х лет.
+                                </p>
+                                <p>Рекомендую Рауля Родионовича, как профессионала своего дела!</p>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="review">
-                                <div class="review__author">
-                                    <div class="review__author-avatar"><img loading="lazy" src="images/content/subscribers/img_3.jpg" alt="Мария Витальевна"></div>
-                                    <div class="review__author-info">
-                                        <p class="review__author-name">Мария Витальевна</p>
-                                        <p class="review__author-age">38 лет</p>
-                                    </div>
-                                </div>
-                                <div class="review__text">
-                                    <p>Обратилась в клинику по совету подруги. Не жалею! Порадовало цена и качество. Цвета бахил поднимают настроение; администраторы всегда вежливые, врачи опытные, аккуратные, знают свое дело. Почувствовала именно
-                                        индивидуальный подход и участие к своей проблеме.</p>
-                                    <p>Очень рекомендую!</p>
-                                </div>
-                                <a class="review__verified" href="#" target="_blank" rel="nofollow noreferrer noopener">
-                                    <img loading="lazy" src="images/icons/ya.svg" alt="">
-                                    Отзыв проверен<br> Яндексом
-                                </a>
-                            </div>
+                            <a class="review__verified" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                                <img loading="lazy" src="images/icons/ya.svg" alt="">
+                                Отзыв проверен<br> Яндексом
+                            </a>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
-                    <button class="slider-prev" type="button" title="Назад">
-                        <svg>
-                            <use xlink:href="#arrow_left"></use>
-                        </svg>
-                    </button>
-                    <button class="slider-next" type="button" title="Вперёд">
-                        <svg>
-                            <use xlink:href="#arrow_right"></use>
-                        </svg>
-                    </button>
+                    <div>
+                        <div class="review">
+                            <div class="review__author">
+                                <div class="review__author-avatar"><img loading="lazy" src="images/content/subscribers/img_2.jpg" alt="Олег"></div>
+                                <div class="review__author-info">
+                                    <p class="review__author-name">Олег</p>
+                                    <p class="review__author-age">32 года</p>
+                                </div>
+                            </div>
+                            <div class="review__text">
+                                <p>Долгое время ходила без зубов, был не красив. В КИСС с улыбкой принял мед. персонал. Долго лечили меня доктора. Теперь улыбаюсь, как раньше друзья, с такой улыбкой я просто звезда. Приятные цены и хорошее
+                                    специалисты</p>
+                            </div>
+                            <a class="review__verified" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                                <img loading="lazy" src="images/icons/ya.svg" alt="">
+                                Отзыв проверен<br> Яндексом
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="review">
+                            <div class="review__author">
+                                <div class="review__author-avatar"><img loading="lazy" src="images/content/subscribers/img_3.jpg" alt="Мария Витальевна"></div>
+                                <div class="review__author-info">
+                                    <p class="review__author-name">Мария Витальевна</p>
+                                    <p class="review__author-age">38 лет</p>
+                                </div>
+                            </div>
+                            <div class="review__text">
+                                <p>Обратилась в клинику по совету подруги. Не жалею! Порадовало цена и качество. Цвета бахил поднимают настроение; администраторы всегда вежливые, врачи опытные, аккуратные, знают свое дело. Почувствовала именно
+                                    индивидуальный подход и участие к своей проблеме.</p>
+                                <p>Очень рекомендую!</p>
+                            </div>
+                            <a class="review__verified" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                                <img loading="lazy" src="images/icons/ya.svg" alt="">
+                                Отзыв проверен<br> Яндексом
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -596,60 +522,47 @@
                     </svg>
                     <span>Перейти<br> в instagram</span>
                 </a>
-                <div class="js-instagram swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a class="instagram__link" href="#" target="_blank" rel="nofollow noreferrer noopener">
-                                <picture>
-                                    <source srcset="images/content/inst/img_1.jpg, images/content/inst/img_1@2x.jpg 2x" media="(min-width: 1350px)">
-                                    <img loading="lazy" src="images/content/inst/img_1_mob.jpg" srcset="images/content/inst/img_1_mob@2x.jpg 2x" alt="alt">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="instagram__link" href="#" target="_blank" rel="nofollow noreferrer noopener">
-                                <picture>
-                                    <source srcset="images/content/inst/img_2.jpg, images/content/inst/img_2@2x.jpg 2x" media="(min-width: 1350px)">
-                                    <img loading="lazy" src="images/content/inst/img_2_mob.jpg" srcset="images/content/inst/img_2_mob@2x.jpg 2x" alt="alt">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="instagram__link" href="#" target="_blank" rel="nofollow noreferrer noopener">
-                                <picture>
-                                    <source srcset="images/content/inst/img_3.jpg, images/content/inst/img_3@2x.jpg 2x" media="(min-width: 1350px)">
-                                    <img loading="lazy" src="images/content/inst/img_3_mob.jpg" srcset="images/content/inst/img_3_mob@2x.jpg 2x" alt="alt">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="instagram__link" href="#" target="_blank" rel="nofollow noreferrer noopener">
-                                <picture>
-                                    <source srcset="images/content/inst/img_4.jpg, images/content/inst/img_4@2x.jpg 2x" media="(min-width: 1350px)">
-                                    <img loading="lazy" src="images/content/inst/img_4_mob.jpg" srcset="images/content/inst/img_4_mob@2x.jpg 2x" alt="alt">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="instagram__link" href="#" target="_blank" rel="nofollow noreferrer noopener">
-                                <picture>
-                                    <source srcset="images/content/inst/img_5.jpg, images/content/inst/img_5@2x.jpg 2x" media="(min-width: 1350px)">
-                                    <img loading="lazy" src="images/content/inst/img_5_mob.jpg" srcset="images/content/inst/img_5_mob@2x.jpg 2x" alt="alt">
-                                </picture>
-                            </a>
-                        </div>
+                <div class="js-instagram">
+                    <div>
+                        <a class="instagram__link" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                            <picture>
+                                <source srcset="images/content/inst/img_1.jpg, images/content/inst/img_1@2x.jpg 2x" media="(min-width: 1350px)">
+                                <img loading="lazy" src="images/content/inst/img_1_mob.jpg" srcset="images/content/inst/img_1_mob@2x.jpg 2x" alt="alt">
+                            </picture>
+                        </a>
                     </div>
-                    <div class="swiper-pagination"></div>
-                    <button class="slider-prev" type="button" title="Назад">
-                        <svg>
-                            <use xlink:href="#arrow_left"></use>
-                        </svg>
-                    </button>
-                    <button class="slider-next" type="button" title="Вперёд">
-                        <svg>
-                            <use xlink:href="#arrow_right"></use>
-                        </svg>
-                    </button>
+                    <div>
+                        <a class="instagram__link" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                            <picture>
+                                <source srcset="images/content/inst/img_2.jpg, images/content/inst/img_2@2x.jpg 2x" media="(min-width: 1350px)">
+                                <img loading="lazy" src="images/content/inst/img_2_mob.jpg" srcset="images/content/inst/img_2_mob@2x.jpg 2x" alt="alt">
+                            </picture>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="instagram__link" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                            <picture>
+                                <source srcset="images/content/inst/img_3.jpg, images/content/inst/img_3@2x.jpg 2x" media="(min-width: 1350px)">
+                                <img loading="lazy" src="images/content/inst/img_3_mob.jpg" srcset="images/content/inst/img_3_mob@2x.jpg 2x" alt="alt">
+                            </picture>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="instagram__link" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                            <picture>
+                                <source srcset="images/content/inst/img_4.jpg, images/content/inst/img_4@2x.jpg 2x" media="(min-width: 1350px)">
+                                <img loading="lazy" src="images/content/inst/img_4_mob.jpg" srcset="images/content/inst/img_4_mob@2x.jpg 2x" alt="alt">
+                            </picture>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="instagram__link" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                            <picture>
+                                <source srcset="images/content/inst/img_5.jpg, images/content/inst/img_5@2x.jpg 2x" media="(min-width: 1350px)">
+                                <img loading="lazy" src="images/content/inst/img_5_mob.jpg" srcset="images/content/inst/img_5_mob@2x.jpg 2x" alt="alt">
+                            </picture>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -660,24 +573,24 @@
                 </div>
             </div>
 
-            <div class="js-banks banks swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a href="#"><img loading="lazy" src="images/content/banks/otp.png" srcset="images/content/banks/otp@2x.png 2x" alt="alt"></a></div>
-                    <div class="swiper-slide"><a href="#"><img loading="lazy" src="images/content/banks/renesans.png" srcset="images/content/banks/renesans@2x.png 2x" alt="alt"></a></div>
-                    <div class="swiper-slide"><a href="#"><img loading="lazy" src="images/content/banks/tks.png" srcset="images/content/banks/tks@2x.png 2x" alt="alt"></a></div>
-                    <div class="swiper-slide"><a href="#"><img loading="lazy" src="images/content/banks/ce.png" srcset="images/content/banks/ce@2x.png 2x" alt="alt"></a></div>
-                    <div class="swiper-slide"><a href="#"><img loading="lazy" src="images/content/banks/otp.png" srcset="images/content/banks/otp@2x.png 2x" alt="alt"></a></div>
-                    <div class="swiper-slide"><a href="#"><img loading="lazy" src="images/content/banks/renesans.png" srcset="images/content/banks/renesans@2x.png 2x" alt="alt"></a></div>
-                    <div class="swiper-slide"><a href="#"><img loading="lazy" src="images/content/banks/tks.png" srcset="images/content/banks/tks@2x.png 2x" alt="alt"></a></div>
-                    <div class="swiper-slide"><a href="#"><img loading="lazy" src="images/content/banks/ce.png" srcset="images/content/banks/ce@2x.png 2x" alt="alt"></a></div>
-                    <div class="swiper-slide"><a href="#"><img loading="lazy" src="images/content/banks/otp.png" srcset="images/content/banks/otp@2x.png 2x" alt="alt"></a></div>
-                    <div class="swiper-slide"><a href="#"><img loading="lazy" src="images/content/banks/renesans.png" srcset="images/content/banks/renesans@2x.png 2x" alt="alt"></a></div>
-                    <div class="swiper-slide"><a href="#"><img loading="lazy" src="images/content/banks/tks.png" srcset="images/content/banks/tks@2x.png 2x" alt="alt"></a></div>
-                    <div class="swiper-slide"><a href="#"><img loading="lazy" src="images/content/banks/ce.png" srcset="images/content/banks/ce@2x.png 2x" alt="alt"></a></div>
-                    <div class="swiper-slide"><a href="#"><img loading="lazy" src="images/content/banks/otp.png" srcset="images/content/banks/otp@2x.png 2x" alt="alt"></a></div>
-                    <div class="swiper-slide"><a href="#"><img loading="lazy" src="images/content/banks/renesans.png" srcset="images/content/banks/renesans@2x.png 2x" alt="alt"></a></div>
-                    <div class="swiper-slide"><a href="#"><img loading="lazy" src="images/content/banks/tks.png" srcset="images/content/banks/tks@2x.png 2x" alt="alt"></a></div>
-                    <div class="swiper-slide"><a href="#"><img loading="lazy" src="images/content/banks/ce.png" srcset="images/content/banks/ce@2x.png 2x" alt="alt"></a></div>
+            <div class="banks">
+                <div class="js-banks">
+                    <div><a href="#"><img loading="lazy" src="images/content/banks/otp.png" srcset="images/content/banks/otp@2x.png 2x" alt="alt"></a></div>
+                    <div><a href="#"><img loading="lazy" src="images/content/banks/renesans.png" srcset="images/content/banks/renesans@2x.png 2x" alt="alt"></a></div>
+                    <div><a href="#"><img loading="lazy" src="images/content/banks/tks.png" srcset="images/content/banks/tks@2x.png 2x" alt="alt"></a></div>
+                    <div><a href="#"><img loading="lazy" src="images/content/banks/ce.png" srcset="images/content/banks/ce@2x.png 2x" alt="alt"></a></div>
+                    <div><a href="#"><img loading="lazy" src="images/content/banks/otp.png" srcset="images/content/banks/otp@2x.png 2x" alt="alt"></a></div>
+                    <div><a href="#"><img loading="lazy" src="images/content/banks/renesans.png" srcset="images/content/banks/renesans@2x.png 2x" alt="alt"></a></div>
+                    <div><a href="#"><img loading="lazy" src="images/content/banks/tks.png" srcset="images/content/banks/tks@2x.png 2x" alt="alt"></a></div>
+                    <div><a href="#"><img loading="lazy" src="images/content/banks/ce.png" srcset="images/content/banks/ce@2x.png 2x" alt="alt"></a></div>
+                    <div><a href="#"><img loading="lazy" src="images/content/banks/otp.png" srcset="images/content/banks/otp@2x.png 2x" alt="alt"></a></div>
+                    <div><a href="#"><img loading="lazy" src="images/content/banks/renesans.png" srcset="images/content/banks/renesans@2x.png 2x" alt="alt"></a></div>
+                    <div><a href="#"><img loading="lazy" src="images/content/banks/tks.png" srcset="images/content/banks/tks@2x.png 2x" alt="alt"></a></div>
+                    <div><a href="#"><img loading="lazy" src="images/content/banks/ce.png" srcset="images/content/banks/ce@2x.png 2x" alt="alt"></a></div>
+                    <div><a href="#"><img loading="lazy" src="images/content/banks/otp.png" srcset="images/content/banks/otp@2x.png 2x" alt="alt"></a></div>
+                    <div><a href="#"><img loading="lazy" src="images/content/banks/renesans.png" srcset="images/content/banks/renesans@2x.png 2x" alt="alt"></a></div>
+                    <div><a href="#"><img loading="lazy" src="images/content/banks/tks.png" srcset="images/content/banks/tks@2x.png 2x" alt="alt"></a></div>
+                    <div><a href="#"><img loading="lazy" src="images/content/banks/ce.png" srcset="images/content/banks/ce@2x.png 2x" alt="alt"></a></div>
                 </div>
             </div>
         </div>
@@ -694,11 +607,12 @@
     //= template/scripts.html
 
     <!--скрипты страницы-->
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/portraits.js"></script>
     <script src="js/services.js"></script>
     <script src="js/results.js"></script>
     <script src="js/specialists.js"></script>
+
     <script src="js/reviews.js"></script>
     <script src="js/instagram.js"></script>
     <script src="js/banks.js"></script>

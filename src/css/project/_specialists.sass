@@ -8,76 +8,6 @@
   @media(min-width: 1900px)
     margin-bottom: 170px
 
-  .swiper
-    margin-left: -20px
-    margin-right: -20px
-
-  &__nav-block
-    align-items: center
-    display: flex
-    height: 40px
-    justify-content: space-between
-    margin-top: 30px
-    padding-left: 20px
-    padding-right: 20px
-
-    @media(min-width: 768px)
-      bottom: 20px
-      left: 50%
-      margin-top: 0
-      position: absolute
-      top: auto
-      width: 50%
-      z-index: 1
-
-    @media(min-width: 1024px)
-      bottom: 30px
-      padding-left: 30px
-
-    @media(min-width: 1350px)
-      bottom: 60px
-      padding-left: 70px
-
-    @media(min-width: 1400px)
-      height: 60px
-
-    @media(min-width: 1900px)
-      height: 93px
-      padding-left: 100px
-
-  &__pagination
-    position: relative
-    width: 80px
-
-    @media(min-width: 768px)
-      display: none
-
-    .swiper-pagination
-      bottom: auto
-      transform: translate(-50%, -50%)
-      top: 50%
-
-  &__nav
-    position: relative
-    width: 100px
-
-    @media(min-width: 1400px)
-      width: 145px
-
-    @media(min-width: 1900px)
-      width: 216px
-
-    .slider-next,
-    .slider-prev
-      opacity: 1
-
-    .slider-prev
-      left: 0
-
-    .slider-next
-      left: auto
-      right: 0
-
   .round-button
     left: 0
     position: absolute
@@ -86,18 +16,76 @@
 
     @media(min-width: 1024px)
       left: 50%
+      transform: translateX(10px)
 
     @media(min-width: 1350px)
       top: 0
-      transform: translateY(-50%)
+      transform: translate(20px, -50%)
 
     @media(min-width: 1900px)
-      margin-left: 100px
+      transform: translate(100px, -50%)
+
+  .slick-next,
+  .slick-prev
+    bottom: 0
+    opacity: 1
+    top: auto
+    transform: none
+
+    @media(min-width: 768px)
+      bottom: 20px
+
+    @media(min-width: 1024px)
+      bottom: 30px
+
+    @media(min-width: 1350px)
+      bottom: 60px
+
+    @media(min-width: 1900px)
+      bottom: 60px
+
+  .slick-next
+    left: auto
+    right: 10px
+
+    @media(min-width: 768px)
+      left: 50%
+      right: auto
+      transform: translateX(60px)
+
+    @media(min-width: 1350px)
+      transform: translateX(100px)
+
+    @media(min-width: 1900px)
+      transform: translateX(230px)
+
+  .slick-prev
+    left: auto
+    right: 60px
+
+    @media(min-width: 768px)
+      left: 50%
+      right: auto
+      transform: translateX(10px)
+
+    @media(min-width: 1350px)
+      transform: translateX(20px)
+
+    @media(min-width: 1900px)
+      transform: translateX(100px)
+
+  .slick-slider
+    margin-left: -10px
+    margin-right: -10px
+    padding-bottom: 70px
+
+    @media(min-width: 768px)
+      padding-bottom: 0
 
 .specialist
   position: relative
-  padding-left: 20px
-  padding-right: 20px
+  padding-left: 10px
+  padding-right: 10px
 
   &__image-block
     margin-bottom: 30px
@@ -128,8 +116,6 @@
       display: flex
       left: 0
       position: absolute
-      padding-left: 20px
-      padding-right: 20px
       right: 0
       top: 0
       z-index: 1
@@ -158,6 +144,12 @@
 
     &:nth-child(2)
       justify-content: center
+
+      @media(min-width: 768px)
+        padding-left: 10px
+
+      @media(min-width: 1350px)
+        padding-left: 20px
 
       @media(min-width: 1900px)
         padding-left: 100px

@@ -1,24 +1,23 @@
-const reviews = new Swiper('.js-reviews', {
-    loop: true,
-    autoplay: {
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true
-    },
-    speed: 500,
-    slidesPerView: 'auto',
-    centeredSlides: true,
-    pagination: {
-        el: '.js-reviews .swiper-pagination',
-        dynamicBullets: true,
-    },
-    breakpoints: {
-        1200: {
-            pagination: false,
-            navigation: {
-                nextEl: '.js-reviews .slider-next',
-                prevEl: '.js-reviews .slider-prev',
-            },
-            allowTouchMove: false
+$(document).ready(function() {
+  if($('.js-reviews').length) {
+    $('.js-reviews').slick({
+      autoplay: true,
+      arrows: false,
+      infinite: true,
+      mobileFirst: true,
+      centerMode: true,
+      centerPadding: '10%',
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            arrows: true,
+            prevArrow: '<button class="slick-prev" type="button" title="Назад"><svg><use xlink:href="#arrow_left"></use></svg></button>',
+            nextArrow: '<button class="slick-next" type="button" title="Вперёд"><svg><use xlink:href="#arrow_right"></use></svg></button>'
+          }
         }
-    }
+      ]
+    });
+  }
 });

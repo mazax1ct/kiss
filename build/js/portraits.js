@@ -1,21 +1,23 @@
-const portraits = new Swiper('.js-portraits', {
-    loop: true,
-    loopedSlides: 3,
-    loopAdditionalSlides: 3,
-    autoplay: {
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true
-    },
-    speed: 500,
-    slidesPerView: 'auto',
-    centeredSlides: true,
-    breakpoints: {
-        1200: {
-            navigation: {
-                nextEl: '.js-portraits .slider-next',
-                prevEl: '.js-portraits .slider-prev',
-            },
-            allowTouchMove: false
+$(document).ready(function() {
+  if($('.js-portraits').length) {
+    $('.js-portraits').slick({
+      autoplay: true,
+      arrows: false,
+      infinite: true,
+      mobileFirst: true,
+      centerMode: true,
+      centerPadding: '10%',
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            arrows: true,
+            prevArrow: '<button class="slick-prev" type="button" title="Назад"><svg><use xlink:href="#arrow_left"></use></svg></button>',
+            nextArrow: '<button class="slick-next" type="button" title="Вперёд"><svg><use xlink:href="#arrow_right"></use></svg></button>'
+          }
         }
-    }
+      ]
+    });
+  }
 });
