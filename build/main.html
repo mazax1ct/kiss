@@ -466,7 +466,7 @@
                 </svg>
             </button>
             <div class="header__location-block">
-                <button class="header__button header__location" type="button" title="Открыть карту">
+                <button class="js-popup-opener header__button header__location" type="button" title="Открыть карту" data-popup="map-popup">
                     <svg>
                         <use xlink:href="#location"></use>
                     </svg>
@@ -1257,6 +1257,15 @@
                     <span>Записаться<br> на приём</span>
                 </button>
             </form>
+        </div>
+    
+        <div class="map-popup popup">
+            <button class="js-popup-closer popup__close" type="button" title="Закрыть">
+                <svg>
+                    <use xlink:href="#close"></use>
+                </svg>
+            </button>
+            <div id="popup_map" class="map-popup__map"></div>
         </div>
     </div>
 

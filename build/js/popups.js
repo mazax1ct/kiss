@@ -1,5 +1,7 @@
 var lastFocusedElement; //переменная для последнего элемента в фокусе перед открытием поповера
 var firstTabStop, lastTabStop; //переменные для первого и последнего элемента в фокусе в открытом попапе
+var popupMapShow = false;
+
 
 //обработчик для работы с клавиатуры
 function keyboardUse(e) {
@@ -85,6 +87,22 @@ $(document).on('click', '.js-popup-opener', function () {
   }
   $('body').addClass('popup-open');
   popoverOpen($(this).attr('data-popup'));
+
+  if($(this).attr('data-popup') == 'map-popup') {
+    if(popupMapShow != true) {
+      var elem = document.createElement('script');
+      elem.type = 'text/javascript';
+      elem.src = 'https://api-maps.yandex.ru/2.1/?apikey=9d7b529c-c833-4e6e-b74e-a623a6a75a71&load=package.full&lang=ru_RU';
+
+      var container = document.getElementById('popup_map');
+      container.appendChild(elem);
+      popupMapShow = true;
+
+      setTimeout( function() {
+        mapInit(container);
+      }, 3000);
+    }
+  }
 
   return false;
 });

@@ -1,20 +1,19 @@
 //яндекс карты
-var footerMap;
 var locations = [
   [59.929096, 30.340329, 'Kiss'],
 ];
 
 var mapShowed = false;
 
-function init() {
-  footerMap = new ymaps.Map('footer_map', {
+function mapInit(elem) {
+  var map = new ymaps.Map(elem, {
     center: [59.929096, 30.340329],
     zoom: 17
   }, {
     searchControlProvider: 'yandex#search'
   });
 
-  footerMap.behaviors.disable('scrollZoom');
+  map.behaviors.disable('scrollZoom');
 
   var i, placemark;
 
@@ -32,13 +31,13 @@ function init() {
       iconImageOffset: [-20, -20]
     });
 
-    footerMap.geoObjects.add(placemark);
+    map.geoObjects.add(placemark);
   }
 
   var body = document.querySelector('body');
   if (body.offsetWidth < 768) {
-    footerMap.behaviors.disable('drag');
-    footerMap.behaviors.enable('MultiTouch');
+    map.behaviors.disable('drag');
+    map.behaviors.enable('MultiTouch');
   }
 }
 
@@ -53,13 +52,20 @@ window.onload = () => {
   // функция обратного вызова
   let callback = function(entries, observer) {
     entries.forEach(entry => {
-      if (entry.isIntersecting && mapShowed != true) {
-        var elem = document.createElement('script');
-        elem.type = 'text/javascript';
-        elem.src = 'https://api-maps.yandex.ru/2.1/?apikey=9d7b529c-c833-4e6e-b74e-a623a6a75a71&lang=ru_RU&onload=init';
-        document.getElementById('footer_map').appendChild(elem);
+      if (entry.isIntersecting > 0) {
+        if(mapShowed != true) {
+          var elem = document.createElement('script');
+          elem.type = 'text/javascript';
+          elem.src = 'https://api-maps.yandex.ru/2.1/?apikey=9d7b529c-c833-4e6e-b74e-a623a6a75a71&load=package.full&lang=ru_RU';
 
-        mapShowed = true;
+          var container = document.getElementById('footer_map');
+          container.appendChild(elem);
+          mapShowed = true;
+
+        	setTimeout( function() {
+            mapInit(container);
+          }, 3000);
+        }
       }
     })
   }
@@ -71,10 +77,3 @@ window.onload = () => {
   let target = document.getElementById('footer_map');
   observer.observe(target);
 }
-
-/*setTimeout(function() {
-  var elem = document.createElement('script');
-  elem.type = 'text/javascript';
-  elem.src = 'https://api-maps.yandex.ru/2.1/?apikey=9d7b529c-c833-4e6e-b74e-a623a6a75a71&lang=ru_RU&onload=init';
-  document.getElementById('footer_map').appendChild(elem);
-}, 2000);*/
