@@ -127,4 +127,10 @@
 
   &__map
     background-color: #E6E6E6
+    display: flex
     height: calc(70vh - 120px)
+    overflow: hidden
+
+    &::after
+      content: 'Карта загружается...'
+      margin: auto
