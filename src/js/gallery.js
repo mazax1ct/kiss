@@ -28,7 +28,8 @@ $(document).on('click', '.gallery-switches__switch', function () {
 
   $('.gallery__tab').removeClass('is-active');
   $('.gallery__tab[data-target="'+ $(this).attr('data-target') +'"]').addClass('is-active');
-  $('.gallery__tab[data-target="'+ $(this).attr('data-target') +'"]').find('.js-gallery').slick('setPosition');
+  
+  $('.gallery__tab:visible').find('.js-gallery').slick('setPosition');
 
   return false;
 });

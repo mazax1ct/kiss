@@ -1,0 +1,78 @@
+.products
+  margin-bottom: 60px
+  position: relative
+
+  @media(min-width: 1350px)
+    margin-bottom: 120px
+
+  @media(min-width: 1900px)
+    margin-bottom: 170px
+
+  .round-button
+    left: auto
+    position: absolute
+    right: 20px
+    top: -30px
+    z-index: 2
+
+    @media(min-width: 1024px)
+      left: 50%
+      transform: translateX(10px)
+
+    @media(min-width: 1350px)
+      top: 0
+      transform: translate(20px, -50%)
+
+    @media(min-width: 1900px)
+      transform: translate(100px, -50%)
+
+  &__list
+    @media(min-width: 768px)
+      display: flex
+
+  &__item
+    border: 1px solid rgba($main-color, 0.4)
+    padding: 20px
+
+    @media(min-width: 768px)
+      width: 33.33333%
+
+    @media(min-width: 1200px)
+      padding: 30px
+
+    @media(min-width: 1900px)
+      padding: 40px
+      padding-top: 100px
+
+    &:not(:last-child)
+      border-bottom: none
+
+      @media(min-width: 768px)
+        border-bottom: 1px solid rgba($main-color, 0.4)
+        border-right: none
+
+  &__item-image
+    border-radius: 50%
+    margin-bottom: 20px
+
+    @media(min-width: 1350px)
+      margin-bottom: 40px
+
+    @media(min-width: 1900px)
+      margin-bottom: 60px
+
+  &__item-title
+    font-size: 20px
+    font-weight: 700
+    margin-bottom: 10px
+
+    @media(min-width: 1350px)
+      font-size: 30px
+
+    @media(min-width: 1900px)
+      font-size: 38px
+      margin-bottom: 30px
+
+  &__item-text
+    @media(min-width: 1900px)
+      font-size: 24px
