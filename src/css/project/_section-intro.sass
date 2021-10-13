@@ -1,0 +1,131 @@
+.section-intro
+  @media(min-width: 768px)
+    display: flex
+
+  &:not(:last-child)
+    margin-bottom: 60px
+
+    @media(min-width: 1350px)
+      margin-bottom: 120px
+
+    @media(min-width: 1900px)
+      margin-bottom: 170px
+
+  .round-button
+    display: none
+
+    @media(min-width: 768px)
+      display: flex
+      left: 0
+      position: absolute
+      transform: translateX(-50%)
+      top: 0
+      z-index: 1
+
+  &__text-block
+    @media(min-width: 768px)
+      display: flex
+      flex-direction: column
+      padding-right: 20px
+      width: 50%
+
+    @media(min-width: 1900px)
+      width: 56%
+
+    h1
+      text-transform: uppercase
+
+      @media(min-width: 1900px)
+        margin-bottom: 40px
+
+  &__text
+    margin-bottom: 40px
+    max-width: 790px
+
+    @media(min-width: 1900px)
+      margin-bottom: 80px
+
+  &__price
+    font-size: 20px
+    font-weight: 700
+
+    @media(min-width: 1350px)
+      font-size: 30px
+
+    @media(min-width: 1900px)
+      font-size: 38px
+
+  &__anchors
+    color: $main-color
+    display: flex
+    flex-wrap: wrap
+    font-size: 12px
+    font-weight: 700
+    line-height: 1.2
+    list-style: none
+    margin-top: auto
+    margin-bottom: -5px
+    padding: 0
+
+    @media(min-width: 1350px)
+      font-size: 16px
+
+    @media(min-width: 1900px)
+      font-size: 20px
+      margin-bottom: -10px
+
+  &__anchors-item
+    margin-bottom: 5px
+
+    &:not(:last-child)
+      margin-right: 5px
+
+      @media(min-width: 1024px)
+        margin-right: 10px
+
+      @media(min-width: 1900px)
+        margin-right: 20px
+
+  &__anchors-link
+    align-items: center
+    background-color: $main-color
+    border-radius: 12px
+    color: #fff
+    display: flex
+    justify-content: center
+    height: 24px
+    padding-left: 12px
+    padding-right: 12px
+    text-decoration: none
+    transition: background-color 0.3s, color 0.3s
+
+    @media(min-width: 1350px)
+      border-radius: 18px
+      height: 36px
+
+    @media(min-width: 1900px)
+      border-radius: 24px
+      height: 48px
+      padding-left: 22px
+      padding-right: 22px
+
+    &:hover,
+    &:focus
+      background-color: $main-color-hover
+      color: #fff
+
+  &__image
+    display: none
+    position: relative
+
+    @media(min-width: 768px)
+      display: block
+      width: 50%
+
+    @media(min-width: 1900px)
+      width: 44%
+
+    img
+      @media(min-width: 768px)
+        height: 100%
+        object-fit: cover

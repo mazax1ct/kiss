@@ -32,7 +32,10 @@
 
   &__item
     border: 1px solid rgba($main-color, 0.4)
+    display: block
+    color: $text-color
     padding: 20px
+    text-decoration: none
 
     @media(min-width: 768px)
       width: 33.33333%
@@ -62,6 +65,7 @@
       margin-bottom: 60px
 
   &__item-title
+    display: block
     font-size: 20px
     font-weight: 700
     margin-bottom: 10px
@@ -74,5 +78,18 @@
       margin-bottom: 30px
 
   &__item-text
+    display: block
+
+    @media(min-width: 768px) and (max-width: 1023px)
+      font-size: 12px
+
     @media(min-width: 1900px)
       font-size: 24px
+
+a.products__item
+  &:hover,
+  &:focus
+    color: $text-color
+
+    .products__item-title
+      text-decoration: underline

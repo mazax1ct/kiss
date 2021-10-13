@@ -1,0 +1,146 @@
+.product-slider
+  margin-bottom: 60px
+  position: relative
+
+  @media(min-width: 1350px)
+    margin-bottom: 120px
+
+  @media(min-width: 1900px)
+    margin-bottom: 170px
+
+  .slick-next,
+  .slick-prev
+    opacity: 1
+    top: calc((100vw - 20px)*0.76)
+    transform: none
+
+    @media(min-width: 768px)
+      bottom: 20px
+      top: auto
+
+    @media(min-width: 1900px)
+      bottom: 0
+
+  .slick-next
+    left: 70px
+
+    @media(min-width: 1350px)
+      left: 100px
+
+    @media(min-width: 1900px)
+      left: 123px
+
+  .slick-prev
+    left: 20px
+
+    @media(min-width: 1350px)
+      left: 30px
+
+    @media(min-width: 1900px)
+      left: 10px
+
+  .slick-slider
+    margin-left: -10px
+    margin-right: -10px
+
+.product-slide
+  padding-left: 10px
+  padding-right: 10px
+
+  @media(min-width: 768px)
+    display: flex
+    justify-content: space-between
+
+  &__image-block
+    margin-bottom: 20px
+    position: relative
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      max-width: 885px
+      width: 50%
+
+    @media(min-width: 1900px)
+      padding-bottom: 170px
+
+  &__main-image
+    height: 100%
+    object-fit: cover
+
+  &__secondary-image
+    bottom: 0
+    left: auto
+    position: absolute
+    right: 0
+    top: auto
+    width: 40%
+    z-index: 1
+
+  &__text-block
+    @media(min-width: 768px)
+      display: flex
+      flex-direction: column
+      justify-content: center
+      padding-left: 20px
+      max-width: 810px
+      width: 50%
+
+    @media(min-width: 1024px)
+      padding-top: 40px
+      padding-bottom: 40px
+
+    @media(min-width: 1350px)
+      padding-bottom: 80px
+
+    @media(min-width: 1900px)
+      padding-bottom: 120px
+
+  &__title
+    font-size: 32px
+    font-weight: 700
+    line-height: 1.2
+    margin-bottom: 10px
+
+    @media(min-width: 1350px)
+      font-size: 44px
+      margin-bottom: 20px
+
+    @media(min-width: 1900px)
+      font-size: 62px
+      margin-bottom: 40px
+
+  &__text-1
+    @media(min-width: 1900px)
+      font-size: 32px
+      margin-bottom: 80px
+
+  &__text-2
+    font-weight: 700
+
+    @media(min-width: 1900px)
+      font-size: 38px
+
+  &__text-3
+    @media(min-width: 1900px)
+      font-size: 24px
+
+  &__columns
+    display: flex
+    margin-top: auto
+    margin-left: -10px
+    margin-right: -10px
+
+    @media(max-width: 1023px)
+      font-size: 12px
+
+  &__column
+    padding-left: 10px
+    padding-right: 10px
+    width: 50%
+
+    img
+      margin-bottom: 20px
+      max-width: 40px
+
+      @media(min-width: 1350px)
+        max-width: 100%
