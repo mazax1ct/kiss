@@ -34,10 +34,10 @@ h1,
 
   @media(min-width: 768px)
     font-size: 36px
+    margin-bottom: 40px
 
   @media(min-width: 1350px)
     font-size: 48px
-    line-height: 1.4
 
   @media(min-width: 1400px)
     font-size: 52px
@@ -111,8 +111,6 @@ img
   vertical-align: top
 
 .title-block
-  margin-bottom: 60px
-
   @media(min-width: 768px)
     align-items: flex-start
     display: flex
@@ -121,31 +119,60 @@ img
     margin-right: -10px
 
   @media(min-width: 1350px)
-    margin-bottom: 120px
     margin-left: -20px
     margin-right: -20px
 
-  @media(min-width: 1900px)
-    margin-bottom: 170px
+  &:not(:last-child)
+    margin-bottom: 60px
 
-  h2,
-  .h2
-    margin-bottom: 20px
+    @media(min-width: 1350px)
+      margin-bottom: 120px
+
+    @media(min-width: 1900px)
+      margin-bottom: 170px
+
+  h1,
+  .h1
+    line-height: 1.2
+    text-transform: uppercase
 
     @media(min-width: 768px)
       margin-top: -10px
-      margin-bottom: 0
-      max-width: 830px
-      padding-right: 10px
-      padding-left: 10px
-      width: 50%
-
-    @media(min-width: 1350px)
-      padding-right: 20px
-      padding-left: 20px
 
     @media(min-width: 1900px)
       margin-top: -15px
+
+    .decorated-words
+      position: relative
+      white-space: nowrap
+
+      &::after
+        background-image: url("data:image/svg+xml,%3Csvg width='753' height='149' viewBox='0 0 753 149' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M204.502 19.3647C12.6927 37.0015 -33.953 99.5192 119.947 126.993C183.129 138.263 280.789 146.666 375.25 146.981C510.975 147.44 653.252 139.668 714.563 114.518C818.541 71.8451 684.064 39.2671 511.755 27.3945C405.905 20.139 283.831 12.0805 204.502 19.3647Z' stroke='%2343CEE0' stroke-width='3' stroke-miterlimit='22.9256'/%3E%3Cpath d='M124.994 110.143C-38.5355 75.6343 89.9461 -1.17662 361.35 2.10172C802.137 7.42183 833.282 125.73 345.582 125.73C265.73 125.73 202.036 126.391 124.994 110.143Z' stroke='%2360EAFC' stroke-width='3' stroke-miterlimit='22.9256'/%3E%3Cpath d='M626.278 121.204C708.592 105.287 743.735 81.7736 723.196 53.2158C670.168 -20.7156 358.094 31.5002 154.106 31.5002C-49.8043 31.5292 -10.2874 82.0345 53.127 103.663C172.771 144.456 465.399 152.313 626.278 121.204Z' stroke='%2314A9BD' stroke-width='3' stroke-miterlimit='22.9256'/%3E%3C/svg%3E%0A")
+        background-repeat: no-repeat
+        background-size: 100% auto
+        background-position: 50% 50%
+        content: ''
+        height: 190%
+        left: 50%
+        position: absolute
+        top: 50%
+        transform: translate(-50%, -50%)
+        width: 110%
+        z-index: -1
+
+  h2,
+  .h2
+    @media(min-width: 768px)
+      margin-top: -10px
+
+    @media(min-width: 1900px)
+      margin-top: -15px
+
+    &:not(:last-child)
+      margin-bottom: 20px
+
+      @media(min-width: 1900px)
+        margin-bottom: 40px
 
   &__text
     @media(min-width: 768px)
@@ -163,9 +190,13 @@ img
     @media(min-width: 1900px)
       font-size: 24px
 
-.form-block
-  margin-bottom: 60px
+    &:not(:last-child)
+      margin-bottom: 30px
 
+      @media(min-width: 768px)
+        margin-bottom: 0
+
+.form-block
   @media(min-width: 768px)
     align-items: flex-start
     display: flex
@@ -174,15 +205,17 @@ img
     margin-right: -10px
 
   @media(min-width: 1350px)
-    margin-bottom: 120px
     margin-left: -20px
     margin-right: -20px
 
-  @media(min-width: 1900px)
-    margin-bottom: 170px
+  &:not(:last-child)
+    margin-bottom: 60px
 
-  &:last-child
-    margin-bottom: 0
+    @media(min-width: 1350px)
+      margin-bottom: 120px
+
+    @media(min-width: 1900px)
+      margin-bottom: 170px
 
   &__block
     @media(min-width: 768px)
@@ -219,7 +252,6 @@ img
       margin-top: 15px
 
     @media(min-width: 1900px)
-      margin-bottom: 60px
       margin-top: 0
 
 .text-block

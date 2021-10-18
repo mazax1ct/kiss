@@ -52,17 +52,19 @@
                 <img src="images/content/banner/img_1.jpg" srcset="images/content/banner/img_1@2x.jpg" alt="">
                 <div class="banner__container">
                     <div class="banner__links">
-                        <a class="banner__link" href="#1">Направления ортопедии</a>
-                        <a class="banner__link" href="#2">Результаты пациентов</a>
-                        <a class="banner__link" href="#3">Стоимость услуг</a>
-                        <a class="banner__link" href="#4">Акции и скидки</a>
-                        <a class="banner__link" href="#5">Фотогалерея</a>
+                        <a class="js-scroll-to banner__link" href="#1">Направления ортопедии</a>
+                        <a class="js-scroll-to banner__link" href="#2">Результаты пациентов</a>
+                        <a class="js-scroll-to banner__link" href="#3">Стоимость услуг</a>
+                        <a class="js-scroll-to banner__link" href="#4">Акции и скидки</a>
+                        <a class="js-scroll-to banner__link" href="#5">Фотогалерея</a>
                     </div>
                 </div>
             </div>
 
             <div class="title-block">
-                <h2 id="1">Направления ортопедии</h2>
+                <div class="title-block__text">
+                    <h2 id="1">Направления ортопедии</h2>
+                </div>
                 <div class="title-block__text">
                     <p>Стоматолог перестал быть просто зубным врачом. Теперь функции доктора расширились, и он способен творить чудеса, появились узкие специалисты, как и у врачей общей практики</p>
                 </div>
@@ -203,7 +205,9 @@
             </div>
 
             <div class="title-block">
-                <h2 id="2">Реальные результаты вместо&nbsp;слов</h2>
+                <div class="title-block__text">
+                    <h2 id="2">Реальные результаты вместо&nbsp;слов</h2>
+                </div>
                 <div class="title-block__text">
                     <p>Приходите за доступными услугами и эффективной помощью в наш центр протезирования. Стоимость наших услуг абсолютно демократичная, честная, прозрачная</p>
                 </div>
@@ -265,57 +269,63 @@
             </div>
 
             <div class="title-block">
-                <h2 id="3">Стоимость услуг</h2>
+                <div class="title-block__text">
+                    <h2 id="3">Стоимость услуг</h2>
+                </div>
                 <div class="title-block__text">
                     <p>Процесс протезирования представляет собой совокупность процедур, занимающих различное количество времени. Срок изготовления и установки протезов зависит от разных факторов</p>
                 </div>
             </div>
 
             <div class="prices">
-                <a class="price" href="#">
-                    <span class="price__title">Установка виниров</span>
-                    <span class="price__text">Помогают корректировать форму, цвет зуба и выполняют эстетическую функцию</span>
-                    <span class="price__price-block">
-                        <span class="price__old-price">от 160 000 ₽</span>
-                        <span class="price__new-price">от 136 500 ₽</span>
-                    </span>
-                    <span class="price__link">
-                        <span class="price__link-text">Записаться</span>
-                        <svg>
-                            <use xlink:href="#arrow_right"></use>
-                        </svg>
-                    </span>
-                </a>
-                <a class="price" href="#">
-                    <span class="price__title">Протезы</span>
-                    <span class="price__text">Помогают корректировать форму, цвет зуба и выполняют эстетическую функцию</span>
-                    <span class="price__price-block">
-                        <span class="price__new-price">от 90 000 ₽</span>
-                    </span>
-                    <span class="price__link">
-                        <span class="price__link-text">Записаться</span>
-                        <svg>
-                            <use xlink:href="#arrow_right"></use>
-                        </svg>
-                    </span>
-                </a>
-                <a class="price" href="#">
-                    <span class="price__title">Коронки</span>
-                    <span class="price__text">Помогают корректировать форму, цвет зуба и выполняют эстетическую функцию</span>
-                    <span class="price__price-block">
-                        <span class="price__new-price">от 12 000 ₽</span>
-                    </span>
-                    <span class="price__link">
-                        <span class="price__link-text">Записаться</span>
-                        <svg>
-                            <use xlink:href="#arrow_right"></use>
-                        </svg>
-                    </span>
-                </a>
+                <div class="prices__list">
+                    <a class="price" href="#">
+                        <span class="price__title">Установка виниров</span>
+                        <span class="price__text">Помогают корректировать форму, цвет зуба и выполняют эстетическую функцию</span>
+                        <span class="price__price-block">
+                            <span class="price__old-price">от 160 000 ₽</span>
+                            <span class="price__new-price">от 136 500 ₽</span>
+                        </span>
+                        <span class="price__link">
+                            <span class="price__link-text">Записаться</span>
+                            <svg>
+                                <use xlink:href="#arrow_right"></use>
+                            </svg>
+                        </span>
+                    </a>
+                    <a class="price" href="#">
+                        <span class="price__title">Протезы</span>
+                        <span class="price__text">Помогают корректировать форму, цвет зуба и выполняют эстетическую функцию</span>
+                        <span class="price__price-block">
+                            <span class="price__new-price">от 90 000 ₽</span>
+                        </span>
+                        <span class="price__link">
+                            <span class="price__link-text">Записаться</span>
+                            <svg>
+                                <use xlink:href="#arrow_right"></use>
+                            </svg>
+                        </span>
+                    </a>
+                    <a class="price" href="#">
+                        <span class="price__title">Коронки</span>
+                        <span class="price__text">Помогают корректировать форму, цвет зуба и выполняют эстетическую функцию</span>
+                        <span class="price__price-block">
+                            <span class="price__new-price">от 12 000 ₽</span>
+                        </span>
+                        <span class="price__link">
+                            <span class="price__link-text">Записаться</span>
+                            <svg>
+                                <use xlink:href="#arrow_right"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
             </div>
 
             <div class="title-block">
-                <h2 id="4">Акции и скидки центра</h2>
+                <div class="title-block__text">
+                    <h2 id="4">Акции и скидки центра</h2>
+                </div>
                 <div class="title-block__text">
                     <p>Мы ценим наших пациентов и разработали систему персональных бонусов, уверены, они вас порадуют</p>
                 </div>
@@ -371,7 +381,9 @@
             </div>
 
             <div class="title-block">
-                <h2 id="5">Фотогалерея</h2>
+                <div class="title-block__text">
+                    <h2 id="5">Фотогалерея</h2>
+                </div>
                 <div class="title-block__text">
                     <p>Приходите за доступными услугами и эффективной помощью в наш центр протезирования. Стоимость наших услуг абсолютно демократичная, честная, прозрачная</p>
                     <div class="gallery-switches">
@@ -527,7 +539,6 @@
 
     <!--скрипты страницы-->
     <script src="js/slick.min.js"></script>
-    <script src="js/banner.js"></script>
     <script src="js/services.js"></script>
     <script src="js/results.js"></script>
     <script src="js/actions.js"></script>

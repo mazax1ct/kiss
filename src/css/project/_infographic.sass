@@ -1,14 +1,15 @@
 .infographic
-  margin-bottom: 60px
-
   @media(min-width: 768px)
     display: flex
 
-  @media(min-width: 1350px)
-    margin-bottom: 120px
+  &:not(:last-child)
+    margin-bottom: 60px
 
-  @media(min-width: 1900px)
-    margin-bottom: 170px
+    @media(min-width: 1350px)
+      margin-bottom: 120px
+
+    @media(min-width: 1900px)
+      margin-bottom: 170px
 
   &__block
     border: 1px solid rgba($main-color, 0.4)

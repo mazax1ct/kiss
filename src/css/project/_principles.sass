@@ -1,0 +1,56 @@
+.principles
+  @media(min-width: 768px)
+    display: flex
+
+  &:not(:last-child)
+    margin-bottom: 60px
+
+    @media(min-width: 1350px)
+      margin-bottom: 120px
+
+    @media(min-width: 1900px)
+      margin-bottom: 170px
+
+  &__block
+    border: 1px solid rgba($main-color, 0.4)
+    padding: 20px
+
+    @media(min-width: 768px)
+      padding: 20px 10px
+      width: 25%
+
+    @media(min-width: 1024px)
+      padding: 30px
+
+    @media(min-width: 1900px)
+      font-size: 24px
+      padding: 40px 30px
+
+    &:not(:last-child)
+      border-bottom: none
+
+      @media(min-width: 768px)
+        border-bottom: 1px solid rgba($main-color, 0.4)
+        border-right: none
+
+    img
+      margin-bottom: 20px
+
+      @media(min-width: 768px) and (max-width: 1023px)
+        max-width: 40px
+
+      @media(min-width: 1900px)
+        margin-bottom: 50px
+
+  &__block-title
+    font-size: 20px
+    font-weight: 700
+    margin-bottom: 10px
+
+    @media(min-width: 1350px)
+      font-size: 28px
+      margin-bottom: 20px
+
+    @media(min-width: 1900px)
+      font-size: 38px
+      margin-bottom: 30px

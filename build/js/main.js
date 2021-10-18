@@ -36,6 +36,15 @@ $(document).on('blur', '.input-label .input', function() {
   }
 });
 
+//флип-флап
 $(document).on('click', '.flip-flap__front', function () {
 	$(this).closest('.flip-flap').toggleClass('is-flipped');
+});
+
+//скролл по якорю
+$(document).on('click', '.js-scroll-to', function () {
+	event.preventDefault();
+	var id  = $(this).attr('href'),
+	top = $(id).offset().top - 20;
+	$('body,html').animate({scrollTop: top}, 1000);
 });

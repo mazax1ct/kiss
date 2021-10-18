@@ -1,0 +1,32 @@
+.contacts-map
+  background-color: rgba($text-color, 0.2)
+  display: flex
+  height: 260px
+  margin-left: -20px
+  margin-right: -20px
+  overflow: hidden
+
+  @media(min-width: 1350px)
+    height: 380px
+
+  @media(min-width: 1400px)
+    margin-left: -40px
+    margin-right: -40px
+
+  @media(min-width: 1900px)
+    height: 500px
+    margin-left: -60px
+    margin-right: -60px
+
+  &::after
+    content: 'Карта загружается...'
+    margin: auto
+
+  &:not(:last-child)
+    margin-bottom: 60px
+
+    @media(min-width: 1350px)
+      margin-bottom: 120px
+
+    @media(min-width: 1900px)
+      margin-bottom: 170px

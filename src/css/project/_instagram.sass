@@ -1,11 +1,7 @@
 .instagram
-  margin-bottom: 60px
   margin-left: -20px
   margin-right: -20px
   position: relative
-
-  @media(min-width: 1350px)
-    margin-bottom: 120px
 
   @media(min-width: 1400px)
     left: 50%
@@ -15,8 +11,14 @@
     transform: translateX(-50%)
     width: 100vw
 
-  @media(min-width: 1900px)
-    margin-bottom: 170px
+  &:not(:last-child)
+    margin-bottom: 60px
+
+    @media(min-width: 1350px)
+      margin-bottom: 120px
+
+    @media(min-width: 1900px)
+      margin-bottom: 170px
 
   &:hover
     .slick-next,
