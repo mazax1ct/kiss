@@ -1,0 +1,68 @@
+.bonuses
+  &:not(:last-child)
+    margin-bottom: 60px
+
+    @media(min-width: 1350px)
+      margin-bottom: 120px
+
+    @media(min-width: 1900px)
+      margin-bottom: 170px
+
+.bonuses-list
+  & > .bonus
+    &:nth-child(2n+1)
+      background-color: #F5F9FA
+
+  &:not(:last-child)
+    margin-bottom: 50px
+
+.bonus
+  cursor: pointer
+  padding: 20px
+
+  @media(min-width: 1200px)
+    padding-left: 30px
+    padding-right: 30px
+
+  @media(min-width: 1350px)
+    padding: 35px 40px
+
+  &.is-active
+    svg
+      transform: rotate(90deg)
+
+  &:hover
+    .bonus__title
+      color: $main-color
+
+  &__title
+    align-items: center
+    display: flex
+    font-size: 18px
+    font-weight: 700
+    line-height: 1.2
+    min-height: 30px
+    margin-bottom: 0
+    padding-right: 30px
+    position: relative
+    transition: color 0.3s
+
+    @media(min-width: 1350px)
+      font-size: 20px
+
+    @media(min-width: 1900px)
+      font-size: 26px
+
+    svg
+      fill: $main-color
+      height: 30px
+      left: auto
+      position: absolute
+      right: 0
+      top: 0
+      transition: transform 0.3s
+      width: 30px
+
+  &__dropdown
+    display: none
+    padding-top: 20px

@@ -1,0 +1,103 @@
+.spec-about
+  @media(min-width: 768px)
+    display: flex
+    flex-direction: row-reverse
+
+  &:not(:last-child)
+    margin-bottom: 60px
+
+    @media(min-width: 1350px)
+      margin-bottom: 120px
+
+    @media(min-width: 1900px)
+      margin-bottom: 170px
+
+  .round-button
+    display: none
+
+    @media(min-width: 768px)
+      display: flex
+      left: 0
+      position: absolute
+      transform: translateX(-50%)
+      top: 30px
+      z-index: 1
+
+  &__text-block
+    @media(min-width: 768px)
+      display: flex
+      flex-direction: column
+      padding-right: 20px
+      width: 50%
+
+    @media(min-width: 1900px)
+      width: 56%
+
+    h1
+      text-transform: uppercase
+
+      @media(min-width: 1900px)
+        margin-bottom: 40px
+
+  &__text
+    max-width: 790px
+
+  &__place
+    color: $main-color
+
+    @media(min-width: 1900px)
+      font-size: 32px
+      margin-bottom: 30px
+
+  &__title
+    align-items: center
+    display: flex
+    font-size: 16px
+    font-weight: 700
+
+    @media(min-width: 1350px)
+      font-size: 24px
+      line-height: 1.2
+      margin-top: 40px
+
+    @media(min-width: 1900px)
+      font-size: 38px
+
+    img
+      width: 30px
+      margin-right: 10px
+
+      @media(min-width: 1350px)
+        margin-right: 20px
+        width: 36px
+
+      @media(min-width: 1900px)
+        width: 46px
+
+  &__dropdown
+    display: none
+    padding-bottom: 20px
+
+  &__toggler
+    background-color: transparent
+    border: none
+    color: $main-color
+    cursor: pointer
+    padding: 0
+    text-decoration: underline
+
+  &__image
+    margin-bottom: 30px
+    position: relative
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      width: 50%
+
+    @media(min-width: 1900px)
+      width: 44%
+
+    //img
+      @media(min-width: 768px)
+        height: 100%
+        object-fit: cover

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Контакты</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+</head>
+
+<body>
+    //= template/sprite.html
+
+    //= template/preloader.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="main.html">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Контакты
+                </li>
+            </ul>
+
+            <h1>Контакты</h1>
+
+            <div id="footer_map" class="contacts-map"></div>
+
+            <div class="form-block">
+                <div class="form-block__block">
+                    <h2>Есть вопросы?<br> Напишите нам!</h2>
+                    <p>Мы проконсультируем вас по любым вопросам и предложим решение!<br> Оставьте свои контакты и мы свяжемся с вами в ближайшее время и ответим на все вопросы</p>
+                </div>
+                <div class="form-block__block">
+                    <form action="">
+                        <label class="input-label">
+                            <span class="input-label__text">Ваше Имя</span>
+                            <input class="input" type="text" value="" />
+                        </label>
+                        <label class="input-label">
+                            <span class="input-label__text">Телефон</span>
+                            <input class="js-phone-mask input" type="text" value="" />
+                        </label>
+                        <label class="input-label">
+                            <textarea class="textarea" placeholder="Ваш вопрос"></textarea>
+                        </label>
+                        <button class="record-popup__submit round-button round-button--type_2" type="submit">
+                            <svg class="arrow">
+                                <use xlink:href="#arrow_top_right"></use>
+                            </svg>
+                            <span>Отправить</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer_no_map.html
+
+    //= template/popups.html
+
+    <!--закрывашка меню-->
+    <div class="js-submenu-closer submenu-closer"></div>
+
+    <!--общие скрипты-->
+    //= template/scripts.html
+
+    <!--скрипты страницы-->
+    <script src="js/slick.min.js"></script>
+    <script src="js/bonuses.js"></script>
+    <script src="js/banks.js"></script>
+    <script src="js/tabs.js"></script>
+
+    <!--прелоадер-->
+    <script src="js/preloader.js"></script>
+</body>
+
+</html>

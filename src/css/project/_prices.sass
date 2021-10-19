@@ -10,19 +10,6 @@
     @media(min-width: 1900px)
       margin-bottom: 170px
 
-  &__list
-
-    & > .price
-      &:nth-child(2n+1)
-        background-color: #F5F9FA
-
-    & > a.price
-
-      &:hover,
-      &:focus
-        background-color: $main-color
-        color: #fff
-
   .round-button
     display: none
 
@@ -40,6 +27,21 @@
 
     @media(min-width: 1900px)
       transform: translate(100px, -50%)
+
+.prices-list
+  & > .price
+    &:nth-child(2n+1)
+      background-color: #F5F9FA
+
+  & > a.price
+
+    &:hover,
+    &:focus
+      background-color: $main-color
+      color: #fff
+
+  &:not(:last-child)
+    margin-bottom: 50px
 
 .price
   color: $text-color

@@ -31,13 +31,14 @@ h1,
   font-size: 26px
   line-height: 1.2
   margin-bottom: 20px
+  text-transform: uppercase
 
   @media(min-width: 768px)
     font-size: 36px
-    margin-bottom: 40px
 
   @media(min-width: 1350px)
     font-size: 48px
+    margin-bottom: 40px
 
   @media(min-width: 1400px)
     font-size: 52px
@@ -50,11 +51,15 @@ h1,
 
 h2,
 .h2
-  font-size: 32px
+  font-size: 24px
   line-height: 1.2
+
+  @media(min-width: 768px)
+    font-size: 30px
 
   @media(min-width: 1350px)
     font-size: 44px
+    margin-bottom: 40px
 
   @media(min-width: 1900px)
     font-size: 62px
@@ -109,6 +114,11 @@ img
   height: auto
   max-width: 100%
   vertical-align: top
+
+ul,
+ol
+  list-style-position: inside
+  padding: 0
 
 .title-block
   @media(min-width: 768px)
@@ -260,6 +270,12 @@ img
 
   @media(min-width: 1900px)
     margin-bottom: 60px
+
+.text-block-small
+  max-width: 790px
+
+  @media(min-width: 1350px)
+    margin-bottom: 40px
 
 .calc-note
   align-items: center
