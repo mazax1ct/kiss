@@ -1,6 +1,7 @@
 .section-intro
   @media(min-width: 768px)
     display: flex
+    flex-direction: row-reverse
 
   &:not(:last-child)
     margin-bottom: 60px
@@ -116,11 +117,11 @@
       color: #fff
 
   &__image
-    display: none
     position: relative
+    margin-bottom: 30px
 
     @media(min-width: 768px)
-      display: block
+      margin-bottom: 0
       width: 50%
 
     @media(min-width: 1900px)

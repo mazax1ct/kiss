@@ -22,13 +22,13 @@ $(document).ready(function() {
   }
 });
 
-$(document).on('click', '.gallery-switches__switch', function () {
-  $('.gallery-switches__switch').removeClass('is-active');
+$(document).on('click', '.js-gallery-switch', function () {
+  $('.js-gallery-switch').removeClass('is-active');
   $(this).addClass('is-active');
 
   $('.gallery__tab').removeClass('is-active');
   $('.gallery__tab[data-target="'+ $(this).attr('data-target') +'"]').addClass('is-active');
-  
+
   $('.gallery__tab:visible').find('.js-gallery').slick('setPosition');
 
   return false;

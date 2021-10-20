@@ -1,7 +1,7 @@
 $(document).ready(function() {
   if($('.js-product-slider').length) {
     $('.js-product-slider').slick({
-      //autoplay: true,
+      autoplay: true,
       speed: 1000,
       infinite: true,
       mobileFirst: true,

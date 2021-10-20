@@ -1,5 +1,5 @@
-$(document).on('click', '.tabs-nav__button', function () {
-  $(this).closest('.tabs').find('.tabs-nav__button').removeClass('is-active');
+$(document).on('click', '.js-tabs-nav', function () {
+  $(this).closest('.tabs').find('.js-tabs-nav').removeClass('is-active');
   $(this).addClass('is-active');
 
   $(this).closest('.tabs').find('.tab').removeClass('is-active');
