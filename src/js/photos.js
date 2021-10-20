@@ -21,3 +21,20 @@ $(document).ready(function() {
     });
   }
 });
+
+var filtered = false;
+
+$(document).on('click', '.js-filter', function () {
+  $('.js-filter').removeClass('is-active');
+  $(this).addClass('is-active');
+
+  var filter = $(this).data('filter');
+
+  if(filter == 'all') {
+    $('.js-filtered-slider').slick('slickUnfilter');
+    filtered = false;
+  } else {
+    $('.js-filtered-slider').slick('slickUnfilter').slick('slickFilter','[data-filter="'+filter+'"]');
+    filtered = true;
+  }
+});

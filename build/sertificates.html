@@ -534,71 +534,69 @@
 
             <ul class="slider-filter">
                 <li class="slider-filter__item">
-                    <button class="slider-filter__button is-active" type="button" data-target="1">Ортопедия</button>
+                    <button class="js-filter slider-filter__button is-active" type="button" data-filter="all">Все</button>
                 </li>
                 <li class="slider-filter__item">
-                    <button class="slider-filter__button" type="button" data-target="2">Имплантация</button>
+                    <button class="js-filter slider-filter__button" type="button" data-filter="1">Ортопедия</button>
                 </li>
                 <li class="slider-filter__item">
-                    <button class="slider-filter__button" type="button" data-target="3">Терапия</button>
+                    <button class="js-filter slider-filter__button" type="button" data-filter="2">Имплантация</button>
                 </li>
                 <li class="slider-filter__item">
-                    <button class="slider-filter__button" type="button" data-target="4">Хирургия</button>
+                    <button class="js-filter slider-filter__button" type="button" data-filter="3">Терапия</button>
                 </li>
                 <li class="slider-filter__item">
-                    <button class="slider-filter__button" type="button" data-target="5">Ортодонтия</button>
+                    <button class="js-filter slider-filter__button" type="button" data-filter="4">Хирургия</button>
                 </li>
                 <li class="slider-filter__item">
-                    <button class="slider-filter__button" type="button" data-target="6">Отбеливание</button>
+                    <button class="js-filter slider-filter__button" type="button" data-filter="5">Ортодонтия</button>
+                </li>
+                <li class="slider-filter__item">
+                    <button class="js-filter slider-filter__button" type="button" data-filter="6">Отбеливание</button>
                 </li>
             </ul>
 
             <div class="photos">
-                <div class="js-photos">
-                    <div>
-                        <a class="photos__link" href="#">
-                            <picture>
-                                <source srcset="images/content/inst/img_1.jpg, images/content/inst/img_1@2x.jpg 2x" media="(min-width: 1350px)">
-                                <img loading="lazy" src="images/content/inst/img_1_mob.jpg" srcset="images/content/inst/img_1_mob@2x.jpg 2x" alt="alt">
-                            </picture>
+                <div class="js-photos js-filtered-slider">
+                    <div data-filter="1">
+                        <a class="photos__link" href="images/content/photos/img_1@2x.jpg" data-fancybox="gallery">
+                            <img loading="lazy" src="images/content/photos/img_1.jpg" srcset="images/content/photos/img_1@2x.jpg 2x" alt="alt">
                         </a>
                     </div>
-                    <div>
-                        <a class="photos__link" href="#">
-                            <picture>
-                                <source srcset="images/content/inst/img_2.jpg, images/content/inst/img_2@2x.jpg 2x" media="(min-width: 1350px)">
-                                <img loading="lazy" src="images/content/inst/img_2_mob.jpg" srcset="images/content/inst/img_2_mob@2x.jpg 2x" alt="alt">
-                            </picture>
+                    <div data-filter="2">
+                        <a class="photos__link" href="images/content/photos/img_2@2x.jpg" data-fancybox="gallery">
+                            <img loading="lazy" src="images/content/photos/img_2.jpg" srcset="images/content/photos/img_2@2x.jpg 2x" alt="alt">
                         </a>
                     </div>
-                    <div>
-                        <a class="photos__link" href="#">
-                            <picture>
-                                <source srcset="images/content/inst/img_3.jpg, images/content/inst/img_3@2x.jpg 2x" media="(min-width: 1350px)">
-                                <img loading="lazy" src="images/content/inst/img_3_mob.jpg" srcset="images/content/inst/img_3_mob@2x.jpg 2x" alt="alt">
-                            </picture>
-                        </a>
-                    </div>
-                    <div>
-                        <a class="photos__link" href="#">
-                            <picture>
-                                <source srcset="images/content/inst/img_4.jpg, images/content/inst/img_4@2x.jpg 2x" media="(min-width: 1350px)">
-                                <img loading="lazy" src="images/content/inst/img_4_mob.jpg" srcset="images/content/inst/img_4_mob@2x.jpg 2x" alt="alt">
-                            </picture>
-                        </a>
-                    </div>
-                    <div>
-                        <a class="photos__link" href="#">
-                            <picture>
-                                <source srcset="images/content/inst/img_5.jpg, images/content/inst/img_5@2x.jpg 2x" media="(min-width: 1350px)">
-                                <img loading="lazy" src="images/content/inst/img_5_mob.jpg" srcset="images/content/inst/img_5_mob@2x.jpg 2x" alt="alt">
-                            </picture>
+                    <div data-filter="3">
+                        <a class="photos__link" href="images/content/photos/img_3@2x.jpg" data-fancybox="gallery">
+                            <img loading="lazy" src="images/content/photos/img_3.jpg" srcset="images/content/photos/img_3@2x.jpg 2x" alt="alt">
                         </a>
                     </div>
                 </div>
             </div>
 
             <h2 class="h1">Лицензии</h2>
+
+            <div class="photos">
+                <div class="js-photos">
+                    <div>
+                        <a class="photos__link" href="images/content/photos/img_1@2x.jpg" data-fancybox="gallery">
+                            <img loading="lazy" src="images/content/photos/img_1.jpg" srcset="images/content/photos/img_1@2x.jpg 2x" alt="alt">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="photos__link" href="images/content/photos/img_2@2x.jpg" data-fancybox="gallery">
+                            <img loading="lazy" src="images/content/photos/img_2.jpg" srcset="images/content/photos/img_2@2x.jpg 2x" alt="alt">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="photos__link" href="images/content/photos/img_3@2x.jpg" data-fancybox="gallery">
+                            <img loading="lazy" src="images/content/photos/img_3.jpg" srcset="images/content/photos/img_3@2x.jpg 2x" alt="alt">
+                        </a>
+                    </div>
+                </div>
+            </div>
 
             <div class="form-block">
                 <div class="form-block__block">
@@ -857,6 +855,8 @@
     <!--скрипты страницы-->
     <script src="js/slick.min.js"></script>
     <script src="js/photos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>
 
     <!--прелоадер-->
     <script src="js/preloader.js"></script>

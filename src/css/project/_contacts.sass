@@ -1,9 +1,107 @@
 .contacts
+  position: relative
+
   &:not(:last-child)
-    margin-bottom: 60px
+    margin-bottom: 40px
+
+  .round-button
+    @media(min-width: 768px)
+      left: 50%
+      position: absolute
+      top: 0
+      transform: translateX(10px)
+      z-index: 1
+
+    @media(min-width: 1024px)
+      top: -30px
 
     @media(min-width: 1350px)
-      margin-bottom: 120px
+      transform: translateX(20px)
 
     @media(min-width: 1900px)
-      margin-bottom: 170px
+      transform: translateX(100px)
+
+  &__row
+    @media(min-width: 768px)
+      align-items: flex-start
+      display: flex
+      justify-content: space-between
+      margin-left: -10px
+      margin-right: -10px
+
+    @media(min-width: 1350px)
+      margin-left: -20px
+      margin-right: -20px
+
+    &:not(:last-child)
+      margin-bottom: 40px
+
+      @media(min-width: 768px)
+        margin-bottom: 60px
+
+      @media(min-width: 1350px)
+        margin-bottom: 60px
+
+  &__block
+    @media(min-width: 768px)
+      max-width: 790px
+      padding-left: 10px
+      padding-right: 10px
+      width: 50%
+
+    @media(min-width: 1350px)
+      font-size: 18px
+      max-width: 830px
+      padding-left: 20px
+      padding-right: 20px
+
+    @media(min-width: 1900px)
+      font-size: 24px
+
+    &:not(:last-child)
+      margin-bottom: 30px
+
+      @media(min-width: 768px)
+        margin-bottom: 0
+
+  &__phone
+    font-size: 26px
+    font-weight: 700
+    line-height: 1.2
+
+    @media(min-width: 768px)
+      font-size: 36px
+      line-height: 40px
+
+    @media(min-width: 1350px)
+      font-size: 48px
+      line-height: 60px
+
+    @media(min-width: 1400px)
+      font-size: 52px
+
+    @media(min-width: 1600px)
+      font-size: 60px
+
+    @media(min-width: 1900px)
+      font-size: 72px
+      line-height: 70px
+      margin-bottom: 40px
+
+  &__item
+    align-items: center
+    display: flex
+
+    @media(min-width: 1900px)
+      margin-bottom: 40px
+
+    img
+      margin-right: 10px
+      width: 40px
+
+      @media(min-width: 1350px)
+        margin-right: 20px
+        width: 60px
+
+      @media(min-width: 1900px)
+        width: 70px
