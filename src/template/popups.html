@@ -1,5 +1,5 @@
 <div class="popups-shade">
-    <div class="record-popup popup">
+    <div id="record-popup" class="record-popup popup">
         <button class="js-popup-closer popup__close" type="button" title="Закрыть">
             <svg>
                 <use xlink:href="#close"></use>
@@ -44,7 +44,46 @@
         </form>
     </div>
 
-    <div class="map-popup popup">
+    <div id="resume-popup" class="record-popup popup">
+        <button class="js-popup-closer popup__close" type="button" title="Закрыть">
+            <svg>
+                <use xlink:href="#close"></use>
+            </svg>
+        </button>
+        <p class="record-popup__title">Оставить резюме</p>
+        <p class="record-popup__text">Мы проконсультируем вас по любым вопросам и предложим решение! Оставьте свои контакты и мы свяжемся с вами в ближайшее время и ответим на все вопросы</p>
+        <form action="">
+            <label class="input-label">
+                <span class="input-label__text">Ваше Имя</span>
+                <input class="input" type="text" value="" />
+            </label>
+            <label class="input-label">
+                <span class="input-label__text">Телефон</span>
+                <input class="js-phone-mask input" type="text" value="" />
+            </label>
+            <label class="select-wrapper">
+                <span class="select-wrapper__container">
+                    <select class="js-select" placeholder="Выберите специальность">
+                        <option value=""></option>
+                        <option value="1">Специальность 1</option>
+                        <option value="2">Специальность 2</option>
+                        <option value="3">Специальность 3</option>
+                    </select>
+                </span>
+            </label>
+            <label class="input-label">
+                <textarea class="textarea" placeholder="О себе"></textarea>
+            </label>
+            <button class="record-popup__submit round-button round-button--type_1" type="submit">
+                <svg class="arrow">
+                    <use xlink:href="#arrow_top_right"></use>
+                </svg>
+                <span>Записаться<br> на приём</span>
+            </button>
+        </form>
+    </div>
+
+    <div id="map-popup" class="map-popup popup">
         <button class="js-popup-closer popup__close" type="button" title="Закрыть">
             <svg>
                 <use xlink:href="#close"></use>

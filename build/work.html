@@ -177,6 +177,9 @@
         <symbol id="arrow_more" viewBox="0 0 24 24">
             <path d="M22 12L18 8V11H3V13H18V16L22 12Z" />
         </symbol>
+        <symbol id="play" viewBox="0 0 145 145">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M72.5 145C112.541 145 145 112.541 145 72.5C145 32.4594 112.541 0 72.5 0C32.4594 0 0 32.4594 0 72.5C0 112.541 32.4594 145 72.5 145ZM58 97.9808L103 72L58 46.0192L58 97.9808Z" />
+        </symbol>
     </svg>
 
     <div id="preloader">
@@ -541,6 +544,31 @@
                 </div>
             </div>
 
+            <figure class="video">
+                <div class="js-video video__container">
+                    <a class="js-video__link video__link" href="https://www.youtube.com/watch?v=bMPOfhoDVwo" target="_blank">
+                        <img class="video__media" src="images/content/works/img_2.jpg" srcset="images/content/works/img_2@2x.jpg 2x" alt="Видео 1" title="Видео 1" />
+                        <button class="js-video__button video__button" type="button" aria-label="Запустить видео" title="Запустить видео">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#play" />
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </figure>
+
+            <div class="work-about">
+                <p class="work-about__item">
+                    <img src="images/icons/rub.svg" alt="">
+                    Стоимость&nbsp;лечения: 120&nbsp;000&nbsp;₽
+                </p>
+                <p class="work-about__item">
+                    <img src="images/icons/clock.svg" alt="">
+                    Время&nbsp;лечения: 12&nbsp;часов
+                </p>
+
+            </div>
+
             <h2>Команда врачей:</h2>
             <div class="team">
                 <div class="team__item">
@@ -644,6 +672,47 @@
 
 
             <h2>Галерея:</h2>
+
+            <div class="before-after-slider">
+                <div class="js-before-after-slider">
+                    <div>
+                        <div class="js-before-after twentytwenty-container">
+                            <picture>
+                                <source srcset="images/content/before_after/img_1.jpg, images/content/before_after/img_1@2x.jpg 2x" media="(min-width: 1350px)">
+                                <img src="images/content/before_after/img_1.jpg" srcset="images/content/before_after/img_1@2x.jpg 2x" alt="alt">
+                            </picture>
+                            <picture>
+                                <source srcset="images/content/before_after/img_2.jpg, images/content/before_after/img_2@2x.jpg 2x" media="(min-width: 1350px)">
+                                <img src="images/content/before_after/img_2.jpg" srcset="images/content/before_after/img_2@2x.jpg 2x" alt="alt">
+                            </picture>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="js-before-after twentytwenty-container">
+                            <picture>
+                                <source srcset="images/content/before_after/img_1.jpg, images/content/before_after/img_1@2x.jpg 2x" media="(min-width: 1350px)">
+                                <img src="images/content/before_after/img_1.jpg" srcset="images/content/before_after/img_1@2x.jpg 2x" alt="alt">
+                            </picture>
+                            <picture>
+                                <source srcset="images/content/before_after/img_2.jpg, images/content/before_after/img_2@2x.jpg 2x" media="(min-width: 1350px)">
+                                <img src="images/content/before_after/img_2.jpg" srcset="images/content/before_after/img_2@2x.jpg 2x" alt="alt">
+                            </picture>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="js-before-after twentytwenty-container">
+                            <picture>
+                                <source srcset="images/content/before_after/img_1.jpg, images/content/before_after/img_1@2x.jpg 2x" media="(min-width: 1350px)">
+                                <img src="images/content/before_after/img_1.jpg" srcset="images/content/before_after/img_1@2x.jpg 2x" alt="alt">
+                            </picture>
+                            <picture>
+                                <source srcset="images/content/before_after/img_2.jpg, images/content/before_after/img_2@2x.jpg 2x" media="(min-width: 1350px)">
+                                <img src="images/content/before_after/img_2.jpg" srcset="images/content/before_after/img_2@2x.jpg 2x" alt="alt">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="form-block">
                 <div class="form-block__block">
@@ -822,7 +891,7 @@
     </footer>
 
     <div class="popups-shade">
-        <div class="record-popup popup">
+        <div id="record-popup" class="record-popup popup">
             <button class="js-popup-closer popup__close" type="button" title="Закрыть">
                 <svg>
                     <use xlink:href="#close"></use>
@@ -867,7 +936,46 @@
             </form>
         </div>
     
-        <div class="map-popup popup">
+        <div id="resume-popup" class="record-popup popup">
+            <button class="js-popup-closer popup__close" type="button" title="Закрыть">
+                <svg>
+                    <use xlink:href="#close"></use>
+                </svg>
+            </button>
+            <p class="record-popup__title">Оставить резюме</p>
+            <p class="record-popup__text">Мы проконсультируем вас по любым вопросам и предложим решение! Оставьте свои контакты и мы свяжемся с вами в ближайшее время и ответим на все вопросы</p>
+            <form action="">
+                <label class="input-label">
+                    <span class="input-label__text">Ваше Имя</span>
+                    <input class="input" type="text" value="" />
+                </label>
+                <label class="input-label">
+                    <span class="input-label__text">Телефон</span>
+                    <input class="js-phone-mask input" type="text" value="" />
+                </label>
+                <label class="select-wrapper">
+                    <span class="select-wrapper__container">
+                        <select class="js-select" placeholder="Выберите специальность">
+                            <option value=""></option>
+                            <option value="1">Специальность 1</option>
+                            <option value="2">Специальность 2</option>
+                            <option value="3">Специальность 3</option>
+                        </select>
+                    </span>
+                </label>
+                <label class="input-label">
+                    <textarea class="textarea" placeholder="О себе"></textarea>
+                </label>
+                <button class="record-popup__submit round-button round-button--type_1" type="submit">
+                    <svg class="arrow">
+                        <use xlink:href="#arrow_top_right"></use>
+                    </svg>
+                    <span>Записаться<br> на приём</span>
+                </button>
+            </form>
+        </div>
+    
+        <div id="map-popup" class="map-popup popup">
             <button class="js-popup-closer popup__close" type="button" title="Закрыть">
                 <svg>
                     <use xlink:href="#close"></use>
@@ -901,7 +1009,11 @@
 
     <!--скрипты страницы-->
     <script src="js/slick.min.js"></script>
+    <script src="js/video.js"></script>
     <script src="js/accordions.js"></script>
+    <script src="js/before-after.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
 
     <!--прелоадер-->
     <script src="js/preloader.js"></script>

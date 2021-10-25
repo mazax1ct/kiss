@@ -1,0 +1,38 @@
+.before-after-slider
+  position: relative
+
+  &:not(:last-child)
+    margin-bottom: 60px
+
+    @media(min-width: 1350px)
+      margin-bottom: 120px
+
+    @media(min-width: 1900px)
+      margin-bottom: 170px
+
+  .slick-next,
+  .slick-prev
+    opacity: 1
+
+  .slick-next
+    left: auto
+    right: -15px
+
+  .slick-prev
+    left: -15px
+
+  .slick-slide
+    padding-left: 3px
+    padding-right: 3px
+
+    @media(min-width: 1900px)
+      padding-left: 10px
+      padding-right: 10px
+
+  picture
+    display: block
+    width: 100%
+
+  //.twentytwenty-container
+    height: 0 !important
+    padding-bottom: 64.65%

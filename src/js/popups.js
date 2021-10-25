@@ -37,8 +37,8 @@ function popoverOpen(el) {
   $('body').addClass('popup-open');
   $('.popups-shade').fadeIn(300, function() {
     $('.popups-shade').addClass('is-open');
-    $('.' + el).fadeIn(300, function() {
-      $('.' + el).addClass('is-open');
+    $('#' + el).fadeIn(300, function() {
+      $('#' + el).addClass('is-open');
       var popover = $('.popup.is-open');
 
       //ловим все интерактивные элементы в поповере
