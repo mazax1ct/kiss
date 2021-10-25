@@ -1,0 +1,206 @@
+.calc
+  background-color: $main-color
+  color: #fff
+  margin-left: -20px
+  margin-right: -20px
+  padding-top: 60px
+  padding-left: 20
+  padding-right: 20px
+  padding-bottom: 60px
+
+  @media(min-width: 1400px)
+    left: 50%
+    margin-left: 0
+    margin-right: 0
+    position: relative
+    transform: translateX(-50%)
+    width: 100vw
+
+  a
+    color: #fff
+
+  &__container
+    margin-left: auto
+    margin-right: auto
+    max-width: 1920px
+    padding-left: 20px
+    padding-right: 20px
+
+    @media(min-width: 1400px)
+      padding-left: 40px
+      padding-right: 40px
+
+    @media(min-width: 1900px)
+      padding-left: 60px
+      padding-right: 60px
+
+  &__nav
+    align-items: center
+    display: flex
+    justify-content: center
+    margin-bottom: 45px
+
+    @media(min-width: 1024px)
+      margin-bottom: 60px
+
+  &__nav-button
+    align-items: center
+    background-color: rgba(#fff, 0.5)
+    border-radius: 50%
+    border: none
+    color: $main-color
+    cursor: pointer
+    font-size: 18px
+    font-weight: 700
+    display: flex
+    height: 40px
+    justify-content: center
+    margin-left: 6px
+    margin-right: 6px
+    padding: 0
+    transition: background-color 0.3s
+    width: 40px
+
+    @media(min-width: 1024px)
+      font-size: 24px
+      height: 56px
+      margin-left: 12px
+      margin-right: 12px
+      width: 56px
+
+    &.is-active
+      background-color: #fff
+      cursor: default
+
+    &:first-child
+      margin-left: 0
+
+    &:last-child
+      margin-right: 0
+
+  &__title
+    font-size: 24px
+    font-weight: 700
+    line-height: 1.2
+    margin-bottom: 40px
+    text-transform: uppercase
+    text-align: center
+
+    @media(min-width: 1024px)
+      font-size: 48px
+      margin-bottom: 90px
+
+  &__jaws-scheme
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 50px
+    max-width: 643px
+
+    @media(min-width: 1024px)
+      margin-bottom: 100px
+
+    path
+      cursor: pointer
+      fill: rgba(#fff, 0.7)
+      transition: fill 0.3s
+
+      &.hover,
+      &.is-active,
+      &:hover,
+      &:focus
+        fill: #fff
+
+  &__jaws-title
+    font-size: 18px
+    font-weight: 700
+    margin-bottom: 10px
+    text-align: center
+
+    @media(min-width: 1024px)
+      display: none
+
+  &__jaw
+    margin-bottom: 15px
+
+    @media(min-width: 1024px)
+      display: flex
+      justify-content: space-between
+      max-width: 1060px
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 25px
+
+  &__jaw-block
+    &:first-child
+      .calc__jaw-block-title
+        @media(min-width: 1024px)
+          text-align: left
+
+    &:last-child
+      .calc__jaw-block-title
+        @media(min-width: 1024px)
+          text-align: right
+
+      .calc__jaw-teeth
+        @media(min-width: 1024px)
+          flex-direction: row-reverse
+
+  &__jaw-block-title
+    display: none
+
+    @media(min-width: 1024px)
+      display: block
+      font-size: 24px
+      font-weight: 700
+      margin-bottom: 10px
+
+  &__jaw-teeth
+    align-items: center
+    display: flex
+    justify-content: center
+    margin-left: -4px
+    margin-right: -4px
+
+    @media(min-width: 1024px)
+      margin-left: -8px
+      margin-right: -8px
+
+  &__jaw-tooth
+    align-items: center
+    background-color: rgba(#fff, 0.5)
+    border-radius: 50%
+    border: none
+    color: $main-color
+    cursor: pointer
+    font-size: 18px
+    font-weight: 700
+    display: flex
+    height: 32px
+    justify-content: center
+    margin-left: 4px
+    margin-right: 4px
+    padding: 0
+    transition: background-color 0.3s
+    width: 32px
+
+    @media(min-width: 1024px)
+      height: 48px
+      margin-left: 8px
+      margin-right: 8px
+      width: 48px
+
+    &.hover,
+    &.is-active,
+    &:hover,
+    &:focus
+      background-color: #fff
+
+    &.is-active
+      cursor: default
+
+  &__button-block
+    margin-top: 50px
+    text-align: center
+
+    @media(min-width: 1024px)
+      margin-top: 75px

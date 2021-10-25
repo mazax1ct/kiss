@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Калькулятор</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+</head>
+
+<body>
+    //= template/sprite.html
+
+    //= template/preloader.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="main.html">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Калькулятор
+                </li>
+            </ul>
+
+            <h1>Калькулятор</h1>
+
+            <div class="calc">
+                <div class="calc__container">
+                    <div class="calc__nav">
+                        <span class="calc__nav-button is-active">1</span>
+                        <span class="calc__nav-button">2</span>
+                        <span class="calc__nav-button">3</span>
+                        <span class="calc__nav-button">4</span>
+                        <span class="calc__nav-button">5</span>
+                        <span class="calc__nav-button">6</span>
+                    </div>
+                    <p class="calc__title">С каким зубом проблема?</p>
+                    <div class="calc__jaws-scheme">
+                        <svg width="643" height="242" viewBox="0 0 643 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path data-id="47" d="M600.3 116.8C614.6 120.4 613.1 177.9 608.1 174.2C608.1 174.2 600.1 166.2 592.8 162C590.9 160.9 595.8 142.7 581.8 127.6C579.9 125.6 595.5 115.6 600.3 116.8Z" tabindex="0" />
+                                <path data-id="46" d="M576.101 130.9C590.501 134.1 590.701 191.6 585.501 188.1C585.501 188.1 577.201 180.4 569.901 176.4C568.001 175.4 572.301 157 557.901 142.4C555.901 140.3 571.301 129.8 576.101 130.9Z"
+                                  tabindex="0" />
+                                <path data-id="45"
+                                  d="M546.899 141.2C554.299 141.3 568.799 159.6 565.699 192.1C564.999 199.9 562.599 214.1 553.899 208.6C553.899 208.6 547.799 193.7 535.399 187.6C532.199 186 528.799 183 528.099 179.5L525.999 155.4C522.699 144.4 539.199 141.2 546.899 141.2Z"
+                                  tabindex="0" />
+                                <path data-id="44" d="M512 148.5C520.9 147.7 526.4 170.2 525.3 197.2C525 205.2 523.2 219.7 513.8 214.6C513.8 214.6 487.6 196.5 487.6 187.6V165.2C487.7 156.5 491.8 150.4 512 148.5Z" tabindex="0" />
+                                <path data-id="43"
+                                  d="M468.1 240.8C474.1 240.1 482.3 222 483.4 202.6C483.6 199.9 483.8 162.6 483.8 162.6C483.1 154.3 477.4 153.6 473 154.4L443.1 160C436.1 161.3 433.2 164.3 433.4 172.6L433.5 200C433.5 204.4 434.9 208.7 437.4 212.4C445.8 224.8 459.6 242.4 468.1 240.8Z"
+                                  tabindex="0" />
+                                <path data-id="42"
+                                  d="M408.499 242.3C414.399 242.3 424.599 222.6 428.099 203.3C428.599 200.6 429.099 196.2 428.999 193.4L428.299 168.4C427.999 164.1 424.199 160.8 419.699 161.1L390.199 163.2C383.299 163.7 378.499 169.5 378.599 176.4V198.2C378.599 204.7 379.799 211.2 382.499 217.1C388.099 229.6 398.599 242.9 408.499 242.3Z"
+                                  tabindex="0" />
+                                <path data-id="41" d="M349.7 236.7C363.6 236.7 374.9 207.4 374.9 193.7V176.2C374.9 169.4 369.3 163.9 362.3 163.9H337.1C330.1 163.9 324.5 169.4 324.5 176.2V193.1C324.5 206.7 335.8 236.7 349.7 236.7Z" tabindex="0" />
+                                <path data-id="31" d="M294.3 236.7C280.4 236.7 269.1 207.4 269.1 193.7V176.2C269.1 169.4 274.7 163.9 281.7 163.9H306.9C313.9 163.9 319.5 169.4 319.5 176.2V193.1C319.5 206.7 308.2 236.7 294.3 236.7Z" tabindex="0" />
+                                <path data-id="32"
+                                  d="M235.499 242.3C229.599 242.3 219.399 222.6 215.899 203.3C215.399 200.6 214.899 196.2 214.999 193.4L215.699 168.4C215.999 164.1 219.799 160.8 224.299 161.1L253.799 163.2C260.699 163.7 265.499 169.5 265.399 176.4V198.2C265.399 204.7 264.199 211.2 261.499 217.1C255.899 229.6 245.399 242.9 235.499 242.3Z"
+                                  tabindex="0" />
+                                <path data-id="33"
+                                  d="M175.899 240.8C169.899 240.1 161.699 222 160.599 202.6C160.399 199.9 160.199 162.6 160.199 162.6C160.899 154.3 166.599 153.6 170.999 154.4L200.899 160C207.899 161.3 210.799 164.3 210.599 172.6L210.499 200C210.499 204.4 209.099 208.7 206.599 212.4C198.199 224.8 184.399 242.4 175.899 240.8Z"
+                                  tabindex="0" />
+                                <path data-id="34" d="M132 148.5C123.1 147.7 117.6 170.2 118.7 197.2C119 205.2 120.8 219.7 130.2 214.6C130.2 214.6 156.4 196.5 156.4 187.6V165.2C156.4 156.5 152.2 150.4 132 148.5Z" tabindex="0" />
+                                <path data-id="35"
+                                  d="M97.0993 141.2C89.6993 141.3 75.1993 159.6 78.2993 192.1C78.9993 199.9 81.3993 214.1 90.0993 208.6C90.0993 208.6 96.1993 193.7 108.599 187.6C111.799 186 115.199 183 115.899 179.5L117.999 155.4C121.299 144.4 104.899 141.2 97.0993 141.2Z"
+                                  tabindex="0" />
+                                <path data-id="36" d="M67.8991 130.9C53.4991 134.1 53.2991 191.6 58.4991 188.1C58.4991 188.1 66.7991 180.4 74.0991 176.4C75.9991 175.4 71.6991 157 86.0991 142.4C88.0991 140.3 72.7991 129.8 67.8991 130.9Z"
+                                  tabindex="0" />
+                                <path data-id="37" d="M43.7008 116.8C29.4008 120.4 30.9008 177.9 35.9008 174.2C35.9008 174.2 43.9008 166.2 51.2008 162C53.1008 160.9 48.2008 142.7 62.2008 127.6C64.1008 125.6 48.5008 115.6 43.7008 116.8Z"
+                                  tabindex="0" />
+                                <path data-id="27"
+                                  d="M607.1 57.2001C610.7 56.5001 616.7 46.8001 617.3 38.3001C617.3 38.3001 618.6 30.4001 618.6 23.6001C618.6 9.20009 600.4 21.4001 600.2 29.5001C600.1 34.8001 599.3 49.9001 599.3 49.9001C598.5 57.1001 604.4 57.7001 607.1 57.2001Z"
+                                  tabindex="0" />
+                                <path data-id="26" d="M581.4 72.1C585.9 71.3 593.2 59.4 593.9 49C593.9 49 595.4 39.3 595.4 31.1C595.4 13.5 573 28.4 572.7 38.3C572.5 44.8 571.6 63.3 571.6 63.3C570.8 72 578.1 72.7 581.4 72.1Z" tabindex="0" />
+                                <path data-id="25"
+                                  d="M549.899 87C555.499 86 564.699 72 565.599 59.7C565.599 59.7 567.499 48.3 567.499 38.5C567.499 17.7 539.499 35.3 539.099 47.1C538.899 54.8 537.699 76.6 537.699 76.6C536.699 86.8 545.799 87.8 549.899 87Z"
+                                  tabindex="0" />
+                                <path data-id="24"
+                                  d="M512.3 103.4C518.6 102.2 529 85.8001 529.9 71.3001C529.9 71.3001 532.1 57.8001 532.1 46.4001C532.1 21.9001 500.6 42.6001 500.2 56.5001C499.9 65.6001 498.6 91.2001 498.6 91.2001C497.4 103.2 507.7 104.3 512.3 103.4Z"
+                                  tabindex="0" />
+                                <path data-id="23"
+                                  d="M476.701 114.7C485.801 114.7 492.201 97.7 492.201 86.8C492.201 86.8 493.901 51.4 492.601 39.3C490.901 24.3 460.201 43.7 457.101 66.5C455.801 76.5 456.801 94.6 456.801 94.6C458.001 112.4 469.301 114.7 476.701 114.7Z"
+                                  tabindex="0" />
+                                <path data-id="22"
+                                  d="M412.299 116.2H427.799C440.199 116.2 450.299 106.1 450.299 93.7001C450.299 43.1001 437.499 34.8001 427.899 35.0001C416.599 35.2001 398.199 46.5001 396.299 72.3001C395.499 83.9001 395.799 92.0001 395.799 99.7001C395.799 108.8 403.199 116.2 412.299 116.2Z"
+                                  tabindex="0" />
+                                <path data-id="21" d="M356.3 33.2C378 33.2 388 71.1 389.8 102.3C389.8 113.6 380.7 122.8 369.4 122.8H343.3C332.1 122.8 324.9 115.6 324.9 104.3C324.9 86.9 324.9 36.3 356.3 33.2Z" tabindex="0" />
+                                <path data-id="11" d="M287.699 33.2C265.999 33.2 255.999 71.1 254.199 102.3C254.199 113.6 263.299 122.8 274.599 122.8H300.699C311.899 122.8 319.099 115.6 319.099 104.3C319.099 86.9 319.099 36.3 287.699 33.2Z"
+                                  tabindex="0" />
+                                <path data-id="12"
+                                  d="M231.5 116.2H216C203.6 116.2 193.5 106.1 193.5 93.7001C193.5 43.1001 206.3 34.8001 215.9 35.0001C227.2 35.2001 245.6 46.5001 247.5 72.3001C248.3 83.9001 248 92.0001 248 99.7001C248 108.8 240.6 116.2 231.5 116.2Z"
+                                  tabindex="0" />
+                                <path data-id="13"
+                                  d="M167.101 114.7C158.001 114.7 151.601 97.7 151.601 86.8C151.601 86.8 149.901 51.4 151.201 39.3C152.901 24.3 183.601 43.7 186.701 66.5C188.001 76.5 187.001 94.6 187.001 94.6C185.801 112.4 174.501 114.7 167.101 114.7Z"
+                                  tabindex="0" />
+                                <path data-id="14"
+                                  d="M131.499 103.4C125.199 102.2 114.799 85.8001 113.899 71.3001C113.899 71.3001 111.699 57.8001 111.699 46.4001C111.699 21.9001 143.199 42.6001 143.599 56.5001C143.899 65.6001 145.199 91.2001 145.199 91.2001C146.399 103.2 136.099 104.3 131.499 103.4Z"
+                                  tabindex="0" />
+                                <path data-id="15"
+                                  d="M93.9008 87C88.3008 86 79.1008 72 78.2008 59.7C78.2008 59.7 76.3008 48.3 76.3008 38.5C76.3008 17.7 104.301 35.3 104.701 47.1C104.901 54.8 106.101 76.6 106.101 76.6C107.101 86.8 98.0008 87.8 93.9008 87Z"
+                                  tabindex="0" />
+                                <path data-id="16"
+                                  d="M62.4004 72.1C57.9004 71.3 50.6004 59.4 49.9004 49C49.9004 49 48.4004 39.3 48.4004 31.1C48.4004 13.5 70.8004 28.4 71.1004 38.3C71.3004 44.8 72.2004 63.3 72.2004 63.3C73.0004 72 65.6004 72.7 62.4004 72.1Z"
+                                  tabindex="0" />
+                                <path data-id="17"
+                                  d="M36.6992 57.2001C33.0992 56.5001 27.0992 46.8001 26.4992 38.3001C26.4992 38.3001 25.1992 30.4001 25.1992 23.6001C25.1992 9.20009 43.3992 21.4001 43.5992 29.5001C43.6992 34.8001 44.4992 49.9001 44.4992 49.9001C45.2992 57.1001 39.3992 57.7001 36.6992 57.2001Z"
+                                  tabindex="0" />
+                            </g>
+                        </svg>
+                    </div>
+                    <p class="calc__jaws-title">Верхняя челюсть</p>
+                    <div class="calc__jaw">
+                        <div class="calc__jaw-block">
+                            <p class="calc__jaw-block-title">Правая сторона верхняя челюсть</p>
+                            <div class="calc__jaw-teeth">
+                                <button class="calc__jaw-tooth" type="button" data-id="17">17</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="16">16</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="15">15</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="14">14</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="13">13</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="12">12</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="11">11</button>
+                            </div>
+                        </div>
+                        <div class="calc__jaw-block">
+                            <p class="calc__jaw-block-title">Левая сторона верхняя челюсть</p>
+                            <div class="calc__jaw-teeth">
+                                <button class="calc__jaw-tooth" type="button" data-id="27">27</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="26">26</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="25">25</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="24">24</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="23">23</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="22">22</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="21">21</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="calc__jaws-title">Нижняя челюсть</p>
+                    <div class="calc__jaw">
+                        <div class="calc__jaw-block">
+                            <p class="calc__jaw-block-title">Правая сторона нижняя челюсть</p>
+                            <div class="calc__jaw-teeth">
+                                <button class="calc__jaw-tooth" type="button" data-id="37">37</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="36">36</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="35">35</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="34">34</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="33">33</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="32">32</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="31">31</button>
+                            </div>
+                        </div>
+                        <div class="calc__jaw-block">
+                            <p class="calc__jaw-block-title">Левая сторона нижняя челюсть</p>
+                            <div class="calc__jaw-teeth">
+                                <button class="calc__jaw-tooth" type="button" data-id="47">47</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="46">46</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="45">45</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="44">44</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="43">43</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="42">42</button>
+                                <button class="calc__jaw-tooth" type="button" data-id="41">41</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calc__button-block">
+                        <button class="button button--type_3" type="button">
+                            Продолжить
+                            <svg>
+                                <use xlink:href="#arrow_more"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    //= template/footer_no_map.html
+
+    //= template/popups.html
+
+    <!--закрывашка меню-->
+    <div class="js-submenu-closer submenu-closer"></div>
+
+    <!--общие скрипты-->
+    //= template/scripts.html
+
+    <!--скрипты страницы-->
+    <script src="js/slick.min.js"></script>
+    <script src="js/calc.js"></script>
+
+
+    <!--прелоадер-->
+    <script src="js/preloader.js"></script>
+</body>
+
+</html>
